@@ -1,0 +1,36 @@
+﻿# Build results
+bin/
+obj/
+Debug/
+Release/
+
+# User-specific files
+*.csproj.user
+*.user
+
+# VS Code / Visual Studio
+.vs/
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# Environment variables
+.env
+appsettings.*.json
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# Rider
+.idea/
+*.sln.iml
+
+# Local user-specific files
+launchSettings.json
+
+# Generated files
+*.generated.cs
