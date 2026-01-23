@@ -12,4 +12,5 @@ public class Categoria
 
     // Relaciones
     public virtual Empresa Empresa { get; set; } = null!;
+    public virtual ICollection<Producto> Productos { get; set; } = new List<Producto>();
 }

@@ -14,4 +14,5 @@ public class Stock
     // Relaciones
     public virtual Producto Producto { get; set; } = null!;
     public virtual Sucursal Sucursal { get; set; } = null!;
+    public virtual ICollection<MovimientoStock> Movimientos { get; set; } = new List<MovimientoStock>();
 }

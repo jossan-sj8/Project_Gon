@@ -23,4 +23,7 @@ public class Venta
     public virtual Sucursal Sucursal { get; set; } = null!;
     public virtual Cliente? Cliente { get; set; }
     public virtual Usuario Usuario { get; set; } = null!;
+    public virtual ICollection<DetalleVenta> Detalles { get; set; } = new List<DetalleVenta>();
+    public virtual ICollection<Pago> Pagos { get; set; } = new List<Pago>();
+    public virtual ICollection<Devolucion> Devoluciones { get; set; } = new List<Devolucion>();
 }

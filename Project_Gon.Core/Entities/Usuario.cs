@@ -20,4 +20,10 @@ public class Usuario
     // Relaciones
     public virtual Empresa Empresa { get; set; } = null!;
     public virtual Sucursal? Sucursal { get; set; }
+    public virtual ICollection<MovimientoStock> MovimientosStock { get; set; } = new List<MovimientoStock>();
+    public virtual ICollection<Venta> Ventas { get; set; } = new List<Venta>();
+    public virtual ICollection<ArqueoCaja> ArqueosCaja { get; set; } = new List<ArqueoCaja>();
+    public virtual ICollection<Devolucion> Devoluciones { get; set; } = new List<Devolucion>();
+    public virtual ICollection<AuditoriaLog> AuditLogs { get; set; } = new List<AuditoriaLog>();
+    public virtual ICollection<ModuloAcceso> ModuloAccesos { get; set; } = new List<ModuloAcceso>();
 }

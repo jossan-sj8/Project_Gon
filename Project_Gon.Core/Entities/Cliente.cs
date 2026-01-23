@@ -17,4 +17,5 @@ public class Cliente
 
     // Relaciones
     public virtual Empresa Empresa { get; set; } = null!;
+    public virtual ICollection<Venta> Ventas { get; set; } = new List<Venta>();
 }
