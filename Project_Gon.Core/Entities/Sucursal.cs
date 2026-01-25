@@ -15,4 +15,8 @@ public class Sucursal
 
     // Relación con Empresa
     public virtual Empresa Empresa { get; set; } = null!;
+    public virtual ICollection<Usuario> Usuarios { get; set; } = new List<Usuario>();
+    public virtual ICollection<Stock> Stocks { get; set; } = new List<Stock>();
+    public virtual ICollection<Venta> Ventas { get; set; } = new List<Venta>();
+    public virtual ICollection<CajaRegistradora> CajasRegistradoras { get; set; } = new List<CajaRegistradora>();
 }

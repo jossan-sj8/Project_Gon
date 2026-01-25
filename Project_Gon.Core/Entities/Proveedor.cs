@@ -16,4 +16,5 @@ public class Proveedor
 
     // Relaciones
     public virtual Empresa Empresa { get; set; } = null!;
+    public virtual ICollection<PrecioProveedor> PreciosProveedor { get; set; } = new List<PrecioProveedor>();
 }

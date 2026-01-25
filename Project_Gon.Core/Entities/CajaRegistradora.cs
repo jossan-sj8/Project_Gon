@@ -12,4 +12,5 @@ public class CajaRegistradora
 
     // Relaciones
     public virtual Sucursal Sucursal { get; set; } = null!;
+    public virtual ICollection<ArqueoCaja> Arqueos { get; set; } = new List<ArqueoCaja>();
 }

@@ -16,4 +16,8 @@ public class Producto
     // Relaciones
     public virtual Empresa Empresa { get; set; } = null!;
     public virtual Categoria Categoria { get; set; } = null!;
+    public virtual ICollection<Stock> Stocks { get; set; } = new List<Stock>();
+    public virtual ICollection<DetalleVenta> DetalleVentas { get; set; } = new List<DetalleVenta>();
+    public virtual ICollection<PrecioProveedor> PreciosProveedor { get; set; } = new List<PrecioProveedor>();
+    public virtual ICollection<DetalleDevolucion> DetallesDevoluciones { get; set; } = new List<DetalleDevolucion>();
 }
