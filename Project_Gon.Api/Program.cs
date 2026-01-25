@@ -1,5 +1,6 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Project_Gon.Infrastructure.Data;
+using Project_Gon.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,13 +8,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// ✅ AGREGAR: Repository Pattern + Unit of Work
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 // Add services to the container.
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// Aplicar migraciones autom�ticamente en desarrollo
+// Aplicar migraciones automáticamente en desarrollo
 if (app.Environment.IsDevelopment())
 {
     using (var scope = app.Services.CreateScope())
