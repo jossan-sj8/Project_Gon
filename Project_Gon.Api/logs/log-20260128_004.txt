@@ -3107,3 +3107,812 @@ WHERE "Id" = @p12;
 2026-01-28 17:37:46.176 -03:00 [DBG] The connection queue processing loop for 0HNIULBTPDJD5 completed.
 2026-01-28 17:37:46.176 -03:00 [DBG] Connection id "0HNIULBTPDJD5" stopped.
 2026-01-28 17:37:46.177 -03:00 [DBG] Connection id "0HNIULBTPDJD5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-28 17:58:49.396 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-28 17:58:49.745 -03:00 [DBG] The index {'ProductoId'} was not created on entity type 'Stock' as the properties are already covered by the index {'ProductoId', 'SucursalId'}.
+2026-01-28 17:58:49.747 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Email'}.
+2026-01-28 17:58:49.747 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Rut'}.
+2026-01-28 17:58:49.820 -03:00 [DBG] The property 'MovimientoStock.DevolucionId' was created in shadow state because there are no eligible CLR members with a matching name.
+2026-01-28 17:58:49.884 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 17:58:49.894 -03:00 [DBG] Creating DbConnection.
+2026-01-28 17:58:49.910 -03:00 [DBG] Created DbConnection. (14ms).
+2026-01-28 17:58:49.912 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:58:50.095 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:58:50.098 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 17:58:50.102 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-01-28 17:58:50.103 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2026-01-28 17:58:50.107 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 17:58:50.127 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 17:58:50.146 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:58:50.151 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 20ms reading results.
+2026-01-28 17:58:50.153 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:58:50.156 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-01-28 17:58:50.267 -03:00 [DBG] Migrating using database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:58:50.269 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:58:50.271 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:58:50.308 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:58:50.309 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:58:50.311 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-01-28 17:58:50.312 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:58:50.313 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:58:50.342 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 17:58:50.342 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 17:58:50.344 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2026-01-28 17:58:50.346 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 17:58:50.351 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 17:58:50.355 -03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-28 17:58:50.357 -03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-28 17:58:50.358 -03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-01-28 17:58:50.359 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 17:58:50.361 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (2ms).
+2026-01-28 17:58:50.362 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (3ms).
+2026-01-28 17:58:50.363 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 17:58:50.364 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 17:58:50.365 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 17:58:50.366 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 17:58:50.367 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 17:58:50.367 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 17:58:50.369 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 17:58:50.371 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:58:50.371 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 17:58:50.377 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-28 17:58:50.378 -03:00 [DBG] Committing transaction.
+2026-01-28 17:58:50.381 -03:00 [DBG] Committed transaction.
+2026-01-28 17:58:50.382 -03:00 [DBG] Disposing transaction.
+2026-01-28 17:58:50.382 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:58:50.383 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 17:58:50.384 -03:00 [INF] Database migrations applied successfully
+2026-01-28 17:58:50.386 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 17:58:50.387 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:58:50.388 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 17:58:50.409 -03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-28 17:58:50.441 -03:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2026-01-28 17:58:50.453 -03:00 [INF] Project Gon API iniciada en ambiente: Development
+2026-01-28 17:58:50.456 -03:00 [DBG] Hosting starting
+2026-01-28 17:58:50.464 -03:00 [INF] User profile is available. Using 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-28 17:58:50.469 -03:00 [DBG] Reading data from file 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys\key-7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c.xml'.
+2026-01-28 17:58:50.474 -03:00 [DBG] Found key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c}.
+2026-01-28 17:58:50.480 -03:00 [DBG] Considering key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} with expiration date 2026-04-28 18:20:11Z as default key.
+2026-01-28 17:58:50.482 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-28 17:58:50.483 -03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-28 17:58:50.484 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-28 17:58:50.487 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-28 17:58:50.488 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-28 17:58:50.489 -03:00 [DBG] Using key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} as the default key.
+2026-01-28 17:58:50.490 -03:00 [DBG] Key ring with default key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} was loaded during application startup.
+2026-01-28 17:58:50.492 -03:00 [DBG] Middleware loaded
+2026-01-28 17:58:50.494 -03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2026-01-28 17:58:50.495 -03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-01-28 17:58:50.538 -03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-01-28 17:58:50.539 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-28 17:58:50.541 -03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-01-28 17:58:50.567 -03:00 [INF] Now listening on: https://localhost:7058
+2026-01-28 17:58:50.568 -03:00 [INF] Now listening on: http://localhost:5070
+2026-01-28 17:58:50.569 -03:00 [DBG] Loaded hosting startup assembly Project_Gon.Api
+2026-01-28 17:58:50.569 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-28 17:58:50.570 -03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-28 17:58:50.571 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-28 17:58:50.574 -03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-01-28 17:58:50.576 -03:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-01-28 17:58:50.675 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-28 17:58:50.676 -03:00 [INF] Hosting environment: Development
+2026-01-28 17:58:50.677 -03:00 [INF] Content root path: C:\Proyectos\Project_Gon\Project_Gon.Api
+2026-01-28 17:58:50.679 -03:00 [DBG] Hosting started
+2026-01-28 17:58:50.713 -03:00 [DBG] Connection id "0HNIUM04UURLA" accepted.
+2026-01-28 17:58:50.714 -03:00 [DBG] Connection id "0HNIUM04UURLA" started.
+2026-01-28 17:58:50.729 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-01-28 17:58:50.772 -03:00 [DBG] Connection id "0HNIUM04UURLB" accepted.
+2026-01-28 17:58:50.773 -03:00 [DBG] Connection id "0HNIUM04UURLB" started.
+2026-01-28 17:58:50.774 -03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2026-01-28 17:58:50.775 -03:00 [DBG] Request did not match any endpoints
+2026-01-28 17:58:50.800 -03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-28 17:58:50.802 -03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-28 17:58:50.806 -03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-28 17:58:50.807 -03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-28 17:58:50.808 -03:00 [DBG] Connection id "0HNIUM04UURLA" completed keep alive response.
+2026-01-28 17:58:50.809 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html;charset=utf-8 81.3173ms
+2026-01-28 17:58:50.829 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_vs/browserLink - null null
+2026-01-28 17:58:50.829 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-28 17:58:50.833 -03:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2026-01-28 17:58:50.833 -03:00 [DBG] Connection id "0HNIUM04UURLA" completed keep alive response.
+2026-01-28 17:58:50.834 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 5.4686ms
+2026-01-28 17:58:50.844 -03:00 [DBG] Connection id "0HNIUM04UURLB" completed keep alive response.
+2026-01-28 17:58:50.845 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.0675ms
+2026-01-28 17:58:50.979 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-01-28 17:58:50.982 -03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2026-01-28 17:58:50.983 -03:00 [DBG] Request did not match any endpoints
+2026-01-28 17:58:51.004 -03:00 [DBG] Connection id "0HNIUM04UURLB" completed keep alive response.
+2026-01-28 17:58:51.006 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.3919ms
+2026-01-28 17:59:52.477 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-28 17:59:52.834 -03:00 [DBG] The index {'ProductoId'} was not created on entity type 'Stock' as the properties are already covered by the index {'ProductoId', 'SucursalId'}.
+2026-01-28 17:59:52.835 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Email'}.
+2026-01-28 17:59:52.836 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Rut'}.
+2026-01-28 17:59:52.909 -03:00 [DBG] The property 'MovimientoStock.DevolucionId' was created in shadow state because there are no eligible CLR members with a matching name.
+2026-01-28 17:59:52.969 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 17:59:52.981 -03:00 [DBG] Creating DbConnection.
+2026-01-28 17:59:52.998 -03:00 [DBG] Created DbConnection. (16ms).
+2026-01-28 17:59:53.001 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:59:53.073 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:59:53.076 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 17:59:53.080 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-01-28 17:59:53.081 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2026-01-28 17:59:53.085 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 17:59:53.105 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 17:59:53.130 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:59:53.135 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 27ms reading results.
+2026-01-28 17:59:53.137 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:59:53.140 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-01-28 17:59:53.249 -03:00 [DBG] Migrating using database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:59:53.251 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:59:53.253 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:59:53.292 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:59:53.293 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:59:53.295 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-01-28 17:59:53.296 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:59:53.297 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:59:53.324 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 17:59:53.325 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 17:59:53.326 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 17:59:53.326 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 17:59:53.332 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 17:59:53.336 -03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-28 17:59:53.338 -03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-28 17:59:53.339 -03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-01-28 17:59:53.340 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 17:59:53.341 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 17:59:53.341 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 17:59:53.342 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 17:59:53.344 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 17:59:53.345 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 17:59:53.345 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 17:59:53.348 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2026-01-28 17:59:53.349 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 17:59:53.350 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 17:59:53.352 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:59:53.353 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 17:59:53.358 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-28 17:59:53.359 -03:00 [DBG] Committing transaction.
+2026-01-28 17:59:53.430 -03:00 [DBG] Committed transaction.
+2026-01-28 17:59:53.431 -03:00 [DBG] Disposing transaction.
+2026-01-28 17:59:53.431 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:59:53.432 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 17:59:53.433 -03:00 [INF] Database migrations applied successfully
+2026-01-28 17:59:53.435 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 17:59:53.436 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 17:59:53.437 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 17:59:53.458 -03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-28 17:59:53.490 -03:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2026-01-28 17:59:53.502 -03:00 [INF] Project Gon API iniciada en ambiente: Development
+2026-01-28 17:59:53.505 -03:00 [DBG] Hosting starting
+2026-01-28 17:59:53.513 -03:00 [INF] User profile is available. Using 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-28 17:59:53.519 -03:00 [DBG] Reading data from file 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys\key-7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c.xml'.
+2026-01-28 17:59:53.524 -03:00 [DBG] Found key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c}.
+2026-01-28 17:59:53.529 -03:00 [DBG] Considering key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} with expiration date 2026-04-28 18:20:11Z as default key.
+2026-01-28 17:59:53.532 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-28 17:59:53.533 -03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-28 17:59:53.535 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-28 17:59:53.538 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-28 17:59:53.538 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-28 17:59:53.540 -03:00 [DBG] Using key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} as the default key.
+2026-01-28 17:59:53.540 -03:00 [DBG] Key ring with default key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} was loaded during application startup.
+2026-01-28 17:59:53.543 -03:00 [DBG] Middleware loaded
+2026-01-28 17:59:53.544 -03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2026-01-28 17:59:53.545 -03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-01-28 17:59:53.588 -03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-01-28 17:59:53.590 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-28 17:59:53.592 -03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-01-28 17:59:53.619 -03:00 [INF] Now listening on: https://localhost:7058
+2026-01-28 17:59:53.620 -03:00 [INF] Now listening on: http://localhost:5070
+2026-01-28 17:59:53.620 -03:00 [DBG] Loaded hosting startup assembly Project_Gon.Api
+2026-01-28 17:59:53.621 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-28 17:59:53.622 -03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-28 17:59:53.622 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-28 17:59:53.626 -03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-01-28 17:59:53.629 -03:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-01-28 17:59:53.635 -03:00 [DBG] Connection id "0HNIUM0NN1256" accepted.
+2026-01-28 17:59:53.635 -03:00 [DBG] Connection id "0HNIUM0NN1256" started.
+2026-01-28 17:59:53.652 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-01-28 17:59:53.678 -03:00 [DBG] Connection id "0HNIUM0NN1257" accepted.
+2026-01-28 17:59:53.679 -03:00 [DBG] Connection id "0HNIUM0NN1257" started.
+2026-01-28 17:59:53.761 -03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2026-01-28 17:59:53.762 -03:00 [DBG] Request did not match any endpoints
+2026-01-28 17:59:53.783 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-28 17:59:53.784 -03:00 [INF] Hosting environment: Development
+2026-01-28 17:59:53.785 -03:00 [INF] Content root path: C:\Proyectos\Project_Gon\Project_Gon.Api
+2026-01-28 17:59:53.787 -03:00 [DBG] Hosting started
+2026-01-28 17:59:53.789 -03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-28 17:59:53.791 -03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-28 17:59:53.796 -03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-28 17:59:53.797 -03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-28 17:59:53.798 -03:00 [DBG] Connection id "0HNIUM0NN1256" completed keep alive response.
+2026-01-28 17:59:53.800 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html;charset=utf-8 148.4738ms
+2026-01-28 17:59:53.817 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_vs/browserLink - null null
+2026-01-28 17:59:53.817 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-28 17:59:53.821 -03:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2026-01-28 17:59:53.822 -03:00 [DBG] Connection id "0HNIUM0NN1257" completed keep alive response.
+2026-01-28 17:59:53.823 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 6.0104ms
+2026-01-28 17:59:53.833 -03:00 [DBG] Connection id "0HNIUM0NN1256" completed keep alive response.
+2026-01-28 17:59:53.835 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.489ms
+2026-01-28 17:59:53.882 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-01-28 17:59:53.885 -03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2026-01-28 17:59:53.886 -03:00 [DBG] Request did not match any endpoints
+2026-01-28 17:59:53.898 -03:00 [DBG] Connection id "0HNIUM0NN1256" completed keep alive response.
+2026-01-28 17:59:53.899 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.7189ms
+2026-01-28 18:01:19.471 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-28 18:01:19.821 -03:00 [DBG] The index {'ProductoId'} was not created on entity type 'Stock' as the properties are already covered by the index {'ProductoId', 'SucursalId'}.
+2026-01-28 18:01:19.823 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Email'}.
+2026-01-28 18:01:19.824 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Rut'}.
+2026-01-28 18:01:19.898 -03:00 [DBG] The property 'MovimientoStock.DevolucionId' was created in shadow state because there are no eligible CLR members with a matching name.
+2026-01-28 18:01:19.961 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 18:01:19.973 -03:00 [DBG] Creating DbConnection.
+2026-01-28 18:01:19.989 -03:00 [DBG] Created DbConnection. (15ms).
+2026-01-28 18:01:19.992 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:01:20.175 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:01:20.178 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 18:01:20.182 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-01-28 18:01:20.183 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2026-01-28 18:01:20.187 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 18:01:20.209 -03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 18:01:20.228 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:01:20.233 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 20ms reading results.
+2026-01-28 18:01:20.235 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:01:20.237 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-01-28 18:01:20.349 -03:00 [DBG] Migrating using database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:01:20.351 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:01:20.353 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:01:20.389 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:01:20.390 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:01:20.392 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-01-28 18:01:20.393 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:01:20.394 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:01:20.421 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 18:01:20.422 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 18:01:20.422 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 18:01:20.423 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 18:01:20.429 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 18:01:20.433 -03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-28 18:01:20.435 -03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-28 18:01:20.436 -03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-01-28 18:01:20.437 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 18:01:20.437 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 18:01:20.438 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 18:01:20.439 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 18:01:20.440 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 18:01:20.441 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 18:01:20.444 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2026-01-28 18:01:20.445 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2026-01-28 18:01:20.446 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 18:01:20.447 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 18:01:20.449 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:01:20.450 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 18:01:20.455 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-28 18:01:20.456 -03:00 [DBG] Committing transaction.
+2026-01-28 18:01:20.458 -03:00 [DBG] Committed transaction.
+2026-01-28 18:01:20.460 -03:00 [DBG] Disposing transaction.
+2026-01-28 18:01:20.460 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:01:20.461 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 18:01:20.462 -03:00 [INF] Database migrations applied successfully
+2026-01-28 18:01:20.464 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 18:01:20.465 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:01:20.466 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 18:01:20.487 -03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-28 18:01:20.518 -03:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2026-01-28 18:01:20.530 -03:00 [INF] Project Gon API iniciada en ambiente: Development
+2026-01-28 18:01:20.533 -03:00 [DBG] Hosting starting
+2026-01-28 18:01:20.541 -03:00 [INF] User profile is available. Using 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-28 18:01:20.546 -03:00 [DBG] Reading data from file 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys\key-7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c.xml'.
+2026-01-28 18:01:20.551 -03:00 [DBG] Found key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c}.
+2026-01-28 18:01:20.558 -03:00 [DBG] Considering key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} with expiration date 2026-04-28 18:20:11Z as default key.
+2026-01-28 18:01:20.561 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-28 18:01:20.562 -03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-28 18:01:20.563 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-28 18:01:20.566 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-28 18:01:20.567 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-28 18:01:20.569 -03:00 [DBG] Using key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} as the default key.
+2026-01-28 18:01:20.569 -03:00 [DBG] Key ring with default key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} was loaded during application startup.
+2026-01-28 18:01:20.572 -03:00 [DBG] Middleware loaded
+2026-01-28 18:01:20.573 -03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2026-01-28 18:01:20.574 -03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-01-28 18:01:20.621 -03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-01-28 18:01:20.623 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-28 18:01:20.624 -03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-01-28 18:01:20.652 -03:00 [INF] Now listening on: https://localhost:7058
+2026-01-28 18:01:20.653 -03:00 [INF] Now listening on: http://localhost:5070
+2026-01-28 18:01:20.654 -03:00 [DBG] Loaded hosting startup assembly Project_Gon.Api
+2026-01-28 18:01:20.654 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-28 18:01:20.655 -03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-28 18:01:20.655 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-28 18:01:20.659 -03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-01-28 18:01:20.663 -03:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-01-28 18:01:20.763 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-28 18:01:20.763 -03:00 [INF] Hosting environment: Development
+2026-01-28 18:01:20.764 -03:00 [INF] Content root path: C:\Proyectos\Project_Gon\Project_Gon.Api
+2026-01-28 18:01:20.766 -03:00 [DBG] Hosting started
+2026-01-28 18:01:20.795 -03:00 [DBG] Connection id "0HNIUM1HM85P9" accepted.
+2026-01-28 18:01:20.796 -03:00 [DBG] Connection id "0HNIUM1HM85P9" started.
+2026-01-28 18:01:20.810 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-01-28 18:01:20.853 -03:00 [DBG] Connection id "0HNIUM1HM85PA" accepted.
+2026-01-28 18:01:20.853 -03:00 [DBG] Connection id "0HNIUM1HM85PA" started.
+2026-01-28 18:01:20.855 -03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2026-01-28 18:01:20.855 -03:00 [DBG] Request did not match any endpoints
+2026-01-28 18:01:20.881 -03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-28 18:01:20.883 -03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-28 18:01:20.888 -03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-28 18:01:20.888 -03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-28 18:01:20.889 -03:00 [DBG] Connection id "0HNIUM1HM85P9" completed keep alive response.
+2026-01-28 18:01:20.891 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html;charset=utf-8 81.6669ms
+2026-01-28 18:01:20.903 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_vs/browserLink - null null
+2026-01-28 18:01:20.903 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-28 18:01:20.907 -03:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2026-01-28 18:01:20.907 -03:00 [DBG] Connection id "0HNIUM1HM85P9" completed keep alive response.
+2026-01-28 18:01:20.908 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 5.5147ms
+2026-01-28 18:01:20.917 -03:00 [DBG] Connection id "0HNIUM1HM85PA" completed keep alive response.
+2026-01-28 18:01:20.918 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.3367ms
+2026-01-28 18:01:20.945 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-01-28 18:01:20.947 -03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2026-01-28 18:01:20.947 -03:00 [DBG] Request did not match any endpoints
+2026-01-28 18:01:20.961 -03:00 [DBG] Connection id "0HNIUM1HM85PA" completed keep alive response.
+2026-01-28 18:01:20.962 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.1787ms
+2026-01-28 18:02:54.193 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-28 18:02:54.548 -03:00 [DBG] The index {'ProductoId'} was not created on entity type 'Stock' as the properties are already covered by the index {'ProductoId', 'SucursalId'}.
+2026-01-28 18:02:54.550 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Email'}.
+2026-01-28 18:02:54.550 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Rut'}.
+2026-01-28 18:02:54.628 -03:00 [DBG] The property 'MovimientoStock.DevolucionId' was created in shadow state because there are no eligible CLR members with a matching name.
+2026-01-28 18:02:54.691 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 18:02:54.703 -03:00 [DBG] Creating DbConnection.
+2026-01-28 18:02:54.719 -03:00 [DBG] Created DbConnection. (15ms).
+2026-01-28 18:02:54.722 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:02:54.795 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:02:54.798 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 18:02:54.802 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-01-28 18:02:54.803 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2026-01-28 18:02:54.807 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 18:02:54.827 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 18:02:54.846 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:02:54.851 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 20ms reading results.
+2026-01-28 18:02:54.853 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:02:54.856 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-01-28 18:02:54.967 -03:00 [DBG] Migrating using database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:02:54.969 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:02:54.972 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:02:55.007 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:02:55.008 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:02:55.010 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-01-28 18:02:55.011 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:02:55.012 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:02:55.039 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 18:02:55.040 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 18:02:55.041 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2026-01-28 18:02:55.042 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 18:02:55.048 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 18:02:55.051 -03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-28 18:02:55.053 -03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-28 18:02:55.055 -03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-01-28 18:02:55.056 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 18:02:55.058 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 18:02:55.059 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2026-01-28 18:02:55.059 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 18:02:55.061 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 18:02:55.062 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 18:02:55.062 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 18:02:55.063 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 18:02:55.064 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 18:02:55.066 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 18:02:55.067 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:02:55.068 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 18:02:55.073 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-28 18:02:55.075 -03:00 [DBG] Committing transaction.
+2026-01-28 18:02:55.112 -03:00 [DBG] Committed transaction.
+2026-01-28 18:02:55.114 -03:00 [DBG] Disposing transaction.
+2026-01-28 18:02:55.114 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:02:55.115 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 18:02:55.116 -03:00 [INF] Database migrations applied successfully
+2026-01-28 18:02:55.118 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 18:02:55.119 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:02:55.120 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 18:02:55.141 -03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-28 18:02:55.172 -03:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2026-01-28 18:02:55.184 -03:00 [INF] Project Gon API iniciada en ambiente: Development
+2026-01-28 18:02:55.186 -03:00 [DBG] Hosting starting
+2026-01-28 18:02:55.195 -03:00 [INF] User profile is available. Using 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-28 18:02:55.200 -03:00 [DBG] Reading data from file 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys\key-7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c.xml'.
+2026-01-28 18:02:55.206 -03:00 [DBG] Found key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c}.
+2026-01-28 18:02:55.212 -03:00 [DBG] Considering key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} with expiration date 2026-04-28 18:20:11Z as default key.
+2026-01-28 18:02:55.214 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-28 18:02:55.216 -03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-28 18:02:55.218 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-28 18:02:55.221 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-28 18:02:55.222 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-28 18:02:55.223 -03:00 [DBG] Using key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} as the default key.
+2026-01-28 18:02:55.224 -03:00 [DBG] Key ring with default key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} was loaded during application startup.
+2026-01-28 18:02:55.226 -03:00 [DBG] Middleware loaded
+2026-01-28 18:02:55.227 -03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2026-01-28 18:02:55.228 -03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-01-28 18:02:55.279 -03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-01-28 18:02:55.281 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-28 18:02:55.283 -03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-01-28 18:02:55.310 -03:00 [INF] Now listening on: https://localhost:7058
+2026-01-28 18:02:55.310 -03:00 [INF] Now listening on: http://localhost:5070
+2026-01-28 18:02:55.311 -03:00 [DBG] Loaded hosting startup assembly Project_Gon.Api
+2026-01-28 18:02:55.313 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-28 18:02:55.313 -03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-28 18:02:55.314 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-28 18:02:55.317 -03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-01-28 18:02:55.320 -03:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-01-28 18:02:55.410 -03:00 [DBG] Connection id "0HNIUM2DSIFPD" accepted.
+2026-01-28 18:02:55.411 -03:00 [DBG] Connection id "0HNIUM2DSIFPD" started.
+2026-01-28 18:02:55.417 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-28 18:02:55.417 -03:00 [INF] Hosting environment: Development
+2026-01-28 18:02:55.418 -03:00 [INF] Content root path: C:\Proyectos\Project_Gon\Project_Gon.Api
+2026-01-28 18:02:55.420 -03:00 [DBG] Hosting started
+2026-01-28 18:02:55.426 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-01-28 18:02:55.468 -03:00 [DBG] Connection id "0HNIUM2DSIFPE" accepted.
+2026-01-28 18:02:55.469 -03:00 [DBG] Connection id "0HNIUM2DSIFPE" started.
+2026-01-28 18:02:55.471 -03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2026-01-28 18:02:55.472 -03:00 [DBG] Request did not match any endpoints
+2026-01-28 18:02:55.499 -03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-28 18:02:55.500 -03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-28 18:02:55.505 -03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-28 18:02:55.506 -03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-28 18:02:55.507 -03:00 [DBG] Connection id "0HNIUM2DSIFPD" completed keep alive response.
+2026-01-28 18:02:55.508 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html;charset=utf-8 82.7648ms
+2026-01-28 18:02:55.525 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_vs/browserLink - null null
+2026-01-28 18:02:55.525 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-28 18:02:55.529 -03:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2026-01-28 18:02:55.530 -03:00 [DBG] Connection id "0HNIUM2DSIFPE" completed keep alive response.
+2026-01-28 18:02:55.531 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 5.7687ms
+2026-01-28 18:02:55.541 -03:00 [DBG] Connection id "0HNIUM2DSIFPD" completed keep alive response.
+2026-01-28 18:02:55.542 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.923ms
+2026-01-28 18:02:55.575 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-01-28 18:02:55.578 -03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2026-01-28 18:02:55.578 -03:00 [DBG] Request did not match any endpoints
+2026-01-28 18:02:55.591 -03:00 [DBG] Connection id "0HNIUM2DSIFPD" completed keep alive response.
+2026-01-28 18:02:55.592 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.7128ms
+2026-01-28 18:04:34.066 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-28 18:04:34.432 -03:00 [DBG] The index {'ProductoId'} was not created on entity type 'Stock' as the properties are already covered by the index {'ProductoId', 'SucursalId'}.
+2026-01-28 18:04:34.434 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Email'}.
+2026-01-28 18:04:34.435 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Rut'}.
+2026-01-28 18:04:34.513 -03:00 [DBG] The property 'MovimientoStock.DevolucionId' was created in shadow state because there are no eligible CLR members with a matching name.
+2026-01-28 18:04:34.582 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 18:04:34.594 -03:00 [DBG] Creating DbConnection.
+2026-01-28 18:04:34.611 -03:00 [DBG] Created DbConnection. (16ms).
+2026-01-28 18:04:34.614 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:04:34.691 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:04:34.695 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 18:04:34.699 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-01-28 18:04:34.700 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (6ms).
+2026-01-28 18:04:34.704 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 18:04:34.725 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 18:04:34.745 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:04:34.750 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 21ms reading results.
+2026-01-28 18:04:34.752 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:04:34.755 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-01-28 18:04:34.862 -03:00 [DBG] Migrating using database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:04:34.865 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:04:34.867 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:04:35.001 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:04:35.002 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:04:35.004 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-01-28 18:04:35.005 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:04:35.006 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:04:35.033 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 18:04:35.034 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 18:04:35.035 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 18:04:35.036 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 18:04:35.041 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 18:04:35.045 -03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-28 18:04:35.047 -03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-28 18:04:35.049 -03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-01-28 18:04:35.049 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 18:04:35.050 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 18:04:35.051 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 18:04:35.052 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 18:04:35.053 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 18:04:35.056 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 18:04:35.057 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 18:04:35.058 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 18:04:35.058 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 18:04:35.060 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 18:04:35.062 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:04:35.062 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 18:04:35.068 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-28 18:04:35.069 -03:00 [DBG] Committing transaction.
+2026-01-28 18:04:35.107 -03:00 [DBG] Committed transaction.
+2026-01-28 18:04:35.108 -03:00 [DBG] Disposing transaction.
+2026-01-28 18:04:35.109 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:04:35.109 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 18:04:35.111 -03:00 [INF] Database migrations applied successfully
+2026-01-28 18:04:35.112 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 18:04:35.113 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 18:04:35.115 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 18:04:35.135 -03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-28 18:04:35.170 -03:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2026-01-28 18:04:35.182 -03:00 [INF] Project Gon API iniciada en ambiente: Development
+2026-01-28 18:04:35.185 -03:00 [DBG] Hosting starting
+2026-01-28 18:04:35.193 -03:00 [INF] User profile is available. Using 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-28 18:04:35.198 -03:00 [DBG] Reading data from file 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys\key-7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c.xml'.
+2026-01-28 18:04:35.204 -03:00 [DBG] Found key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c}.
+2026-01-28 18:04:35.209 -03:00 [DBG] Considering key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} with expiration date 2026-04-28 18:20:11Z as default key.
+2026-01-28 18:04:35.212 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-28 18:04:35.213 -03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-28 18:04:35.214 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-28 18:04:35.217 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-28 18:04:35.218 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-28 18:04:35.219 -03:00 [DBG] Using key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} as the default key.
+2026-01-28 18:04:35.220 -03:00 [DBG] Key ring with default key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} was loaded during application startup.
+2026-01-28 18:04:35.222 -03:00 [DBG] Middleware loaded
+2026-01-28 18:04:35.223 -03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2026-01-28 18:04:35.225 -03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-01-28 18:04:35.268 -03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-01-28 18:04:35.269 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-28 18:04:35.271 -03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-01-28 18:04:35.298 -03:00 [INF] Now listening on: https://localhost:7058
+2026-01-28 18:04:35.298 -03:00 [INF] Now listening on: http://localhost:5070
+2026-01-28 18:04:35.299 -03:00 [DBG] Loaded hosting startup assembly Project_Gon.Api
+2026-01-28 18:04:35.300 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-28 18:04:35.300 -03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-28 18:04:35.301 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-28 18:04:35.304 -03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-01-28 18:04:35.308 -03:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-01-28 18:04:35.403 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-28 18:04:35.404 -03:00 [INF] Hosting environment: Development
+2026-01-28 18:04:35.405 -03:00 [INF] Content root path: C:\Proyectos\Project_Gon\Project_Gon.Api
+2026-01-28 18:04:35.407 -03:00 [DBG] Hosting started
+2026-01-28 18:04:35.437 -03:00 [DBG] Connection id "0HNIUM3BMGCGC" accepted.
+2026-01-28 18:04:35.438 -03:00 [DBG] Connection id "0HNIUM3BMGCGC" started.
+2026-01-28 18:04:35.453 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-01-28 18:04:35.462 -03:00 [DBG] Connection id "0HNIUM3BMGCGD" accepted.
+2026-01-28 18:04:35.463 -03:00 [DBG] Connection id "0HNIUM3BMGCGD" started.
+2026-01-28 18:04:35.497 -03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2026-01-28 18:04:35.498 -03:00 [DBG] Request did not match any endpoints
+2026-01-28 18:04:35.524 -03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-28 18:04:35.526 -03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-28 18:04:35.531 -03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-28 18:04:35.531 -03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-28 18:04:35.532 -03:00 [DBG] Connection id "0HNIUM3BMGCGC" completed keep alive response.
+2026-01-28 18:04:35.534 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html;charset=utf-8 81.7684ms
+2026-01-28 18:04:35.547 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-28 18:04:35.547 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_vs/browserLink - null null
+2026-01-28 18:04:35.550 -03:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2026-01-28 18:04:35.551 -03:00 [DBG] Connection id "0HNIUM3BMGCGC" completed keep alive response.
+2026-01-28 18:04:35.552 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 4.8185ms
+2026-01-28 18:04:35.564 -03:00 [DBG] Connection id "0HNIUM3BMGCGD" completed keep alive response.
+2026-01-28 18:04:35.565 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.5463ms
+2026-01-28 18:04:35.599 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-01-28 18:04:35.601 -03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2026-01-28 18:04:35.601 -03:00 [DBG] Request did not match any endpoints
+2026-01-28 18:04:35.616 -03:00 [DBG] Connection id "0HNIUM3BMGCGD" completed keep alive response.
+2026-01-28 18:04:35.617 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.4796ms
+2026-01-28 18:05:34.139 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-01-28 18:05:34.143 -03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2026-01-28 18:05:34.144 -03:00 [DBG] Request did not match any endpoints
+2026-01-28 18:05:34.145 -03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-28 18:05:34.146 -03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-28 18:05:34.147 -03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-28 18:05:34.147 -03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-28 18:05:34.148 -03:00 [DBG] Connection id "0HNIUM3BMGCGD" completed keep alive response.
+2026-01-28 18:05:34.149 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html;charset=utf-8 9.1218ms
+2026-01-28 18:05:34.157 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-28 18:05:34.157 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/_vs/browserLink - null null
+2026-01-28 18:05:34.160 -03:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2026-01-28 18:05:34.163 -03:00 [DBG] Connection id "0HNIUM3BMGCGD" completed keep alive response.
+2026-01-28 18:05:34.164 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 7.4177ms
+2026-01-28 18:05:34.167 -03:00 [DBG] Connection id "0HNIUM3BMGCGC" completed keep alive response.
+2026-01-28 18:05:34.169 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.2622ms
+2026-01-28 18:05:34.230 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-01-28 18:05:34.231 -03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2026-01-28 18:05:34.232 -03:00 [DBG] Request did not match any endpoints
+2026-01-28 18:05:34.247 -03:00 [DBG] Connection id "0HNIUM3BMGCGC" completed keep alive response.
+2026-01-28 18:05:34.248 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.7177ms
+2026-01-28 18:06:01.033 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5070/api/Auth/register - application/json 172
+2026-01-28 18:06:01.040 -03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2026-01-28 18:06:01.043 -03:00 [DBG] Endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2026-01-28 18:06:01.045 -03:00 [DBG] Request matched endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 18:06:01.047 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 18:06:01.048 -03:00 [DBG] Https port '7058' loaded from configuration.
+2026-01-28 18:06:01.049 -03:00 [DBG] Redirecting to 'https://localhost:7058/api/Auth/register'.
+2026-01-28 18:06:01.051 -03:00 [DBG] Connection id "0HNIUM3BMGCGC" completed keep alive response.
+2026-01-28 18:06:01.051 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5070/api/Auth/register - 307 0 null 18.7981ms
+2026-01-28 18:06:01.053 -03:00 [DBG] Connection id "0HNIUM3BMGCGC", Request id "0HNIUM3BMGCGC:00000005": started reading request body.
+2026-01-28 18:06:01.054 -03:00 [DBG] Connection id "0HNIUM3BMGCGC", Request id "0HNIUM3BMGCGC:00000005": done reading request body.
+2026-01-28 18:06:01.076 -03:00 [DBG] Connection id "0HNIUM3BMGCGE" accepted.
+2026-01-28 18:06:01.077 -03:00 [DBG] Connection id "0HNIUM3BMGCGE" started.
+2026-01-28 18:06:01.099 -03:00 [DBG] Connection 0HNIUM3BMGCGE established using the following protocol: "Tls12"
+2026-01-28 18:06:01.106 -03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7058/api/Auth/register - null null
+2026-01-28 18:06:01.108 -03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2026-01-28 18:06:01.108 -03:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2026-01-28 18:06:01.109 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 18:06:01.110 -03:00 [DBG] The request has an origin header: 'http://localhost:5070'.
+2026-01-28 18:06:01.110 -03:00 [INF] CORS policy execution failed.
+2026-01-28 18:06:01.111 -03:00 [INF] Request origin http://localhost:5070 does not have permission to access the resource.
+2026-01-28 18:06:01.112 -03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7058/api/Auth/register - 204 null null 6.1906ms
+2026-01-28 18:07:44.823 -03:00 [DBG] Connection id "0HNIUM3BMGCGD" disconnecting.
+2026-01-28 18:07:44.825 -03:00 [DBG] Connection id "0HNIUM3BMGCGD" stopped.
+2026-01-28 18:07:44.826 -03:00 [DBG] Connection id "0HNIUM3BMGCGD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-28 18:07:46.544 -03:00 [DBG] Connection id "0HNIUM3BMGCGF" accepted.
+2026-01-28 18:07:46.545 -03:00 [DBG] Connection id "0HNIUM3BMGCGF" started.
+2026-01-28 18:07:46.546 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5070/api/auth/register - application/json 170
+2026-01-28 18:07:46.547 -03:00 [DBG] 1 candidate(s) found for the request path '/api/auth/register'
+2026-01-28 18:07:46.548 -03:00 [DBG] Endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)' with route pattern 'api/Auth/register' is valid for the request path '/api/auth/register'
+2026-01-28 18:07:46.549 -03:00 [DBG] Request matched endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 18:07:46.550 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 18:07:46.550 -03:00 [DBG] Redirecting to 'https://localhost:7058/api/auth/register'.
+2026-01-28 18:07:46.551 -03:00 [DBG] Connection id "0HNIUM3BMGCGF" completed keep alive response.
+2026-01-28 18:07:46.552 -03:00 [DBG] Connection id "0HNIUM3BMGCGG" accepted.
+2026-01-28 18:07:46.552 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5070/api/auth/register - 307 0 null 5.6848ms
+2026-01-28 18:07:46.552 -03:00 [DBG] Connection id "0HNIUM3BMGCGG" started.
+2026-01-28 18:07:46.554 -03:00 [DBG] Connection id "0HNIUM3BMGCGF", Request id "0HNIUM3BMGCGF:00000001": started reading request body.
+2026-01-28 18:07:46.555 -03:00 [DBG] Connection id "0HNIUM3BMGCGF", Request id "0HNIUM3BMGCGF:00000001": done reading request body.
+2026-01-28 18:07:46.561 -03:00 [DBG] Connection 0HNIUM3BMGCGG established using the following protocol: "Tls12"
+2026-01-28 18:07:46.562 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7058/api/auth/register - application/json 170
+2026-01-28 18:07:46.563 -03:00 [DBG] 1 candidate(s) found for the request path '/api/auth/register'
+2026-01-28 18:07:46.564 -03:00 [DBG] Endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)' with route pattern 'api/Auth/register' is valid for the request path '/api/auth/register'
+2026-01-28 18:07:46.565 -03:00 [DBG] Request matched endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 18:07:46.566 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 18:07:46.595 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-28 18:07:46.597 -03:00 [INF] Executing endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 18:07:46.606 -03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Project_Gon.Core.DTOs.Auth.RegisterDto) on controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api).
+2026-01-28 18:07:46.608 -03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-28 18:07:46.609 -03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-28 18:07:46.610 -03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-28 18:07:46.611 -03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-28 18:07:46.612 -03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-28 18:07:46.614 -03:00 [DBG] Executing controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 18:07:46.673 -03:00 [DBG] Executed controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 18:07:46.676 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 18:07:46.677 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' using the name '' in request data ...
+2026-01-28 18:07:46.679 -03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-28 18:07:46.685 -03:00 [DBG] Connection id "0HNIUM3BMGCGG", Request id "0HNIUM3BMGCGG:00000001": started reading request body.
+2026-01-28 18:07:46.686 -03:00 [DBG] Connection id "0HNIUM3BMGCGG", Request id "0HNIUM3BMGCGG:00000001": done reading request body.
+2026-01-28 18:07:46.691 -03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Project_Gon.Core.DTOs.Auth.RegisterDto'
+2026-01-28 18:07:46.692 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 18:07:46.692 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 18:07:46.693 -03:00 [DBG] Attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 18:07:46.729 -03:00 [DBG] Done attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 18:07:46.731 -03:00 [DBG] The request has model state errors, returning an error response.
+2026-01-28 18:07:46.732 -03:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2026-01-28 18:07:46.733 -03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-28 18:07:46.735 -03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-28 18:07:46.736 -03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2026-01-28 18:07:46.738 -03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2026-01-28 18:07:46.739 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-01-28 18:07:46.749 -03:00 [INF] Executed action Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api) in 134.3864ms
+2026-01-28 18:07:46.750 -03:00 [INF] Executed endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 18:07:46.751 -03:00 [INF] HTTP POST /api/auth/register responded 400 in 183.0962 ms
+2026-01-28 18:07:46.754 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7058/api/auth/register - 400 null application/problem+json; charset=utf-8 191.3262ms
+2026-01-28 18:08:12.013 -03:00 [DBG] Connection id "0HNIUM3BMGCGC" disconnecting.
+2026-01-28 18:08:12.014 -03:00 [DBG] Connection id "0HNIUM3BMGCGC" stopped.
+2026-01-28 18:08:12.015 -03:00 [DBG] Connection id "0HNIUM3BMGCGC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-28 18:08:13.023 -03:00 [DBG] Connection id "0HNIUM3BMGCGE" is closing.
+2026-01-28 18:08:13.024 -03:00 [DBG] Connection id "0HNIUM3BMGCGE" is closed. The last processed stream ID was 1.
+2026-01-28 18:08:13.025 -03:00 [DBG] Connection id "0HNIUM3BMGCGE" received FIN.
+2026-01-28 18:08:13.025 -03:00 [DBG] Connection id "0HNIUM3BMGCGE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-28 18:08:13.050 -03:00 [DBG] The connection queue processing loop for 0HNIUM3BMGCGE completed.
+2026-01-28 18:08:13.051 -03:00 [DBG] Connection id "0HNIUM3BMGCGE" stopped.
+2026-01-28 18:09:57.916 -03:00 [DBG] Connection id "0HNIUM3BMGCGG" is closing.
+2026-01-28 18:09:57.916 -03:00 [DBG] Connection id "0HNIUM3BMGCGF" disconnecting.
+2026-01-28 18:09:57.916 -03:00 [DBG] Connection id "0HNIUM3BMGCGG" is closed. The last processed stream ID was 1.
+2026-01-28 18:09:57.917 -03:00 [DBG] Connection id "0HNIUM3BMGCGF" stopped.
+2026-01-28 18:09:57.919 -03:00 [DBG] Connection id "0HNIUM3BMGCGF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-28 18:09:57.932 -03:00 [DBG] The connection queue processing loop for 0HNIUM3BMGCGG completed.
+2026-01-28 18:09:57.933 -03:00 [DBG] Connection id "0HNIUM3BMGCGG" stopped.
+2026-01-28 18:09:57.934 -03:00 [DBG] Connection id "0HNIUM3BMGCGG" sending FIN because: "The Socket transport's send loop completed gracefully."

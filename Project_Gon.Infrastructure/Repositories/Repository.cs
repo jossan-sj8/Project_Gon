@@ -61,12 +61,14 @@ public class Repository<T> : IRepository<T> where T : class
         return true;
     }
 
-    public async Task<bool> DeleteAsync(T entity)
+    // ✅ CORREGIDO: Eliminado 'async' y usando Task.FromResult
+    public Task<bool> DeleteAsync(T entity)
     {
         if (entity == null)
-            return false;
+            return Task.FromResult(false);
+
         _dbSet.Remove(entity);
-        return true;
+        return Task.FromResult(true);
     }
 
     public async Task<int> CountAsync()

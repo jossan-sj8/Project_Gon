@@ -213,7 +213,9 @@ builder.Services.AddControllers();
 // FluentValidation para validaciones de DTOs
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddFluentValidationClientsideAdapters();
-builder.Services.AddValidatorsFromAssemblyContaining<Program>();
+
+// Registrar validadores desde el ensamblado de Infrastructure
+builder.Services.AddValidatorsFromAssemblyContaining<Project_Gon.Infrastructure.Validators.Auth.LoginDtoValidator>();
 
 // ==================== HEALTH CHECKS ====================
 builder.Services.AddHealthChecks()
