@@ -1,0 +1,1651 @@
+2026-01-28 15:10:20.722 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-28 15:10:21.097 -03:00 [DBG] The index {'ProductoId'} was not created on entity type 'Stock' as the properties are already covered by the index {'ProductoId', 'SucursalId'}.
+2026-01-28 15:10:21.100 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Email'}.
+2026-01-28 15:10:21.101 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Rut'}.
+2026-01-28 15:10:21.190 -03:00 [DBG] The property 'MovimientoStock.DevolucionId' was created in shadow state because there are no eligible CLR members with a matching name.
+2026-01-28 15:10:21.269 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:10:21.759 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:11:25.403 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-28 15:11:25.779 -03:00 [DBG] The index {'ProductoId'} was not created on entity type 'Stock' as the properties are already covered by the index {'ProductoId', 'SucursalId'}.
+2026-01-28 15:11:25.781 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Email'}.
+2026-01-28 15:11:25.782 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Rut'}.
+2026-01-28 15:11:25.857 -03:00 [DBG] The property 'MovimientoStock.DevolucionId' was created in shadow state because there are no eligible CLR members with a matching name.
+2026-01-28 15:11:25.923 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:11:25.948 -03:00 [DBG] Creating DbConnection.
+2026-01-28 15:11:25.975 -03:00 [DBG] Created DbConnection. (27ms).
+2026-01-28 15:11:25.978 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:11:26.071 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:11:26.075 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:11:26.080 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2026-01-28 15:11:26.082 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (8ms).
+2026-01-28 15:11:26.087 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 15:11:26.111 -03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 15:11:26.132 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:11:26.138 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 22ms reading results.
+2026-01-28 15:11:26.141 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:11:26.144 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (3ms).
+2026-01-28 15:11:26.271 -03:00 [DBG] Migrating using database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:11:26.274 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:11:26.277 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:11:26.418 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:11:26.420 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:11:26.422 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-01-28 15:11:26.424 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:11:26.425 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:11:26.454 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 15:11:26.455 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 15:11:26.456 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2026-01-28 15:11:26.457 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 15:11:26.467 -03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 15:11:26.471 -03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-28 15:11:26.474 -03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-28 15:11:26.475 -03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-01-28 15:11:26.476 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 15:11:26.477 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 15:11:26.478 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 15:11:26.479 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 15:11:26.481 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 15:11:26.483 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:11:26.484 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:11:26.485 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:11:26.486 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 15:11:26.488 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 15:11:26.490 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:11:26.491 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 1ms reading results.
+2026-01-28 15:11:26.497 -03:00 [INF] Applying migration '20260128181021_AddRutToUsuario'.
+2026-01-28 15:11:26.515 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 15:11:26.516 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 15:11:26.517 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2026-01-28 15:11:26.518 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX "IX_Usuarios_EmpresaId_Email";
+2026-01-28 15:11:26.529 -03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX "IX_Usuarios_EmpresaId_Email";
+2026-01-28 15:11:26.530 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 15:11:26.531 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 15:11:26.532 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2026-01-28 15:11:26.533 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Usuarios" ADD "Rut" character varying(12);
+2026-01-28 15:11:26.538 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Usuarios" ADD "Rut" character varying(12);
+2026-01-28 15:11:26.539 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 15:11:26.540 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 15:11:26.541 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 15:11:26.542 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Usuarios_EmpresaId_Email" ON "Usuarios" ("EmpresaId", "Email") WHERE "Email" IS NOT NULL;
+2026-01-28 15:11:26.550 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Usuarios_EmpresaId_Email" ON "Usuarios" ("EmpresaId", "Email") WHERE "Email" IS NOT NULL;
+2026-01-28 15:11:26.551 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 15:11:26.552 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 15:11:26.553 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 15:11:26.554 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Usuarios_EmpresaId_Rut" ON "Usuarios" ("EmpresaId", "Rut") WHERE "Rut" IS NOT NULL;
+2026-01-28 15:11:26.557 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_Usuarios_EmpresaId_Rut" ON "Usuarios" ("EmpresaId", "Rut") WHERE "Rut" IS NOT NULL;
+2026-01-28 15:11:26.559 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 15:11:26.560 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 15:11:26.561 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 15:11:26.562 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20260128181021_AddRutToUsuario', '9.0.0');
+2026-01-28 15:11:26.565 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20260128181021_AddRutToUsuario', '9.0.0');
+2026-01-28 15:11:26.567 -03:00 [DBG] Committing transaction.
+2026-01-28 15:11:26.572 -03:00 [DBG] Committed transaction.
+2026-01-28 15:11:26.574 -03:00 [DBG] Disposing transaction.
+2026-01-28 15:11:26.574 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:11:26.575 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (1ms).
+2026-01-28 15:11:26.578 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:11:26.580 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:11:26.581 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (1ms).
+2026-01-28 15:20:10.220 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-28 15:20:10.572 -03:00 [DBG] The index {'ProductoId'} was not created on entity type 'Stock' as the properties are already covered by the index {'ProductoId', 'SucursalId'}.
+2026-01-28 15:20:10.574 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Email'}.
+2026-01-28 15:20:10.575 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Rut'}.
+2026-01-28 15:20:10.649 -03:00 [DBG] The property 'MovimientoStock.DevolucionId' was created in shadow state because there are no eligible CLR members with a matching name.
+2026-01-28 15:20:10.711 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:20:10.722 -03:00 [DBG] Creating DbConnection.
+2026-01-28 15:20:10.738 -03:00 [DBG] Created DbConnection. (15ms).
+2026-01-28 15:20:10.741 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:10.811 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:10.815 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:20:10.819 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-01-28 15:20:10.820 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (6ms).
+2026-01-28 15:20:10.824 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 15:20:10.844 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 15:20:10.863 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:10.868 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 20ms reading results.
+2026-01-28 15:20:10.870 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:10.872 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-01-28 15:20:10.974 -03:00 [DBG] Migrating using database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:10.976 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:10.978 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:11.014 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:11.014 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:11.016 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (1ms).
+2026-01-28 15:20:11.017 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:11.018 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:11.044 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 15:20:11.045 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 15:20:11.046 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 15:20:11.046 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 15:20:11.051 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 15:20:11.054 -03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-28 15:20:11.057 -03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-28 15:20:11.058 -03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-01-28 15:20:11.059 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 15:20:11.060 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 15:20:11.060 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 15:20:11.061 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 15:20:11.062 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 15:20:11.063 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:20:11.064 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:20:11.064 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:20:11.065 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 15:20:11.066 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 15:20:11.068 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:11.068 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 15:20:11.073 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-28 15:20:11.074 -03:00 [DBG] Committing transaction.
+2026-01-28 15:20:11.076 -03:00 [DBG] Committed transaction.
+2026-01-28 15:20:11.077 -03:00 [DBG] Disposing transaction.
+2026-01-28 15:20:11.078 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:11.078 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:20:11.079 -03:00 [INF] Database migrations applied successfully
+2026-01-28 15:20:11.081 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:20:11.082 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:11.083 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:20:11.139 -03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-28 15:20:11.177 -03:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2026-01-28 15:20:11.192 -03:00 [INF] Project Gon API iniciada en ambiente: Development
+2026-01-28 15:20:11.194 -03:00 [DBG] Hosting starting
+2026-01-28 15:20:11.214 -03:00 [INF] User profile is available. Using 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-28 15:20:11.222 -03:00 [DBG] Repository contains no viable default key. Caller should generate a key with immediate activation.
+2026-01-28 15:20:11.223 -03:00 [DBG] Policy resolution states that a new key should be added to the key ring.
+2026-01-28 15:20:11.225 -03:00 [INF] Creating key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} with creation date 2026-01-28 18:20:11Z, activation date 2026-01-28 18:20:11Z, and expiration date 2026-04-28 18:20:11Z.
+2026-01-28 15:20:11.229 -03:00 [DBG] Descriptor deserializer type for key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'.
+2026-01-28 15:20:11.238 -03:00 [DBG] No key escrow sink found. Not writing key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} to escrow.
+2026-01-28 15:20:11.241 -03:00 [DBG] Encrypting to Windows DPAPI for current user account (DESKTOP-QBIPCC9\Jossan).
+2026-01-28 15:20:11.245 -03:00 [INF] Writing data to file 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys\key-7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c.xml'.
+2026-01-28 15:20:11.247 -03:00 [DBG] Key cache expiration token triggered by 'CreateNewKey' operation.
+2026-01-28 15:20:11.248 -03:00 [DBG] Reading data from file 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys\key-7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c.xml'.
+2026-01-28 15:20:11.264 -03:00 [DBG] Found key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c}.
+2026-01-28 15:20:11.266 -03:00 [DBG] Considering key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} with expiration date 2026-04-28 18:20:11Z as default key.
+2026-01-28 15:20:11.268 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-28 15:20:11.268 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-28 15:20:11.270 -03:00 [DBG] Using key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} as the default key.
+2026-01-28 15:20:11.270 -03:00 [DBG] Key ring with default key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} was loaded during application startup.
+2026-01-28 15:20:11.275 -03:00 [DBG] Middleware loaded
+2026-01-28 15:20:11.277 -03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2026-01-28 15:20:11.278 -03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-01-28 15:20:11.360 -03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-01-28 15:20:11.361 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-28 15:20:11.364 -03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-01-28 15:20:11.401 -03:00 [INF] Now listening on: https://localhost:7058
+2026-01-28 15:20:11.401 -03:00 [INF] Now listening on: http://localhost:5070
+2026-01-28 15:20:11.402 -03:00 [DBG] Loaded hosting startup assembly Project_Gon.Api
+2026-01-28 15:20:11.402 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-28 15:20:11.403 -03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-28 15:20:11.403 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-28 15:20:11.407 -03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-01-28 15:20:11.410 -03:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-01-28 15:20:11.431 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-28 15:20:11.432 -03:00 [INF] Hosting environment: Development
+2026-01-28 15:20:11.433 -03:00 [INF] Content root path: C:\Proyectos\Project_Gon\Project_Gon.Api
+2026-01-28 15:20:11.434 -03:00 [DBG] Hosting started
+2026-01-28 15:20:19.533 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U" accepted.
+2026-01-28 15:20:19.534 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U" started.
+2026-01-28 15:20:19.564 -03:00 [DBG] Connection 0HNIUJ7ID7M7U established using the following protocol: "Tls12"
+2026-01-28 15:20:19.586 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7058/api/auth/register - application/json 119
+2026-01-28 15:20:19.603 -03:00 [DBG] 1 candidate(s) found for the request path '/api/auth/register'
+2026-01-28 15:20:19.604 -03:00 [DBG] Endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)' with route pattern 'api/Auth/register' is valid for the request path '/api/auth/register'
+2026-01-28 15:20:19.605 -03:00 [DBG] Request matched endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:20:19.609 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 15:20:19.648 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-28 15:20:19.649 -03:00 [INF] Executing endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:20:19.660 -03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Project_Gon.Core.DTOs.Auth.RegisterDto) on controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api).
+2026-01-28 15:20:19.662 -03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-28 15:20:19.663 -03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-28 15:20:19.664 -03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-28 15:20:19.665 -03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-28 15:20:19.666 -03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-28 15:20:19.667 -03:00 [DBG] Executing controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:20:19.731 -03:00 [DBG] Executed controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:20:19.733 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 15:20:19.735 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' using the name '' in request data ...
+2026-01-28 15:20:19.736 -03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-28 15:20:19.744 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U", Request id "0HNIUJ7ID7M7U:00000001": started reading request body.
+2026-01-28 15:20:19.744 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U", Request id "0HNIUJ7ID7M7U:00000001": done reading request body.
+2026-01-28 15:20:19.748 -03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Project_Gon.Core.DTOs.Auth.RegisterDto'
+2026-01-28 15:20:19.749 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:20:19.750 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:20:19.750 -03:00 [DBG] Attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 15:20:19.767 -03:00 [DBG] Done attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:20:19.783 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:20:19.825 -03:00 [DBG] Compiling query expression: 
+'DbSet<Empresa>()
+    .FirstOrDefault(e => EF.Property<int>(e, "Id") == __p_0)'
+2026-01-28 15:20:19.955 -03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Empresa>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Empresa>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Empresa.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Empresa.Activo (bool) Required, 1], [Property: Empresa.Ciudad (string), 2], [Property: Empresa.CreatedAt (DateTime) Required, 3], [Property: Empresa.Direccion (string), 4], [Property: Empresa.Nombre (string) Required MaxLength(255), 5], [Property: Empresa.Region (string), 6], [Property: Empresa.Rut (string), 7], [Property: Empresa.UpdatedAt (DateTime?), 8] }
+            SELECT TOP(1) e.Id, e.Activo, e.Ciudad, e.CreatedAt, e.Direccion, e.Nombre, e.Region, e.Rut, e.UpdatedAt
+            FROM Empresas AS e
+            WHERE e.Id == @__p_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Empresa.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Empresa.Activo (bool) Required, 1], [Property: Empresa.Ciudad (string), 2], [Property: Empresa.CreatedAt (DateTime) Required, 3], [Property: Empresa.Direccion (string), 4], [Property: Empresa.Nombre (string) Required MaxLength(255), 5], [Property: Empresa.Region (string), 6], [Property: Empresa.Rut (string), 7], [Property: Empresa.UpdatedAt (DateTime?), 8] }
+            SELECT TOP(1) e.Id, e.Activo, e.Ciudad, e.CreatedAt, e.Direccion, e.Nombre, e.Region, e.Rut, e.UpdatedAt
+            FROM Empresas AS e
+            WHERE e.Id == @__p_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Empresa entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Empresa instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Empresa);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: Empresa.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Empresa").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (Empresa)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Empresa | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Empresa")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Empresa | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Empresa")]: 
+                            {
+                                return 
+                                {
+                                    Empresa instance;
+                                    instance = new Empresa();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Activo>k__BackingField = dataReader.GetBoolean(1);
+                                    instance.<Ciudad>k__BackingField = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+                                    instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(3);
+                                    instance.<Direccion>k__BackingField = dataReader.IsDBNull(4) ? default(string) : dataReader.GetString(4);
+                                    instance.<Nombre>k__BackingField = dataReader.GetString(5);
+                                    instance.<Region>k__BackingField = dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6);
+                                    instance.<Rut>k__BackingField = dataReader.IsDBNull(7) ? default(string) : dataReader.GetString(7);
+                                    instance.<UpdatedAt>k__BackingField = dataReader.IsDBNull(8) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(8);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Empresa | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Empresa")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Empresa)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: Project_Gon.Infrastructure.Data.AppDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-28 15:20:19.979 -03:00 [DBG] Creating DbConnection.
+2026-01-28 15:20:19.980 -03:00 [DBG] Created DbConnection. (0ms).
+2026-01-28 15:20:19.981 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:19.982 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:19.983 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:20:19.983 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:20:19.986 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2026-01-28 15:20:19.988 -03:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Activo", e."Ciudad", e."CreatedAt", e."Direccion", e."Nombre", e."Region", e."Rut", e."UpdatedAt"
+FROM "Empresas" AS e
+WHERE e."Id" = @__p_0
+LIMIT 1
+2026-01-28 15:20:20.000 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Activo", e."Ciudad", e."CreatedAt", e."Direccion", e."Nombre", e."Region", e."Rut", e."UpdatedAt"
+FROM "Empresas" AS e
+WHERE e."Id" = @__p_0
+LIMIT 1
+2026-01-28 15:20:20.004 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:20.005 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 3ms reading results.
+2026-01-28 15:20:20.007 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:20.008 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:20:20.011 -03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-28 15:20:20.013 -03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-28 15:20:20.013 -03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-28 15:20:20.014 -03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-28 15:20:20.015 -03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2026-01-28 15:20:20.016 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-01-28 15:20:20.020 -03:00 [INF] Executed action Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api) in 351.3975ms
+2026-01-28 15:20:20.023 -03:00 [INF] Executed endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:20:20.025 -03:00 [INF] HTTP POST /api/auth/register responded 400 in 413.8524 ms
+2026-01-28 15:20:20.028 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:20:20.030 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:20.031 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (1ms).
+2026-01-28 15:20:20.033 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7058/api/auth/register - 400 null text/plain; charset=utf-8 447.7986ms
+2026-01-28 15:20:33.361 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7058/api/auth/register - application/json 119
+2026-01-28 15:20:33.365 -03:00 [DBG] 1 candidate(s) found for the request path '/api/auth/register'
+2026-01-28 15:20:33.365 -03:00 [DBG] Endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)' with route pattern 'api/Auth/register' is valid for the request path '/api/auth/register'
+2026-01-28 15:20:33.367 -03:00 [DBG] Request matched endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:20:33.369 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 15:20:33.374 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-28 15:20:33.375 -03:00 [INF] Executing endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:20:33.376 -03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Project_Gon.Core.DTOs.Auth.RegisterDto) on controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api).
+2026-01-28 15:20:33.377 -03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-28 15:20:33.378 -03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-28 15:20:33.379 -03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-28 15:20:33.380 -03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-28 15:20:33.381 -03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-28 15:20:33.382 -03:00 [DBG] Executing controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:20:33.385 -03:00 [DBG] Executed controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:20:33.386 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 15:20:33.386 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' using the name '' in request data ...
+2026-01-28 15:20:33.387 -03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-28 15:20:33.388 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U", Request id "0HNIUJ7ID7M7U:00000003": started reading request body.
+2026-01-28 15:20:33.389 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U", Request id "0HNIUJ7ID7M7U:00000003": done reading request body.
+2026-01-28 15:20:33.389 -03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Project_Gon.Core.DTOs.Auth.RegisterDto'
+2026-01-28 15:20:33.390 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:20:33.391 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:20:33.391 -03:00 [DBG] Attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 15:20:33.393 -03:00 [DBG] Done attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:20:33.422 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:20:33.425 -03:00 [DBG] Creating DbConnection.
+2026-01-28 15:20:33.426 -03:00 [DBG] Created DbConnection. (0ms).
+2026-01-28 15:20:33.426 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:33.427 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:33.428 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:20:33.428 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:20:33.429 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:20:33.429 -03:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Activo", e."Ciudad", e."CreatedAt", e."Direccion", e."Nombre", e."Region", e."Rut", e."UpdatedAt"
+FROM "Empresas" AS e
+WHERE e."Id" = @__p_0
+LIMIT 1
+2026-01-28 15:20:33.432 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Activo", e."Ciudad", e."CreatedAt", e."Direccion", e."Nombre", e."Region", e."Rut", e."UpdatedAt"
+FROM "Empresas" AS e
+WHERE e."Id" = @__p_0
+LIMIT 1
+2026-01-28 15:20:33.433 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:33.434 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 15:20:33.435 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:33.435 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:20:33.436 -03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-28 15:20:33.438 -03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-28 15:20:33.438 -03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-28 15:20:33.438 -03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-28 15:20:33.439 -03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2026-01-28 15:20:33.440 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-01-28 15:20:33.440 -03:00 [INF] Executed action Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api) in 58.8047ms
+2026-01-28 15:20:33.441 -03:00 [INF] Executed endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:20:33.442 -03:00 [INF] HTTP POST /api/auth/register responded 400 in 68.2574 ms
+2026-01-28 15:20:33.443 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:20:33.443 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:20:33.444 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:20:33.445 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7058/api/auth/register - 400 null text/plain; charset=utf-8 84.0094ms
+2026-01-28 15:21:25.545 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7058/health - application/json 119
+2026-01-28 15:21:25.546 -03:00 [DBG] 1 candidate(s) found for the request path '/health'
+2026-01-28 15:21:25.546 -03:00 [DBG] Request matched endpoint 'Health checks'
+2026-01-28 15:21:25.552 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 15:21:25.554 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-28 15:21:25.555 -03:00 [INF] Executing endpoint 'Health checks'
+2026-01-28 15:21:25.557 -03:00 [DBG] Running health checks
+2026-01-28 15:21:25.560 -03:00 [DBG] Running health check AppDbContext
+2026-01-28 15:21:25.562 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:21:25.565 -03:00 [DBG] Creating DbConnection.
+2026-01-28 15:21:25.565 -03:00 [DBG] Created DbConnection. (0ms).
+2026-01-28 15:21:25.566 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:21:25.567 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:21:25.603 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:21:25.604 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:21:25.604 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:21:25.608 -03:00 [DBG] Health check AppDbContext with status "Healthy" completed after 46.4578ms with message 'null'
+2026-01-28 15:21:25.609 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:21:25.609 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:21:25.610 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:21:25.614 -03:00 [DBG] Health check processing with combined status "Healthy" completed after 55.2935ms
+2026-01-28 15:21:25.615 -03:00 [INF] Executed endpoint 'Health checks'
+2026-01-28 15:21:25.616 -03:00 [INF] HTTP GET /health responded 200 in 62.7170 ms
+2026-01-28 15:21:25.617 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7058/health - 200 null text/plain 72.2516ms
+2026-01-28 15:21:25.618 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U", Request id "0HNIUJ7ID7M7U:00000005": started reading request body.
+2026-01-28 15:21:25.619 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U", Request id "0HNIUJ7ID7M7U:00000005": done reading request body.
+2026-01-28 15:21:54.465 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7058/api/empresas - application/json 140
+2026-01-28 15:21:54.467 -03:00 [DBG] 1 candidate(s) found for the request path '/api/empresas'
+2026-01-28 15:21:54.468 -03:00 [DBG] Endpoint 'Project_Gon.Api.Controllers.EmpresasController.Create (Project_Gon.Api)' with route pattern 'api/Empresas' is valid for the request path '/api/empresas'
+2026-01-28 15:21:54.469 -03:00 [DBG] Request matched endpoint 'Project_Gon.Api.Controllers.EmpresasController.Create (Project_Gon.Api)'
+2026-01-28 15:21:54.470 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 15:21:54.470 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-28 15:21:54.471 -03:00 [INF] Executing endpoint 'Project_Gon.Api.Controllers.EmpresasController.Create (Project_Gon.Api)'
+2026-01-28 15:21:54.509 -03:00 [INF] Route matched with {action = "Create", controller = "Empresas"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Project_Gon.Core.DTOs.Empresa.CreateEmpresaDto) on controller Project_Gon.Api.Controllers.EmpresasController (Project_Gon.Api).
+2026-01-28 15:21:54.511 -03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-28 15:21:54.511 -03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-28 15:21:54.512 -03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-28 15:21:54.513 -03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-28 15:21:54.514 -03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-28 15:21:54.515 -03:00 [DBG] Executing controller factory for controller Project_Gon.Api.Controllers.EmpresasController (Project_Gon.Api)
+2026-01-28 15:21:54.517 -03:00 [DBG] Executed controller factory for controller Project_Gon.Api.Controllers.EmpresasController (Project_Gon.Api)
+2026-01-28 15:21:54.518 -03:00 [DBG] Attempting to bind parameter 'createDto' of type 'Project_Gon.Core.DTOs.Empresa.CreateEmpresaDto' ...
+2026-01-28 15:21:54.519 -03:00 [DBG] Attempting to bind parameter 'createDto' of type 'Project_Gon.Core.DTOs.Empresa.CreateEmpresaDto' using the name '' in request data ...
+2026-01-28 15:21:54.519 -03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-28 15:21:54.521 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U", Request id "0HNIUJ7ID7M7U:00000007": started reading request body.
+2026-01-28 15:21:54.521 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U", Request id "0HNIUJ7ID7M7U:00000007": done reading request body.
+2026-01-28 15:21:54.522 -03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Project_Gon.Core.DTOs.Empresa.CreateEmpresaDto'
+2026-01-28 15:21:54.523 -03:00 [DBG] Done attempting to bind parameter 'createDto' of type 'Project_Gon.Core.DTOs.Empresa.CreateEmpresaDto'.
+2026-01-28 15:21:54.523 -03:00 [DBG] Done attempting to bind parameter 'createDto' of type 'Project_Gon.Core.DTOs.Empresa.CreateEmpresaDto'.
+2026-01-28 15:21:54.524 -03:00 [DBG] Attempting to validate the bound parameter 'createDto' of type 'Project_Gon.Core.DTOs.Empresa.CreateEmpresaDto' ...
+2026-01-28 15:21:54.526 -03:00 [DBG] Done attempting to validate the bound parameter 'createDto' of type 'Project_Gon.Core.DTOs.Empresa.CreateEmpresaDto'.
+2026-01-28 15:21:54.532 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:21:54.552 -03:00 [DBG] 'AppDbContext' generated a temporary value for the property 'Empresa.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:21:54.594 -03:00 [DBG] Context 'AppDbContext' started tracking 'Empresa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:21:54.597 -03:00 [DBG] SaveChanges starting for 'AppDbContext'.
+2026-01-28 15:21:54.599 -03:00 [DBG] DetectChanges starting for 'AppDbContext'.
+2026-01-28 15:21:54.608 -03:00 [DBG] DetectChanges completed for 'AppDbContext'.
+2026-01-28 15:21:54.637 -03:00 [DBG] Creating DbConnection.
+2026-01-28 15:21:54.637 -03:00 [DBG] Created DbConnection. (0ms).
+2026-01-28 15:21:54.638 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:21:54.638 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:21:54.640 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:21:54.640 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:21:54.641 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:21:54.642 -03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Boolean), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?', @p5='?', @p6='?', @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Empresas" ("Activo", "Ciudad", "CreatedAt", "Direccion", "Nombre", "Region", "Rut", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Id";
+2026-01-28 15:21:54.648 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?', @p5='?', @p6='?', @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Empresas" ("Activo", "Ciudad", "CreatedAt", "Direccion", "Nombre", "Region", "Rut", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "Id";
+2026-01-28 15:21:54.655 -03:00 [DBG] The foreign key property 'Empresa.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2026-01-28 15:21:54.659 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:21:54.660 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 10ms reading results.
+2026-01-28 15:21:54.661 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:21:54.662 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:21:54.668 -03:00 [DBG] An entity of type 'Empresa' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:21:54.669 -03:00 [DBG] SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+2026-01-28 15:21:54.672 -03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-28 15:21:54.674 -03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-28 15:21:54.674 -03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-28 15:21:54.675 -03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-28 15:21:54.675 -03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-01-28 15:21:54.676 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'Project_Gon.Core.DTOs.Empresa.EmpresaDto'.
+2026-01-28 15:21:54.686 -03:00 [DBG] Found the endpoints ["Project_Gon.Api.Controllers.EmpresasController.GetById (Project_Gon.Api)"] for address (id=[2],action=[GetById],controller=[Empresas])
+2026-01-28 15:21:54.688 -03:00 [DBG] Successfully processed template api/Empresas/{id} for Project_Gon.Api.Controllers.EmpresasController.GetById (Project_Gon.Api) resulting in /api/Empresas/2 and 
+2026-01-28 15:21:54.689 -03:00 [DBG] Link generation succeeded for endpoints ["Project_Gon.Api.Controllers.EmpresasController.GetById (Project_Gon.Api)"] with result /api/Empresas/2
+2026-01-28 15:21:54.696 -03:00 [INF] Executed action Project_Gon.Api.Controllers.EmpresasController.Create (Project_Gon.Api) in 180.8731ms
+2026-01-28 15:21:54.696 -03:00 [INF] Executed endpoint 'Project_Gon.Api.Controllers.EmpresasController.Create (Project_Gon.Api)'
+2026-01-28 15:21:54.697 -03:00 [INF] HTTP POST /api/empresas responded 201 in 226.8023 ms
+2026-01-28 15:21:54.698 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:21:54.698 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:21:54.699 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:21:54.700 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7058/api/empresas - 201 null application/json; charset=utf-8 234.4927ms
+2026-01-28 15:22:11.506 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7058/api/auth/register - application/json 140
+2026-01-28 15:22:11.508 -03:00 [DBG] 1 candidate(s) found for the request path '/api/auth/register'
+2026-01-28 15:22:11.508 -03:00 [DBG] Endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)' with route pattern 'api/Auth/register' is valid for the request path '/api/auth/register'
+2026-01-28 15:22:11.512 -03:00 [DBG] Request matched endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:22:11.513 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 15:22:11.514 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-28 15:22:11.514 -03:00 [INF] Executing endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:22:11.515 -03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Project_Gon.Core.DTOs.Auth.RegisterDto) on controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api).
+2026-01-28 15:22:11.516 -03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-28 15:22:11.517 -03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-28 15:22:11.518 -03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-28 15:22:11.520 -03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-28 15:22:11.520 -03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-28 15:22:11.521 -03:00 [DBG] Executing controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:22:11.523 -03:00 [DBG] Executed controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:22:11.523 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 15:22:11.524 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' using the name '' in request data ...
+2026-01-28 15:22:11.525 -03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-28 15:22:11.526 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U", Request id "0HNIUJ7ID7M7U:00000009": started reading request body.
+2026-01-28 15:22:11.526 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U", Request id "0HNIUJ7ID7M7U:00000009": done reading request body.
+2026-01-28 15:22:11.527 -03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Project_Gon.Core.DTOs.Auth.RegisterDto'
+2026-01-28 15:22:11.528 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:22:11.528 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:22:11.529 -03:00 [DBG] Attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 15:22:11.530 -03:00 [DBG] Done attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:22:11.531 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:22:11.533 -03:00 [DBG] Creating DbConnection.
+2026-01-28 15:22:11.533 -03:00 [DBG] Created DbConnection. (0ms).
+2026-01-28 15:22:11.534 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:22:11.535 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:22:11.535 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:22:11.536 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:22:11.536 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:22:11.537 -03:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Activo", e."Ciudad", e."CreatedAt", e."Direccion", e."Nombre", e."Region", e."Rut", e."UpdatedAt"
+FROM "Empresas" AS e
+WHERE e."Id" = @__p_0
+LIMIT 1
+2026-01-28 15:22:11.539 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Activo", e."Ciudad", e."CreatedAt", e."Direccion", e."Nombre", e."Region", e."Rut", e."UpdatedAt"
+FROM "Empresas" AS e
+WHERE e."Id" = @__p_0
+LIMIT 1
+2026-01-28 15:22:11.540 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:22:11.541 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 15:22:11.542 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:22:11.542 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:22:11.543 -03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-28 15:22:11.544 -03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-28 15:22:11.545 -03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-28 15:22:11.545 -03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-28 15:22:11.545 -03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2026-01-28 15:22:11.546 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-01-28 15:22:11.547 -03:00 [INF] Executed action Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api) in 25.4874ms
+2026-01-28 15:22:11.548 -03:00 [INF] Executed endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:22:11.548 -03:00 [INF] HTTP POST /api/auth/register responded 400 in 34.4072 ms
+2026-01-28 15:22:11.549 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:22:11.550 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:22:11.550 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:22:11.551 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7058/api/auth/register - 400 null text/plain; charset=utf-8 44.5876ms
+2026-01-28 15:22:53.748 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7058/api/auth/register - application/json 119
+2026-01-28 15:22:53.749 -03:00 [DBG] 1 candidate(s) found for the request path '/api/auth/register'
+2026-01-28 15:22:53.750 -03:00 [DBG] Endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)' with route pattern 'api/Auth/register' is valid for the request path '/api/auth/register'
+2026-01-28 15:22:53.751 -03:00 [DBG] Request matched endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:22:53.751 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 15:22:53.752 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-28 15:22:53.752 -03:00 [INF] Executing endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:22:53.753 -03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Project_Gon.Core.DTOs.Auth.RegisterDto) on controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api).
+2026-01-28 15:22:53.754 -03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-28 15:22:53.754 -03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-28 15:22:53.755 -03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-28 15:22:53.756 -03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-28 15:22:53.757 -03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-28 15:22:53.758 -03:00 [DBG] Executing controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:22:53.759 -03:00 [DBG] Executed controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:22:53.759 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 15:22:53.760 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' using the name '' in request data ...
+2026-01-28 15:22:53.761 -03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-28 15:22:53.762 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U", Request id "0HNIUJ7ID7M7U:0000000B": started reading request body.
+2026-01-28 15:22:53.762 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U", Request id "0HNIUJ7ID7M7U:0000000B": done reading request body.
+2026-01-28 15:22:53.763 -03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Project_Gon.Core.DTOs.Auth.RegisterDto'
+2026-01-28 15:22:53.763 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:22:53.764 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:22:53.765 -03:00 [DBG] Attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 15:22:53.766 -03:00 [DBG] Done attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:22:53.767 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:22:53.768 -03:00 [DBG] Creating DbConnection.
+2026-01-28 15:22:53.768 -03:00 [DBG] Created DbConnection. (0ms).
+2026-01-28 15:22:53.769 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:22:53.769 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:22:53.770 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:22:53.770 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:22:53.771 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:22:53.771 -03:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Activo", e."Ciudad", e."CreatedAt", e."Direccion", e."Nombre", e."Region", e."Rut", e."UpdatedAt"
+FROM "Empresas" AS e
+WHERE e."Id" = @__p_0
+LIMIT 1
+2026-01-28 15:22:53.773 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Activo", e."Ciudad", e."CreatedAt", e."Direccion", e."Nombre", e."Region", e."Rut", e."UpdatedAt"
+FROM "Empresas" AS e
+WHERE e."Id" = @__p_0
+LIMIT 1
+2026-01-28 15:22:53.774 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:22:53.775 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 15:22:53.776 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:22:53.776 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:22:53.777 -03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-28 15:22:53.778 -03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-28 15:22:53.779 -03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-28 15:22:53.779 -03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-28 15:22:53.780 -03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2026-01-28 15:22:53.780 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-01-28 15:22:53.781 -03:00 [INF] Executed action Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api) in 23.0856ms
+2026-01-28 15:22:53.781 -03:00 [INF] Executed endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:22:53.782 -03:00 [INF] HTTP POST /api/auth/register responded 400 in 30.2133 ms
+2026-01-28 15:22:53.783 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:22:53.783 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:22:53.784 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:22:53.785 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7058/api/auth/register - 400 null text/plain; charset=utf-8 36.5924ms
+2026-01-28 15:23:03.047 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7058/api/auth/register - application/json 120
+2026-01-28 15:23:03.048 -03:00 [DBG] 1 candidate(s) found for the request path '/api/auth/register'
+2026-01-28 15:23:03.049 -03:00 [DBG] Endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)' with route pattern 'api/Auth/register' is valid for the request path '/api/auth/register'
+2026-01-28 15:23:03.050 -03:00 [DBG] Request matched endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:23:03.050 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 15:23:03.051 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-28 15:23:03.052 -03:00 [INF] Executing endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:23:03.052 -03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Project_Gon.Core.DTOs.Auth.RegisterDto) on controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api).
+2026-01-28 15:23:03.054 -03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-28 15:23:03.054 -03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-28 15:23:03.055 -03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-28 15:23:03.056 -03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-28 15:23:03.057 -03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-28 15:23:03.058 -03:00 [DBG] Executing controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:23:03.058 -03:00 [DBG] Executed controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:23:03.059 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 15:23:03.059 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' using the name '' in request data ...
+2026-01-28 15:23:03.060 -03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-28 15:23:03.061 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U", Request id "0HNIUJ7ID7M7U:0000000D": started reading request body.
+2026-01-28 15:23:03.061 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U", Request id "0HNIUJ7ID7M7U:0000000D": done reading request body.
+2026-01-28 15:23:03.062 -03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Project_Gon.Core.DTOs.Auth.RegisterDto'
+2026-01-28 15:23:03.063 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:23:03.063 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:23:03.064 -03:00 [DBG] Attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 15:23:03.065 -03:00 [DBG] Done attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:23:03.066 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:23:03.068 -03:00 [DBG] Creating DbConnection.
+2026-01-28 15:23:03.068 -03:00 [DBG] Created DbConnection. (0ms).
+2026-01-28 15:23:03.069 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:23:03.069 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:23:03.070 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:23:03.070 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:23:03.071 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:23:03.071 -03:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Activo", e."Ciudad", e."CreatedAt", e."Direccion", e."Nombre", e."Region", e."Rut", e."UpdatedAt"
+FROM "Empresas" AS e
+WHERE e."Id" = @__p_0
+LIMIT 1
+2026-01-28 15:23:03.073 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Activo", e."Ciudad", e."CreatedAt", e."Direccion", e."Nombre", e."Region", e."Rut", e."UpdatedAt"
+FROM "Empresas" AS e
+WHERE e."Id" = @__p_0
+LIMIT 1
+2026-01-28 15:23:03.077 -03:00 [DBG] Context 'AppDbContext' started tracking 'Empresa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:23:03.078 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:23:03.078 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 4ms reading results.
+2026-01-28 15:23:03.079 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:23:03.080 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:23:03.085 -03:00 [DBG] Compiling query expression: 
+'DbSet<Usuario>()
+    .Where(u => u.Email == __registerDto_Email_0 && u.EmpresaId == __registerDto_EmpresaId_1)
+    .AsNoTracking()
+    .FirstOrDefault()'
+2026-01-28 15:23:03.095 -03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Usuario>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Usuario>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Usuario.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Usuario.Activo (bool) Required, 1], [Property: Usuario.Apellido (string) Required, 2], [Property: Usuario.CreatedAt (DateTime) Required, 3], [Property: Usuario.Email (string) Index MaxLength(255), 4], [Property: Usuario.EmpresaId (int) Required FK Index, 5], [Property: Usuario.Nombre (string) Required, 6], [Property: Usuario.PasswordHash (string) Required, 7], [Property: Usuario.Rol (RolUsuario) Required, 8], [Property: Usuario.Rut (string) Index MaxLength(12), 9], [Property: Usuario.SucursalId (int?) FK Index, 10], [Property: Usuario.UltimoAcceso (DateTime?), 11], [Property: Usuario.UpdatedAt (DateTime?), 12] }
+            SELECT TOP(1) u.Id, u.Activo, u.Apellido, u.CreatedAt, u.Email, u.EmpresaId, u.Nombre, u.PasswordHash, u.Rol, u.Rut, u.SucursalId, u.UltimoAcceso, u.UpdatedAt
+            FROM Usuarios AS u
+            WHERE (u.Email == @__registerDto_Email_0) && (u.EmpresaId == @__registerDto_EmpresaId_1)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Usuario.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Usuario.Activo (bool) Required, 1], [Property: Usuario.Apellido (string) Required, 2], [Property: Usuario.CreatedAt (DateTime) Required, 3], [Property: Usuario.Email (string) Index MaxLength(255), 4], [Property: Usuario.EmpresaId (int) Required FK Index, 5], [Property: Usuario.Nombre (string) Required, 6], [Property: Usuario.PasswordHash (string) Required, 7], [Property: Usuario.Rol (RolUsuario) Required, 8], [Property: Usuario.Rut (string) Index MaxLength(12), 9], [Property: Usuario.SucursalId (int?) FK Index, 10], [Property: Usuario.UltimoAcceso (DateTime?), 11], [Property: Usuario.UpdatedAt (DateTime?), 12] }
+            SELECT TOP(1) u.Id, u.Activo, u.Apellido, u.CreatedAt, u.Email, u.EmpresaId, u.Nombre, u.PasswordHash, u.Rol, u.Rut, u.SucursalId, u.UltimoAcceso, u.UpdatedAt
+            FROM Usuarios AS u
+            WHERE (u.Email == @__registerDto_Email_0) && (u.EmpresaId == @__registerDto_EmpresaId_1), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Usuario entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Usuario instance1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Usuario);
+                (object)dataReader.GetInt32(0) != null ? 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")]: 
+                            {
+                                return 
+                                {
+                                    Usuario instance;
+                                    instance = new Usuario();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Activo>k__BackingField = dataReader.GetBoolean(1);
+                                    instance.<Apellido>k__BackingField = dataReader.GetString(2);
+                                    instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(3);
+                                    instance.<Email>k__BackingField = dataReader.IsDBNull(4) ? default(string) : dataReader.GetString(4);
+                                    instance.<EmpresaId>k__BackingField = dataReader.GetInt32(5);
+                                    instance.<Nombre>k__BackingField = dataReader.GetString(6);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(7);
+                                    instance.<Rol>k__BackingField = Invoke(((EnumToNumberConverter<RolUsuario, int>)((IReadOnlyProperty)[LIFTABLE Constant: Property: Usuario.Rol (RolUsuario) Required | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario").FindProperty("Rol")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetInt32(8));
+                                    instance.<Rut>k__BackingField = dataReader.IsDBNull(9) ? default(string) : dataReader.GetString(9);
+                                    instance.<SucursalId>k__BackingField = dataReader.IsDBNull(10) ? default(int?) : (int?)dataReader.GetInt32(10);
+                                    instance.<UltimoAcceso>k__BackingField = dataReader.IsDBNull(11) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(11);
+                                    instance.<UpdatedAt>k__BackingField = dataReader.IsDBNull(12) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(12);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Usuario)
+                    }
+                    ;
+                    return instance1;
+                } : 
+                {
+                    object[] keyValues1;
+                    keyValues1 = new object[]{ (object)dataReader.GetInt32(0) };
+                    return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                        entityType: [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")], 
+                        properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: Usuario.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario").FindPrimaryKey().Properties], 
+                        keyValues: keyValues1);
+                };
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: Project_Gon.Infrastructure.Data.AppDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-28 15:23:03.108 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:23:03.108 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:23:03.109 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:23:03.110 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:23:03.111 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:23:03.111 -03:00 [DBG] Executing DbCommand [Parameters=[@__registerDto_Email_0='?', @__registerDto_EmpresaId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Activo", u."Apellido", u."CreatedAt", u."Email", u."EmpresaId", u."Nombre", u."PasswordHash", u."Rol", u."Rut", u."SucursalId", u."UltimoAcceso", u."UpdatedAt"
+FROM "Usuarios" AS u
+WHERE u."Email" = @__registerDto_Email_0 AND u."EmpresaId" = @__registerDto_EmpresaId_1
+LIMIT 1
+2026-01-28 15:23:03.116 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__registerDto_Email_0='?', @__registerDto_EmpresaId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Activo", u."Apellido", u."CreatedAt", u."Email", u."EmpresaId", u."Nombre", u."PasswordHash", u."Rol", u."Rut", u."SucursalId", u."UltimoAcceso", u."UpdatedAt"
+FROM "Usuarios" AS u
+WHERE u."Email" = @__registerDto_Email_0 AND u."EmpresaId" = @__registerDto_EmpresaId_1
+LIMIT 1
+2026-01-28 15:23:03.118 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:23:03.119 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 15:23:03.120 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:23:03.120 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:23:03.621 -03:00 [DBG] 'AppDbContext' generated a temporary value for the property 'Usuario.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:23:03.645 -03:00 [DBG] The navigation 'Usuario.Empresa' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:23:03.653 -03:00 [DBG] Context 'AppDbContext' started tracking 'Usuario' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:23:03.654 -03:00 [DBG] SaveChanges starting for 'AppDbContext'.
+2026-01-28 15:23:03.654 -03:00 [DBG] DetectChanges starting for 'AppDbContext'.
+2026-01-28 15:23:03.660 -03:00 [DBG] DetectChanges completed for 'AppDbContext'.
+2026-01-28 15:23:03.663 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:23:03.664 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:23:03.665 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:23:03.665 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:23:03.667 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2026-01-28 15:23:03.668 -03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Boolean), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Int32), @p5='?', @p6='?', @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = Int32), @p10='?' (DbType = DateTime), @p11='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Activo", "Apellido", "CreatedAt", "Email", "EmpresaId", "Nombre", "PasswordHash", "Rol", "Rut", "SucursalId", "UltimoAcceso", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11)
+RETURNING "Id";
+2026-01-28 15:23:03.675 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Int32), @p5='?', @p6='?', @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = Int32), @p10='?' (DbType = DateTime), @p11='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Activo", "Apellido", "CreatedAt", "Email", "EmpresaId", "Nombre", "PasswordHash", "Rol", "Rut", "SucursalId", "UltimoAcceso", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11)
+RETURNING "Id";
+2026-01-28 15:23:03.678 -03:00 [DBG] The foreign key property 'Usuario.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2026-01-28 15:23:03.679 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:23:03.680 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 2ms reading results.
+2026-01-28 15:23:03.681 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:23:03.681 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:23:03.682 -03:00 [DBG] An entity of type 'Usuario' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:23:03.683 -03:00 [DBG] SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+2026-01-28 15:23:03.704 -03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-28 15:23:03.706 -03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-28 15:23:03.706 -03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-28 15:23:03.707 -03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-28 15:23:03.707 -03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-01-28 15:23:03.708 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'Project_Gon.Core.DTOs.Auth.LoginResponseDto'.
+2026-01-28 15:23:03.709 -03:00 [DBG] Found the endpoints ["Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api)"] for address (action=[Login],controller=[Auth])
+2026-01-28 15:23:03.710 -03:00 [DBG] Successfully processed template api/Auth/login for Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api) resulting in /api/Auth/login and 
+2026-01-28 15:23:03.710 -03:00 [DBG] Link generation succeeded for endpoints ["Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api)"] with result /api/Auth/login
+2026-01-28 15:23:03.714 -03:00 [INF] Executed action Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api) in 656.4807ms
+2026-01-28 15:23:03.715 -03:00 [INF] Executed endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:23:03.715 -03:00 [INF] HTTP POST /api/auth/register responded 201 in 664.3209 ms
+2026-01-28 15:23:03.716 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:23:03.717 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:23:03.717 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:23:03.718 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7058/api/auth/register - 201 null application/json; charset=utf-8 671.5579ms
+2026-01-28 15:25:14.829 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U" is closing.
+2026-01-28 15:25:14.830 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U" is closed. The last processed stream ID was 13.
+2026-01-28 15:25:14.834 -03:00 [DBG] The connection queue processing loop for 0HNIUJ7ID7M7U completed.
+2026-01-28 15:25:14.836 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U" stopped.
+2026-01-28 15:25:14.837 -03:00 [DBG] Connection id "0HNIUJ7ID7M7U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-28 15:25:56.357 -03:00 [DBG] Connection id "0HNIUJ7ID7M7V" accepted.
+2026-01-28 15:25:56.358 -03:00 [DBG] Connection id "0HNIUJ7ID7M7V" started.
+2026-01-28 15:25:56.365 -03:00 [DBG] Connection 0HNIUJ7ID7M7V established using the following protocol: "Tls12"
+2026-01-28 15:25:56.367 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7058/api/auth/login - application/json 62
+2026-01-28 15:25:56.368 -03:00 [DBG] 1 candidate(s) found for the request path '/api/auth/login'
+2026-01-28 15:25:56.368 -03:00 [DBG] Endpoint 'Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api)' with route pattern 'api/Auth/login' is valid for the request path '/api/auth/login'
+2026-01-28 15:25:56.369 -03:00 [DBG] Request matched endpoint 'Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api)'
+2026-01-28 15:25:56.370 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 15:25:56.370 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-28 15:25:56.371 -03:00 [INF] Executing endpoint 'Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api)'
+2026-01-28 15:25:56.374 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Project_Gon.Core.DTOs.Auth.LoginDto) on controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api).
+2026-01-28 15:25:56.375 -03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-28 15:25:56.376 -03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-28 15:25:56.377 -03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-28 15:25:56.378 -03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-28 15:25:56.379 -03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-28 15:25:56.380 -03:00 [DBG] Executing controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:25:56.381 -03:00 [DBG] Executed controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:25:56.382 -03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Project_Gon.Core.DTOs.Auth.LoginDto' ...
+2026-01-28 15:25:56.382 -03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Project_Gon.Core.DTOs.Auth.LoginDto' using the name '' in request data ...
+2026-01-28 15:25:56.383 -03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-28 15:25:56.385 -03:00 [DBG] Connection id "0HNIUJ7ID7M7V", Request id "0HNIUJ7ID7M7V:00000001": started reading request body.
+2026-01-28 15:25:56.385 -03:00 [DBG] Connection id "0HNIUJ7ID7M7V", Request id "0HNIUJ7ID7M7V:00000001": done reading request body.
+2026-01-28 15:25:56.386 -03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Project_Gon.Core.DTOs.Auth.LoginDto'
+2026-01-28 15:25:56.387 -03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Project_Gon.Core.DTOs.Auth.LoginDto'.
+2026-01-28 15:25:56.387 -03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Project_Gon.Core.DTOs.Auth.LoginDto'.
+2026-01-28 15:25:56.388 -03:00 [DBG] Attempting to validate the bound parameter 'loginDto' of type 'Project_Gon.Core.DTOs.Auth.LoginDto' ...
+2026-01-28 15:25:56.390 -03:00 [DBG] Done attempting to validate the bound parameter 'loginDto' of type 'Project_Gon.Core.DTOs.Auth.LoginDto'.
+2026-01-28 15:25:56.393 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:25:56.394 -03:00 [DBG] Compiling query expression: 
+'DbSet<Usuario>()
+    .Where(u => u.Email == __emailOrRut_0 && u.Activo)
+    .AsNoTracking()
+    .FirstOrDefault()'
+2026-01-28 15:25:56.399 -03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Usuario>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Usuario>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Usuario.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Usuario.Activo (bool) Required, 1], [Property: Usuario.Apellido (string) Required, 2], [Property: Usuario.CreatedAt (DateTime) Required, 3], [Property: Usuario.Email (string) Index MaxLength(255), 4], [Property: Usuario.EmpresaId (int) Required FK Index, 5], [Property: Usuario.Nombre (string) Required, 6], [Property: Usuario.PasswordHash (string) Required, 7], [Property: Usuario.Rol (RolUsuario) Required, 8], [Property: Usuario.Rut (string) Index MaxLength(12), 9], [Property: Usuario.SucursalId (int?) FK Index, 10], [Property: Usuario.UltimoAcceso (DateTime?), 11], [Property: Usuario.UpdatedAt (DateTime?), 12] }
+            SELECT TOP(1) u.Id, u.Activo, u.Apellido, u.CreatedAt, u.Email, u.EmpresaId, u.Nombre, u.PasswordHash, u.Rol, u.Rut, u.SucursalId, u.UltimoAcceso, u.UpdatedAt
+            FROM Usuarios AS u
+            WHERE (u.Email == @__emailOrRut_0) && u.Activo) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Usuario.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Usuario.Activo (bool) Required, 1], [Property: Usuario.Apellido (string) Required, 2], [Property: Usuario.CreatedAt (DateTime) Required, 3], [Property: Usuario.Email (string) Index MaxLength(255), 4], [Property: Usuario.EmpresaId (int) Required FK Index, 5], [Property: Usuario.Nombre (string) Required, 6], [Property: Usuario.PasswordHash (string) Required, 7], [Property: Usuario.Rol (RolUsuario) Required, 8], [Property: Usuario.Rut (string) Index MaxLength(12), 9], [Property: Usuario.SucursalId (int?) FK Index, 10], [Property: Usuario.UltimoAcceso (DateTime?), 11], [Property: Usuario.UpdatedAt (DateTime?), 12] }
+            SELECT TOP(1) u.Id, u.Activo, u.Apellido, u.CreatedAt, u.Email, u.EmpresaId, u.Nombre, u.PasswordHash, u.Rol, u.Rut, u.SucursalId, u.UltimoAcceso, u.UpdatedAt
+            FROM Usuarios AS u
+            WHERE (u.Email == @__emailOrRut_0) && u.Activo, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Usuario entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Usuario instance1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Usuario);
+                (object)dataReader.GetInt32(0) != null ? 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")]: 
+                            {
+                                return 
+                                {
+                                    Usuario instance;
+                                    instance = new Usuario();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Activo>k__BackingField = dataReader.GetBoolean(1);
+                                    instance.<Apellido>k__BackingField = dataReader.GetString(2);
+                                    instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(3);
+                                    instance.<Email>k__BackingField = dataReader.IsDBNull(4) ? default(string) : dataReader.GetString(4);
+                                    instance.<EmpresaId>k__BackingField = dataReader.GetInt32(5);
+                                    instance.<Nombre>k__BackingField = dataReader.GetString(6);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(7);
+                                    instance.<Rol>k__BackingField = Invoke(((EnumToNumberConverter<RolUsuario, int>)((IReadOnlyProperty)[LIFTABLE Constant: Property: Usuario.Rol (RolUsuario) Required | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario").FindProperty("Rol")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetInt32(8));
+                                    instance.<Rut>k__BackingField = dataReader.IsDBNull(9) ? default(string) : dataReader.GetString(9);
+                                    instance.<SucursalId>k__BackingField = dataReader.IsDBNull(10) ? default(int?) : (int?)dataReader.GetInt32(10);
+                                    instance.<UltimoAcceso>k__BackingField = dataReader.IsDBNull(11) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(11);
+                                    instance.<UpdatedAt>k__BackingField = dataReader.IsDBNull(12) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(12);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Usuario)
+                    }
+                    ;
+                    return instance1;
+                } : 
+                {
+                    object[] keyValues1;
+                    keyValues1 = new object[]{ (object)dataReader.GetInt32(0) };
+                    return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                        entityType: [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")], 
+                        properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: Usuario.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario").FindPrimaryKey().Properties], 
+                        keyValues: keyValues1);
+                };
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: Project_Gon.Infrastructure.Data.AppDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-28 15:25:56.407 -03:00 [DBG] Creating DbConnection.
+2026-01-28 15:25:56.407 -03:00 [DBG] Created DbConnection. (0ms).
+2026-01-28 15:25:56.408 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:25:56.435 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:25:56.436 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:25:56.437 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:25:56.437 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:25:56.438 -03:00 [DBG] Executing DbCommand [Parameters=[@__emailOrRut_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Activo", u."Apellido", u."CreatedAt", u."Email", u."EmpresaId", u."Nombre", u."PasswordHash", u."Rol", u."Rut", u."SucursalId", u."UltimoAcceso", u."UpdatedAt"
+FROM "Usuarios" AS u
+WHERE u."Email" = @__emailOrRut_0 AND u."Activo"
+LIMIT 1
+2026-01-28 15:25:56.443 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__emailOrRut_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Activo", u."Apellido", u."CreatedAt", u."Email", u."EmpresaId", u."Nombre", u."PasswordHash", u."Rol", u."Rut", u."SucursalId", u."UltimoAcceso", u."UpdatedAt"
+FROM "Usuarios" AS u
+WHERE u."Email" = @__emailOrRut_0 AND u."Activo"
+LIMIT 1
+2026-01-28 15:25:56.445 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:25:56.445 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 1ms reading results.
+2026-01-28 15:25:56.446 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:25:56.447 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:25:56.660 -03:00 [DBG] Context 'AppDbContext' started tracking 'Usuario' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:25:56.662 -03:00 [DBG] SaveChanges starting for 'AppDbContext'.
+2026-01-28 15:25:56.662 -03:00 [DBG] DetectChanges starting for 'AppDbContext'.
+2026-01-28 15:25:56.663 -03:00 [DBG] DetectChanges completed for 'AppDbContext'.
+2026-01-28 15:25:56.668 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:25:56.668 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:25:56.669 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:25:56.670 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:25:56.670 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:25:56.671 -03:00 [DBG] Executing DbCommand [Parameters=[@p12='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Int32), @p5='?', @p6='?', @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = Int32), @p10='?' (DbType = DateTime), @p11='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Activo" = @p0, "Apellido" = @p1, "CreatedAt" = @p2, "Email" = @p3, "EmpresaId" = @p4, "Nombre" = @p5, "PasswordHash" = @p6, "Rol" = @p7, "Rut" = @p8, "SucursalId" = @p9, "UltimoAcceso" = @p10, "UpdatedAt" = @p11
+WHERE "Id" = @p12;
+2026-01-28 15:25:56.676 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Int32), @p5='?', @p6='?', @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = Int32), @p10='?' (DbType = DateTime), @p11='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Activo" = @p0, "Apellido" = @p1, "CreatedAt" = @p2, "Email" = @p3, "EmpresaId" = @p4, "Nombre" = @p5, "PasswordHash" = @p6, "Rol" = @p7, "Rut" = @p8, "SucursalId" = @p9, "UltimoAcceso" = @p10, "UpdatedAt" = @p11
+WHERE "Id" = @p12;
+2026-01-28 15:25:56.678 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:25:56.678 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 15:25:56.679 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:25:56.680 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:25:56.681 -03:00 [DBG] An entity of type 'Usuario' tracked by 'AppDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:25:56.681 -03:00 [DBG] SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+2026-01-28 15:25:56.683 -03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-28 15:25:56.684 -03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-28 15:25:56.684 -03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-28 15:25:56.685 -03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-28 15:25:56.686 -03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-01-28 15:25:56.686 -03:00 [INF] Executing OkObjectResult, writing value of type 'Project_Gon.Core.DTOs.Auth.LoginResponseDto'.
+2026-01-28 15:25:56.687 -03:00 [INF] Executed action Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api) in 307.0484ms
+2026-01-28 15:25:56.688 -03:00 [INF] Executed endpoint 'Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api)'
+2026-01-28 15:25:56.688 -03:00 [INF] HTTP POST /api/auth/login responded 200 in 317.7762 ms
+2026-01-28 15:25:56.689 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:25:56.690 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:25:56.690 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:25:56.691 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7058/api/auth/login - 200 null application/json; charset=utf-8 324.4307ms
+2026-01-28 15:26:30.237 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7058/api/auth/register - application/json 120
+2026-01-28 15:26:30.238 -03:00 [DBG] 1 candidate(s) found for the request path '/api/auth/register'
+2026-01-28 15:26:30.239 -03:00 [DBG] Endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)' with route pattern 'api/Auth/register' is valid for the request path '/api/auth/register'
+2026-01-28 15:26:30.240 -03:00 [DBG] Request matched endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:26:30.241 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 15:26:30.241 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-28 15:26:30.242 -03:00 [INF] Executing endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:26:30.242 -03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Project_Gon.Core.DTOs.Auth.RegisterDto) on controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api).
+2026-01-28 15:26:30.244 -03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-28 15:26:30.244 -03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-28 15:26:30.245 -03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-28 15:26:30.246 -03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-28 15:26:30.247 -03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-28 15:26:30.248 -03:00 [DBG] Executing controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:26:30.249 -03:00 [DBG] Executed controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:26:30.249 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 15:26:30.250 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' using the name '' in request data ...
+2026-01-28 15:26:30.250 -03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-28 15:26:30.251 -03:00 [DBG] Connection id "0HNIUJ7ID7M7V", Request id "0HNIUJ7ID7M7V:00000003": started reading request body.
+2026-01-28 15:26:30.252 -03:00 [DBG] Connection id "0HNIUJ7ID7M7V", Request id "0HNIUJ7ID7M7V:00000003": done reading request body.
+2026-01-28 15:26:30.252 -03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Project_Gon.Core.DTOs.Auth.RegisterDto'
+2026-01-28 15:26:30.253 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:26:30.253 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:26:30.254 -03:00 [DBG] Attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 15:26:30.255 -03:00 [DBG] Done attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:26:30.256 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:26:30.257 -03:00 [DBG] Creating DbConnection.
+2026-01-28 15:26:30.258 -03:00 [DBG] Created DbConnection. (0ms).
+2026-01-28 15:26:30.258 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:30.259 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:30.260 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:26:30.260 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:26:30.261 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:26:30.261 -03:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Activo", e."Ciudad", e."CreatedAt", e."Direccion", e."Nombre", e."Region", e."Rut", e."UpdatedAt"
+FROM "Empresas" AS e
+WHERE e."Id" = @__p_0
+LIMIT 1
+2026-01-28 15:26:30.263 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Activo", e."Ciudad", e."CreatedAt", e."Direccion", e."Nombre", e."Region", e."Rut", e."UpdatedAt"
+FROM "Empresas" AS e
+WHERE e."Id" = @__p_0
+LIMIT 1
+2026-01-28 15:26:30.265 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:30.265 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 15:26:30.266 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:30.266 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:26:30.267 -03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-28 15:26:30.268 -03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-28 15:26:30.269 -03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-28 15:26:30.269 -03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-28 15:26:30.270 -03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2026-01-28 15:26:30.271 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-01-28 15:26:30.271 -03:00 [INF] Executed action Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api) in 23.6373ms
+2026-01-28 15:26:30.272 -03:00 [INF] Executed endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:26:30.273 -03:00 [INF] HTTP POST /api/auth/register responded 400 in 31.4023 ms
+2026-01-28 15:26:30.273 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:26:30.274 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:30.275 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:26:30.275 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7058/api/auth/register - 400 null text/plain; charset=utf-8 38.5518ms
+2026-01-28 15:26:37.736 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7058/api/auth/register - application/json 120
+2026-01-28 15:26:37.738 -03:00 [DBG] 1 candidate(s) found for the request path '/api/auth/register'
+2026-01-28 15:26:37.738 -03:00 [DBG] Endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)' with route pattern 'api/Auth/register' is valid for the request path '/api/auth/register'
+2026-01-28 15:26:37.739 -03:00 [DBG] Request matched endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:26:37.740 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 15:26:37.740 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-28 15:26:37.740 -03:00 [INF] Executing endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:26:37.741 -03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Project_Gon.Core.DTOs.Auth.RegisterDto) on controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api).
+2026-01-28 15:26:37.742 -03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-28 15:26:37.743 -03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-28 15:26:37.743 -03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-28 15:26:37.744 -03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-28 15:26:37.745 -03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-28 15:26:37.746 -03:00 [DBG] Executing controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:26:37.747 -03:00 [DBG] Executed controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:26:37.747 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 15:26:37.748 -03:00 [DBG] Attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' using the name '' in request data ...
+2026-01-28 15:26:37.749 -03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-28 15:26:37.750 -03:00 [DBG] Connection id "0HNIUJ7ID7M7V", Request id "0HNIUJ7ID7M7V:00000005": started reading request body.
+2026-01-28 15:26:37.750 -03:00 [DBG] Connection id "0HNIUJ7ID7M7V", Request id "0HNIUJ7ID7M7V:00000005": done reading request body.
+2026-01-28 15:26:37.751 -03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Project_Gon.Core.DTOs.Auth.RegisterDto'
+2026-01-28 15:26:37.751 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:26:37.752 -03:00 [DBG] Done attempting to bind parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:26:37.752 -03:00 [DBG] Attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto' ...
+2026-01-28 15:26:37.753 -03:00 [DBG] Done attempting to validate the bound parameter 'registerDto' of type 'Project_Gon.Core.DTOs.Auth.RegisterDto'.
+2026-01-28 15:26:37.754 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:26:37.755 -03:00 [DBG] Creating DbConnection.
+2026-01-28 15:26:37.756 -03:00 [DBG] Created DbConnection. (0ms).
+2026-01-28 15:26:37.756 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:37.757 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:37.757 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:26:37.758 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:26:37.758 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:26:37.759 -03:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Activo", e."Ciudad", e."CreatedAt", e."Direccion", e."Nombre", e."Region", e."Rut", e."UpdatedAt"
+FROM "Empresas" AS e
+WHERE e."Id" = @__p_0
+LIMIT 1
+2026-01-28 15:26:37.761 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Activo", e."Ciudad", e."CreatedAt", e."Direccion", e."Nombre", e."Region", e."Rut", e."UpdatedAt"
+FROM "Empresas" AS e
+WHERE e."Id" = @__p_0
+LIMIT 1
+2026-01-28 15:26:37.762 -03:00 [DBG] Context 'AppDbContext' started tracking 'Empresa' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:26:37.763 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:37.763 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 1ms reading results.
+2026-01-28 15:26:37.764 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:37.765 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:26:37.766 -03:00 [DBG] Compiling query expression: 
+'DbSet<Usuario>()
+    .Where(u => u.Rut == __rutLimpio_0 && u.EmpresaId == __8__locals1_registerDto_EmpresaId_1)
+    .AsNoTracking()
+    .FirstOrDefault()'
+2026-01-28 15:26:37.769 -03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Usuario>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Usuario>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Usuario.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Usuario.Activo (bool) Required, 1], [Property: Usuario.Apellido (string) Required, 2], [Property: Usuario.CreatedAt (DateTime) Required, 3], [Property: Usuario.Email (string) Index MaxLength(255), 4], [Property: Usuario.EmpresaId (int) Required FK Index, 5], [Property: Usuario.Nombre (string) Required, 6], [Property: Usuario.PasswordHash (string) Required, 7], [Property: Usuario.Rol (RolUsuario) Required, 8], [Property: Usuario.Rut (string) Index MaxLength(12), 9], [Property: Usuario.SucursalId (int?) FK Index, 10], [Property: Usuario.UltimoAcceso (DateTime?), 11], [Property: Usuario.UpdatedAt (DateTime?), 12] }
+            SELECT TOP(1) u.Id, u.Activo, u.Apellido, u.CreatedAt, u.Email, u.EmpresaId, u.Nombre, u.PasswordHash, u.Rol, u.Rut, u.SucursalId, u.UltimoAcceso, u.UpdatedAt
+            FROM Usuarios AS u
+            WHERE (u.Rut == @__rutLimpio_0) && (u.EmpresaId == @__8__locals1_registerDto_EmpresaId_1)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Usuario.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Usuario.Activo (bool) Required, 1], [Property: Usuario.Apellido (string) Required, 2], [Property: Usuario.CreatedAt (DateTime) Required, 3], [Property: Usuario.Email (string) Index MaxLength(255), 4], [Property: Usuario.EmpresaId (int) Required FK Index, 5], [Property: Usuario.Nombre (string) Required, 6], [Property: Usuario.PasswordHash (string) Required, 7], [Property: Usuario.Rol (RolUsuario) Required, 8], [Property: Usuario.Rut (string) Index MaxLength(12), 9], [Property: Usuario.SucursalId (int?) FK Index, 10], [Property: Usuario.UltimoAcceso (DateTime?), 11], [Property: Usuario.UpdatedAt (DateTime?), 12] }
+            SELECT TOP(1) u.Id, u.Activo, u.Apellido, u.CreatedAt, u.Email, u.EmpresaId, u.Nombre, u.PasswordHash, u.Rol, u.Rut, u.SucursalId, u.UltimoAcceso, u.UpdatedAt
+            FROM Usuarios AS u
+            WHERE (u.Rut == @__rutLimpio_0) && (u.EmpresaId == @__8__locals1_registerDto_EmpresaId_1), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Usuario entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Usuario instance1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Usuario);
+                (object)dataReader.GetInt32(0) != null ? 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")]: 
+                            {
+                                return 
+                                {
+                                    Usuario instance;
+                                    instance = new Usuario();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Activo>k__BackingField = dataReader.GetBoolean(1);
+                                    instance.<Apellido>k__BackingField = dataReader.GetString(2);
+                                    instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(3);
+                                    instance.<Email>k__BackingField = dataReader.IsDBNull(4) ? default(string) : dataReader.GetString(4);
+                                    instance.<EmpresaId>k__BackingField = dataReader.GetInt32(5);
+                                    instance.<Nombre>k__BackingField = dataReader.GetString(6);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(7);
+                                    instance.<Rol>k__BackingField = Invoke(((EnumToNumberConverter<RolUsuario, int>)((IReadOnlyProperty)[LIFTABLE Constant: Property: Usuario.Rol (RolUsuario) Required | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario").FindProperty("Rol")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetInt32(8));
+                                    instance.<Rut>k__BackingField = dataReader.IsDBNull(9) ? default(string) : dataReader.GetString(9);
+                                    instance.<SucursalId>k__BackingField = dataReader.IsDBNull(10) ? default(int?) : (int?)dataReader.GetInt32(10);
+                                    instance.<UltimoAcceso>k__BackingField = dataReader.IsDBNull(11) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(11);
+                                    instance.<UpdatedAt>k__BackingField = dataReader.IsDBNull(12) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(12);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Usuario)
+                    }
+                    ;
+                    return instance1;
+                } : 
+                {
+                    object[] keyValues1;
+                    keyValues1 = new object[]{ (object)dataReader.GetInt32(0) };
+                    return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                        entityType: [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")], 
+                        properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: Usuario.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario").FindPrimaryKey().Properties], 
+                        keyValues: keyValues1);
+                };
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: Project_Gon.Infrastructure.Data.AppDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-28 15:26:37.777 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:37.777 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:37.778 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:26:37.778 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:26:37.779 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:26:37.779 -03:00 [DBG] Executing DbCommand [Parameters=[@__rutLimpio_0='?', @__8__locals1_registerDto_EmpresaId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Activo", u."Apellido", u."CreatedAt", u."Email", u."EmpresaId", u."Nombre", u."PasswordHash", u."Rol", u."Rut", u."SucursalId", u."UltimoAcceso", u."UpdatedAt"
+FROM "Usuarios" AS u
+WHERE u."Rut" = @__rutLimpio_0 AND u."EmpresaId" = @__8__locals1_registerDto_EmpresaId_1
+LIMIT 1
+2026-01-28 15:26:37.781 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__rutLimpio_0='?', @__8__locals1_registerDto_EmpresaId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Activo", u."Apellido", u."CreatedAt", u."Email", u."EmpresaId", u."Nombre", u."PasswordHash", u."Rol", u."Rut", u."SucursalId", u."UltimoAcceso", u."UpdatedAt"
+FROM "Usuarios" AS u
+WHERE u."Rut" = @__rutLimpio_0 AND u."EmpresaId" = @__8__locals1_registerDto_EmpresaId_1
+LIMIT 1
+2026-01-28 15:26:37.783 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:37.783 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 15:26:37.784 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:37.785 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:26:37.992 -03:00 [DBG] 'AppDbContext' generated a temporary value for the property 'Usuario.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:26:37.993 -03:00 [DBG] The navigation 'Usuario.Empresa' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:26:37.994 -03:00 [DBG] Context 'AppDbContext' started tracking 'Usuario' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:26:37.995 -03:00 [DBG] SaveChanges starting for 'AppDbContext'.
+2026-01-28 15:26:37.995 -03:00 [DBG] DetectChanges starting for 'AppDbContext'.
+2026-01-28 15:26:37.996 -03:00 [DBG] DetectChanges completed for 'AppDbContext'.
+2026-01-28 15:26:37.997 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:37.998 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:37.998 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:26:37.999 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:26:37.999 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:26:38.000 -03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Boolean), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Int32), @p5='?', @p6='?', @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = Int32), @p10='?' (DbType = DateTime), @p11='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Activo", "Apellido", "CreatedAt", "Email", "EmpresaId", "Nombre", "PasswordHash", "Rol", "Rut", "SucursalId", "UltimoAcceso", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11)
+RETURNING "Id";
+2026-01-28 15:26:38.078 -03:00 [INF] Executed DbCommand (79ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Int32), @p5='?', @p6='?', @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = Int32), @p10='?' (DbType = DateTime), @p11='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Usuarios" ("Activo", "Apellido", "CreatedAt", "Email", "EmpresaId", "Nombre", "PasswordHash", "Rol", "Rut", "SucursalId", "UltimoAcceso", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11)
+RETURNING "Id";
+2026-01-28 15:26:38.080 -03:00 [DBG] The foreign key property 'Usuario.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2026-01-28 15:26:38.081 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:38.081 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 1ms reading results.
+2026-01-28 15:26:38.082 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:38.083 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:26:38.083 -03:00 [DBG] An entity of type 'Usuario' tracked by 'AppDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:26:38.084 -03:00 [DBG] SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+2026-01-28 15:26:38.085 -03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-28 15:26:38.086 -03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-28 15:26:38.087 -03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-28 15:26:38.087 -03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-28 15:26:38.088 -03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-01-28 15:26:38.088 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'Project_Gon.Core.DTOs.Auth.LoginResponseDto'.
+2026-01-28 15:26:38.089 -03:00 [DBG] Found the endpoints ["Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api)"] for address (action=[Login],controller=[Auth])
+2026-01-28 15:26:38.090 -03:00 [DBG] Successfully processed template api/Auth/login for Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api) resulting in /api/Auth/login and 
+2026-01-28 15:26:38.091 -03:00 [DBG] Link generation succeeded for endpoints ["Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api)"] with result /api/Auth/login
+2026-01-28 15:26:38.092 -03:00 [INF] Executed action Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api) in 345.8071ms
+2026-01-28 15:26:38.092 -03:00 [INF] Executed endpoint 'Project_Gon.Api.Controllers.AuthController.Register (Project_Gon.Api)'
+2026-01-28 15:26:38.093 -03:00 [INF] HTTP POST /api/auth/register responded 201 in 352.8764 ms
+2026-01-28 15:26:38.094 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:26:38.094 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:38.095 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:26:38.096 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7058/api/auth/register - 201 null application/json; charset=utf-8 359.3813ms
+2026-01-28 15:26:57.300 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7058/api/auth/login - application/json 58
+2026-01-28 15:26:57.304 -03:00 [DBG] 1 candidate(s) found for the request path '/api/auth/login'
+2026-01-28 15:26:57.305 -03:00 [DBG] Endpoint 'Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api)' with route pattern 'api/Auth/login' is valid for the request path '/api/auth/login'
+2026-01-28 15:26:57.306 -03:00 [DBG] Request matched endpoint 'Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api)'
+2026-01-28 15:26:57.307 -03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2026-01-28 15:26:57.307 -03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-28 15:26:57.308 -03:00 [INF] Executing endpoint 'Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api)'
+2026-01-28 15:26:57.309 -03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Project_Gon.Core.DTOs.Auth.LoginDto) on controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api).
+2026-01-28 15:26:57.310 -03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-28 15:26:57.311 -03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-28 15:26:57.312 -03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-28 15:26:57.313 -03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-28 15:26:57.314 -03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-28 15:26:57.315 -03:00 [DBG] Executing controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:26:57.315 -03:00 [DBG] Executed controller factory for controller Project_Gon.Api.Controllers.AuthController (Project_Gon.Api)
+2026-01-28 15:26:57.316 -03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Project_Gon.Core.DTOs.Auth.LoginDto' ...
+2026-01-28 15:26:57.317 -03:00 [DBG] Attempting to bind parameter 'loginDto' of type 'Project_Gon.Core.DTOs.Auth.LoginDto' using the name '' in request data ...
+2026-01-28 15:26:57.317 -03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-28 15:26:57.318 -03:00 [DBG] Connection id "0HNIUJ7ID7M7V", Request id "0HNIUJ7ID7M7V:00000007": started reading request body.
+2026-01-28 15:26:57.319 -03:00 [DBG] Connection id "0HNIUJ7ID7M7V", Request id "0HNIUJ7ID7M7V:00000007": done reading request body.
+2026-01-28 15:26:57.319 -03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Project_Gon.Core.DTOs.Auth.LoginDto'
+2026-01-28 15:26:57.320 -03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Project_Gon.Core.DTOs.Auth.LoginDto'.
+2026-01-28 15:26:57.321 -03:00 [DBG] Done attempting to bind parameter 'loginDto' of type 'Project_Gon.Core.DTOs.Auth.LoginDto'.
+2026-01-28 15:26:57.322 -03:00 [DBG] Attempting to validate the bound parameter 'loginDto' of type 'Project_Gon.Core.DTOs.Auth.LoginDto' ...
+2026-01-28 15:26:57.323 -03:00 [DBG] Done attempting to validate the bound parameter 'loginDto' of type 'Project_Gon.Core.DTOs.Auth.LoginDto'.
+2026-01-28 15:26:57.324 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:26:57.326 -03:00 [DBG] Compiling query expression: 
+'DbSet<Usuario>()
+    .Where(u => u.Rut == __rutLimpio_0 && u.Activo)
+    .AsNoTracking()
+    .FirstOrDefault()'
+2026-01-28 15:26:57.329 -03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Usuario>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Usuario>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Usuario.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Usuario.Activo (bool) Required, 1], [Property: Usuario.Apellido (string) Required, 2], [Property: Usuario.CreatedAt (DateTime) Required, 3], [Property: Usuario.Email (string) Index MaxLength(255), 4], [Property: Usuario.EmpresaId (int) Required FK Index, 5], [Property: Usuario.Nombre (string) Required, 6], [Property: Usuario.PasswordHash (string) Required, 7], [Property: Usuario.Rol (RolUsuario) Required, 8], [Property: Usuario.Rut (string) Index MaxLength(12), 9], [Property: Usuario.SucursalId (int?) FK Index, 10], [Property: Usuario.UltimoAcceso (DateTime?), 11], [Property: Usuario.UpdatedAt (DateTime?), 12] }
+            SELECT TOP(1) u.Id, u.Activo, u.Apellido, u.CreatedAt, u.Email, u.EmpresaId, u.Nombre, u.PasswordHash, u.Rol, u.Rut, u.SucursalId, u.UltimoAcceso, u.UpdatedAt
+            FROM Usuarios AS u
+            WHERE (u.Rut == @__rutLimpio_0) && u.Activo) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Usuario.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Usuario.Activo (bool) Required, 1], [Property: Usuario.Apellido (string) Required, 2], [Property: Usuario.CreatedAt (DateTime) Required, 3], [Property: Usuario.Email (string) Index MaxLength(255), 4], [Property: Usuario.EmpresaId (int) Required FK Index, 5], [Property: Usuario.Nombre (string) Required, 6], [Property: Usuario.PasswordHash (string) Required, 7], [Property: Usuario.Rol (RolUsuario) Required, 8], [Property: Usuario.Rut (string) Index MaxLength(12), 9], [Property: Usuario.SucursalId (int?) FK Index, 10], [Property: Usuario.UltimoAcceso (DateTime?), 11], [Property: Usuario.UpdatedAt (DateTime?), 12] }
+            SELECT TOP(1) u.Id, u.Activo, u.Apellido, u.CreatedAt, u.Email, u.EmpresaId, u.Nombre, u.PasswordHash, u.Rol, u.Rut, u.SucursalId, u.UltimoAcceso, u.UpdatedAt
+            FROM Usuarios AS u
+            WHERE (u.Rut == @__rutLimpio_0) && u.Activo, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Usuario entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Usuario instance1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Usuario);
+                (object)dataReader.GetInt32(0) != null ? 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")]: 
+                            {
+                                return 
+                                {
+                                    Usuario instance;
+                                    instance = new Usuario();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Activo>k__BackingField = dataReader.GetBoolean(1);
+                                    instance.<Apellido>k__BackingField = dataReader.GetString(2);
+                                    instance.<CreatedAt>k__BackingField = dataReader.GetDateTime(3);
+                                    instance.<Email>k__BackingField = dataReader.IsDBNull(4) ? default(string) : dataReader.GetString(4);
+                                    instance.<EmpresaId>k__BackingField = dataReader.GetInt32(5);
+                                    instance.<Nombre>k__BackingField = dataReader.GetString(6);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(7);
+                                    instance.<Rol>k__BackingField = Invoke(((EnumToNumberConverter<RolUsuario, int>)((IReadOnlyProperty)[LIFTABLE Constant: Property: Usuario.Rol (RolUsuario) Required | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario").FindProperty("Rol")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetInt32(8));
+                                    instance.<Rut>k__BackingField = dataReader.IsDBNull(9) ? default(string) : dataReader.GetString(9);
+                                    instance.<SucursalId>k__BackingField = dataReader.IsDBNull(10) ? default(int?) : (int?)dataReader.GetInt32(10);
+                                    instance.<UltimoAcceso>k__BackingField = dataReader.IsDBNull(11) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(11);
+                                    instance.<UpdatedAt>k__BackingField = dataReader.IsDBNull(12) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(12);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Usuario)
+                    }
+                    ;
+                    return instance1;
+                } : 
+                {
+                    object[] keyValues1;
+                    keyValues1 = new object[]{ (object)dataReader.GetInt32(0) };
+                    return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                        entityType: [LIFTABLE Constant: EntityType: Usuario | Resolver: namelessParameter{4} => namelessParameter{4}.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario")], 
+                        properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: Usuario.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("Project_Gon.Core.Entities.Usuario").FindPrimaryKey().Properties], 
+                        keyValues: keyValues1);
+                };
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: Project_Gon.Infrastructure.Data.AppDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-28 15:26:57.337 -03:00 [DBG] Creating DbConnection.
+2026-01-28 15:26:57.337 -03:00 [DBG] Created DbConnection. (0ms).
+2026-01-28 15:26:57.337 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:57.338 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:57.339 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:26:57.339 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:26:57.340 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:26:57.341 -03:00 [DBG] Executing DbCommand [Parameters=[@__rutLimpio_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Activo", u."Apellido", u."CreatedAt", u."Email", u."EmpresaId", u."Nombre", u."PasswordHash", u."Rol", u."Rut", u."SucursalId", u."UltimoAcceso", u."UpdatedAt"
+FROM "Usuarios" AS u
+WHERE u."Rut" = @__rutLimpio_0 AND u."Activo"
+LIMIT 1
+2026-01-28 15:26:57.342 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__rutLimpio_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Activo", u."Apellido", u."CreatedAt", u."Email", u."EmpresaId", u."Nombre", u."PasswordHash", u."Rol", u."Rut", u."SucursalId", u."UltimoAcceso", u."UpdatedAt"
+FROM "Usuarios" AS u
+WHERE u."Rut" = @__rutLimpio_0 AND u."Activo"
+LIMIT 1
+2026-01-28 15:26:57.343 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:57.344 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 15:26:57.345 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:57.345 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:26:57.553 -03:00 [DBG] Context 'AppDbContext' started tracking 'Usuario' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:26:57.555 -03:00 [DBG] SaveChanges starting for 'AppDbContext'.
+2026-01-28 15:26:57.555 -03:00 [DBG] DetectChanges starting for 'AppDbContext'.
+2026-01-28 15:26:57.556 -03:00 [DBG] DetectChanges completed for 'AppDbContext'.
+2026-01-28 15:26:57.557 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:57.558 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:57.559 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:26:57.559 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:26:57.560 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:26:57.560 -03:00 [DBG] Executing DbCommand [Parameters=[@p12='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Int32), @p5='?', @p6='?', @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = Int32), @p10='?' (DbType = DateTime), @p11='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Activo" = @p0, "Apellido" = @p1, "CreatedAt" = @p2, "Email" = @p3, "EmpresaId" = @p4, "Nombre" = @p5, "PasswordHash" = @p6, "Rol" = @p7, "Rut" = @p8, "SucursalId" = @p9, "UltimoAcceso" = @p10, "UpdatedAt" = @p11
+WHERE "Id" = @p12;
+2026-01-28 15:26:57.615 -03:00 [INF] Executed DbCommand (55ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Int32), @p5='?', @p6='?', @p7='?' (DbType = Int32), @p8='?', @p9='?' (DbType = Int32), @p10='?' (DbType = DateTime), @p11='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Usuarios" SET "Activo" = @p0, "Apellido" = @p1, "CreatedAt" = @p2, "Email" = @p3, "EmpresaId" = @p4, "Nombre" = @p5, "PasswordHash" = @p6, "Rol" = @p7, "Rut" = @p8, "SucursalId" = @p9, "UltimoAcceso" = @p10, "UpdatedAt" = @p11
+WHERE "Id" = @p12;
+2026-01-28 15:26:57.617 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:57.617 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 15:26:57.618 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:57.619 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:26:57.619 -03:00 [DBG] An entity of type 'Usuario' tracked by 'AppDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-28 15:26:57.620 -03:00 [DBG] SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+2026-01-28 15:26:57.621 -03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-28 15:26:57.622 -03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-28 15:26:57.623 -03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-28 15:26:57.623 -03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-28 15:26:57.624 -03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2026-01-28 15:26:57.624 -03:00 [INF] Executing OkObjectResult, writing value of type 'Project_Gon.Core.DTOs.Auth.LoginResponseDto'.
+2026-01-28 15:26:57.625 -03:00 [INF] Executed action Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api) in 310.6939ms
+2026-01-28 15:26:57.626 -03:00 [INF] Executed endpoint 'Project_Gon.Api.Controllers.AuthController.Login (Project_Gon.Api)'
+2026-01-28 15:26:57.626 -03:00 [INF] HTTP POST /api/auth/login responded 200 in 319.2356 ms
+2026-01-28 15:26:57.627 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:26:57.628 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:26:57.628 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:26:57.629 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7058/api/auth/login - 200 null application/json; charset=utf-8 329.7265ms
+2026-01-28 15:29:08.731 -03:00 [DBG] Connection id "0HNIUJ7ID7M7V" is closing.
+2026-01-28 15:29:08.732 -03:00 [DBG] Connection id "0HNIUJ7ID7M7V" is closed. The last processed stream ID was 7.
+2026-01-28 15:29:08.747 -03:00 [DBG] The connection queue processing loop for 0HNIUJ7ID7M7V completed.
+2026-01-28 15:29:08.748 -03:00 [DBG] Connection id "0HNIUJ7ID7M7V" stopped.
+2026-01-28 15:29:08.749 -03:00 [DBG] Connection id "0HNIUJ7ID7M7V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-28 15:46:23.416 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-28 15:46:23.785 -03:00 [DBG] The index {'ProductoId'} was not created on entity type 'Stock' as the properties are already covered by the index {'ProductoId', 'SucursalId'}.
+2026-01-28 15:46:23.787 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Email'}.
+2026-01-28 15:46:23.787 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Rut'}.
+2026-01-28 15:46:23.897 -03:00 [DBG] The property 'MovimientoStock.DevolucionId' was created in shadow state because there are no eligible CLR members with a matching name.
+2026-01-28 15:46:23.958 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:46:23.970 -03:00 [DBG] Creating DbConnection.
+2026-01-28 15:46:23.986 -03:00 [DBG] Created DbConnection. (15ms).
+2026-01-28 15:46:23.989 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:46:24.061 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:46:24.064 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:46:24.068 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-01-28 15:46:24.069 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2026-01-28 15:46:24.073 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 15:46:24.094 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 15:46:24.113 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:46:24.118 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 20ms reading results.
+2026-01-28 15:46:24.120 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:46:24.123 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (3ms).
+2026-01-28 15:46:24.232 -03:00 [DBG] Migrating using database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:46:24.234 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:46:24.236 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:46:24.386 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:46:24.386 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:46:24.388 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (1ms).
+2026-01-28 15:46:24.389 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:46:24.390 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:46:24.415 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 15:46:24.416 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 15:46:24.417 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 15:46:24.418 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 15:46:24.423 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-01-28 15:46:24.426 -03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-28 15:46:24.428 -03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-28 15:46:24.429 -03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-01-28 15:46:24.430 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-28 15:46:24.431 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-28 15:46:24.431 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-01-28 15:46:24.432 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 15:46:24.433 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-01-28 15:46:24.434 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-28 15:46:24.435 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-28 15:46:24.435 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-01-28 15:46:24.436 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 15:46:24.437 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-01-28 15:46:24.438 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:46:24.439 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-01-28 15:46:24.444 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-01-28 15:46:24.445 -03:00 [DBG] Committing transaction.
+2026-01-28 15:46:24.483 -03:00 [DBG] Committed transaction.
+2026-01-28 15:46:24.484 -03:00 [DBG] Disposing transaction.
+2026-01-28 15:46:24.484 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:46:24.485 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:46:24.486 -03:00 [INF] Database migrations applied successfully
+2026-01-28 15:46:24.487 -03:00 [DBG] 'AppDbContext' disposed.
+2026-01-28 15:46:24.489 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-01-28 15:46:24.490 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-01-28 15:46:24.509 -03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-28 15:46:24.536 -03:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2026-01-28 15:46:24.548 -03:00 [INF] Project Gon API iniciada en ambiente: Development
+2026-01-28 15:46:24.550 -03:00 [DBG] Hosting starting
+2026-01-28 15:46:24.558 -03:00 [INF] User profile is available. Using 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-28 15:46:24.563 -03:00 [DBG] Reading data from file 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys\key-7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c.xml'.
+2026-01-28 15:46:24.568 -03:00 [DBG] Found key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c}.
+2026-01-28 15:46:24.573 -03:00 [DBG] Considering key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} with expiration date 2026-04-28 18:20:11Z as default key.
+2026-01-28 15:46:24.575 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-28 15:46:24.576 -03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-28 15:46:24.577 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-28 15:46:24.579 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-28 15:46:24.580 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-28 15:46:24.581 -03:00 [DBG] Using key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} as the default key.
+2026-01-28 15:46:24.582 -03:00 [DBG] Key ring with default key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} was loaded during application startup.
+2026-01-28 15:46:24.584 -03:00 [DBG] Middleware loaded
+2026-01-28 15:46:24.585 -03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2026-01-28 15:46:24.587 -03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-01-28 15:46:24.632 -03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-01-28 15:46:24.634 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-28 15:46:24.636 -03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-01-28 15:46:24.667 -03:00 [INF] Now listening on: https://localhost:7058
+2026-01-28 15:46:24.668 -03:00 [INF] Now listening on: http://localhost:5070
+2026-01-28 15:46:24.668 -03:00 [DBG] Loaded hosting startup assembly Project_Gon.Api
+2026-01-28 15:46:24.669 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-28 15:46:24.669 -03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-28 15:46:24.670 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-28 15:46:24.672 -03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-01-28 15:46:24.675 -03:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-01-28 15:46:24.768 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-28 15:46:24.769 -03:00 [INF] Hosting environment: Development
+2026-01-28 15:46:24.769 -03:00 [INF] Content root path: C:\Proyectos\Project_Gon\Project_Gon.Api
+2026-01-28 15:46:24.771 -03:00 [DBG] Hosting started
+2026-01-28 15:47:13.038 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-28 15:47:13.422 -03:00 [DBG] The index {'ProductoId'} was not created on entity type 'Stock' as the properties are already covered by the index {'ProductoId', 'SucursalId'}.
+2026-01-28 15:47:13.424 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Email'}.
+2026-01-28 15:47:13.424 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Rut'}.
+2026-01-28 15:47:13.530 -03:00 [DBG] The property 'MovimientoStock.DevolucionId' was created in shadow state because there are no eligible CLR members with a matching name.
+2026-01-28 15:47:13.606 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-01-28 15:47:14.029 -03:00 [DBG] 'AppDbContext' disposed.

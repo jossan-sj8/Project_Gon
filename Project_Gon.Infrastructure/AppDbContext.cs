@@ -59,7 +59,7 @@ public class AppDbContext : DbContext
             .IsRequired()
             .HasMaxLength(255);
 
-        // Usuario
+        // Usuario 
         modelBuilder.Entity<Usuario>()
             .HasKey(u => u.Id);
         modelBuilder.Entity<Usuario>()
@@ -72,12 +72,26 @@ public class AppDbContext : DbContext
             .WithMany(s => s.Usuarios)
             .HasForeignKey(u => u.SucursalId)
             .OnDelete(DeleteBehavior.SetNull);
+
+        // ==================== CONFIGURACIONES PARA EMAIL Y RUT ====================
         modelBuilder.Entity<Usuario>()
             .Property(u => u.Email)
             .HasMaxLength(255);
         modelBuilder.Entity<Usuario>()
+            .Property(u => u.Rut)
+            .HasMaxLength(12);  // 12345678-9 formato
+
+        // Índices únicos - Email único por empresa (solo si no es null)
+        modelBuilder.Entity<Usuario>()
             .HasIndex(u => new { u.EmpresaId, u.Email })
-            .IsUnique();
+            .IsUnique()
+            .HasFilter("\"Email\" IS NOT NULL");
+
+        // Índices únicos - RUT único por empresa (solo si no es null)  
+        modelBuilder.Entity<Usuario>()
+            .HasIndex(u => new { u.EmpresaId, u.Rut })
+            .IsUnique()
+            .HasFilter("\"Rut\" IS NOT NULL");
 
         // Categoria
         modelBuilder.Entity<Categoria>()

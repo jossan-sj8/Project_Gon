@@ -6,7 +6,8 @@ public class Usuario
 {
     public int Id { get; set; }
     public int EmpresaId { get; set; }
-    public string? Email { get; set; }
+    public string? Email { get; set; }                    
+    public string? Rut { get; set; }                     
     public string Nombre { get; set; } = null!;
     public string Apellido { get; set; } = null!;
     public string PasswordHash { get; set; } = null!;
