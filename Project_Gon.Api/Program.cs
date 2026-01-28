@@ -1,12 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Project_Gon.Infrastructure.Data;
 using Project_Gon.Infrastructure.Repositories;
+using Project_Gon.Infrastructure.Mappings;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Agregar DbContext con PostgreSQL
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// ✅ AGREGAR: AutoMapper
+builder.Services.AddAutoMapper(typeof(EmpresaMappingProfile).Assembly);
 
 // ✅ AGREGAR: Repository Pattern + Unit of Work
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));

@@ -29,4 +29,8 @@
 		<ProjectReference Include="..\Project_Gon.Common\Project_Gon.Common.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Services\" />
+	</ItemGroup>
+
 </Project>
