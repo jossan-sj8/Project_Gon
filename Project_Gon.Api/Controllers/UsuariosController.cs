@@ -7,6 +7,8 @@ using Project_Gon.Core.Entities;
 using Project_Gon.Core.Enums;
 using Project_Gon.Infrastructure.Repositories;
 using Project_Gon.Infrastructure.Services;
+using Project_Gon.Api.Extensions;  
+using System.Linq.Expressions;     
 
 namespace Project_Gon.Api.Controllers;
 
@@ -38,24 +40,70 @@ public class UsuariosController : ControllerBase
 
     // GET: api/usuarios
     /// <summary>
-    /// Obtiene todos los usuarios con sus relaciones (Empresa, Sucursal).
+    /// Obtiene usuarios según el rol del usuario autenticado.
+    /// - AdminGlobal: todos los usuarios
+    /// - AdminEmpresa sin sucursal: usuarios de su empresa
+    /// - AdminEmpresa con sucursal: usuarios de su sucursal
+    /// - Vendedor: usuarios de su sucursal
     /// </summary>
     [HttpGet]
     public async Task<ActionResult<IEnumerable<UsuarioDto>>> GetAll()
     {
         try
         {
-            // ✅ Cargar relaciones navegacionales con .Include()
+            // Extraer información del usuario actual desde el JWT
+            var userRole = User.GetUserRole();
+            var empresaId = User.GetEmpresaId();
+            var sucursalId = User.GetSucursalId();
+
+            Expression<Func<Usuario, bool>>? predicate = null;
+
+            // Determinar filtro según rol
+            if (userRole == "AdminGlobal")
+            {
+                // AdminGlobal: sin filtro (ve todos)
+                predicate = null;
+            }
+            else if (userRole == "AdminEmpresa")
+            {
+                if (sucursalId.HasValue)
+                {
+                    // AdminEmpresa con sucursal: solo su sucursal
+                    predicate = u => u.SucursalId == sucursalId.Value;
+                }
+                else
+                {
+                    // AdminEmpresa sin sucursal: toda su empresa
+                    predicate = u => u.EmpresaId == empresaId;
+                }
+            }
+            else if (userRole == "Vendedor")
+            {
+                // Vendedor: solo su sucursal
+                predicate = u => u.SucursalId == sucursalId;
+            }
+            else
+            {
+                return Unauthorized("Rol no reconocido");
+            }
+
+            // Cargar usuarios con relaciones
             var usuarios = await _unitOfWork.Usuarios.GetAllAsync(
-                predicate: null,
+                predicate: predicate,
                 include: query => query
                     .Include(u => u.Empresa)
-                    .Include(u => u.Sucursal)! // ← Null-forgiving operator
+                    .Include(u => u.Sucursal)!
             );
 
             var usuariosDto = _mapper.Map<IEnumerable<UsuarioDto>>(usuarios);
 
-            _logger.LogInformation("Retrieved {Count} usuarios", usuariosDto.Count());
+            _logger.LogInformation(
+                "Retrieved {Count} usuarios for user {UserId} with role {Role}",
+                usuariosDto.Count(),
+                User.GetUserId(),
+                userRole
+            );
+
             return Ok(usuariosDto);
         }
         catch (Exception ex)
@@ -67,25 +115,56 @@ public class UsuariosController : ControllerBase
 
     // GET: api/usuarios/{id}
     /// <summary>
-    /// Obtiene un usuario por su ID con sus relaciones.
+    /// Obtiene un usuario por su ID con validación de acceso según rol.
     /// </summary>
     [HttpGet("{id}")]
     public async Task<ActionResult<UsuarioDto>> GetById(int id)
     {
         try
         {
-            // ✅ Cargar relaciones al obtener por ID
+            var userRole = User.GetUserRole();
+            var empresaId = User.GetEmpresaId();
+            var sucursalId = User.GetSucursalId();
+
+            // Cargar usuario
             var usuario = await _unitOfWork.Usuarios.GetByIdAsync(
                 id,
                 include: query => query
                     .Include(u => u.Empresa)
-                    .Include(u => u.Sucursal)! // ← Null-forgiving operator
+                    .Include(u => u.Sucursal)!
             );
 
             if (usuario == null)
             {
                 _logger.LogWarning("Usuario con ID {Id} no encontrado", id);
                 return NotFound($"Usuario con ID {id} no encontrado");
+            }
+
+            // Validar acceso según rol
+            if (userRole == "AdminGlobal")
+            {
+                // AdminGlobal puede ver a todos
+            }
+            else if (userRole == "AdminEmpresa")
+            {
+                if (sucursalId.HasValue)
+                {
+                    // AdminEmpresa con sucursal: solo de su sucursal
+                    if (usuario.SucursalId != sucursalId.Value)
+                        return Forbid("No tienes acceso a este usuario");
+                }
+                else
+                {
+                    // AdminEmpresa sin sucursal: solo de su empresa
+                    if (usuario.EmpresaId != empresaId)
+                        return Forbid("No tienes acceso a este usuario");
+                }
+            }
+            else if (userRole == "Vendedor")
+            {
+                // Vendedor: solo de su sucursal
+                if (usuario.SucursalId != sucursalId)
+                    return Forbid("No tienes acceso a este usuario");
             }
 
             var usuarioDto = _mapper.Map<UsuarioDto>(usuario);
@@ -100,19 +179,27 @@ public class UsuariosController : ControllerBase
 
     // GET: api/usuarios/empresa/{empresaId}
     /// <summary>
-    /// Obtiene todos los usuarios de una empresa específica.
+    /// Obtiene todos los usuarios de una empresa específica (solo AdminGlobal).
     /// </summary>
     [HttpGet("empresa/{empresaId}")]
     public async Task<ActionResult<IEnumerable<UsuarioDto>>> GetByEmpresa(int empresaId)
     {
         try
         {
-            // ✅ Cargar relaciones con filtro
+            var userRole = User.GetUserRole();
+            var currentEmpresaId = User.GetEmpresaId();
+
+            // Solo AdminGlobal puede ver usuarios de otras empresas
+            if (userRole != "AdminGlobal" && currentEmpresaId != empresaId)
+            {
+                return Forbid("No tienes acceso a usuarios de otras empresas");
+            }
+
             var usuarios = await _unitOfWork.Usuarios.GetAllAsync(
                 predicate: u => u.EmpresaId == empresaId,
                 include: query => query
                     .Include(u => u.Empresa)
-                    .Include(u => u.Sucursal)! // ← Null-forgiving operator
+                    .Include(u => u.Sucursal)!
             );
 
             var usuariosDto = _mapper.Map<IEnumerable<UsuarioDto>>(usuarios);
@@ -137,12 +224,20 @@ public class UsuariosController : ControllerBase
     {
         try
         {
-            // ✅ Cargar relaciones con filtro
+            var userRole = User.GetUserRole();
+            var currentSucursalId = User.GetSucursalId();
+
+            // Vendedor solo puede ver su propia sucursal
+            if (userRole == "Vendedor" && currentSucursalId != sucursalId)
+            {
+                return Forbid("No tienes acceso a usuarios de otras sucursales");
+            }
+
             var usuarios = await _unitOfWork.Usuarios.GetAllAsync(
                 predicate: u => u.SucursalId == sucursalId,
                 include: query => query
                     .Include(u => u.Empresa)
-                    .Include(u => u.Sucursal)! // ← Null-forgiving operator
+                    .Include(u => u.Sucursal)!
             );
 
             var usuariosDto = _mapper.Map<IEnumerable<UsuarioDto>>(usuarios);
@@ -160,19 +255,26 @@ public class UsuariosController : ControllerBase
 
     // GET: api/usuarios/rol/{rol}
     /// <summary>
-    /// Obtiene todos los usuarios con un rol específico.
+    /// Obtiene todos los usuarios con un rol específico (solo AdminGlobal).
     /// </summary>
     [HttpGet("rol/{rol}")]
     public async Task<ActionResult<IEnumerable<UsuarioDto>>> GetByRol(RolUsuario rol)
     {
         try
         {
-            // ✅ Cargar relaciones con filtro por rol
+            var userRole = User.GetUserRole();
+
+            // Solo AdminGlobal puede filtrar por rol
+            if (userRole != "AdminGlobal")
+            {
+                return Forbid("No tienes permiso para filtrar usuarios por rol");
+            }
+
             var usuarios = await _unitOfWork.Usuarios.GetAllAsync(
                 predicate: u => u.Rol == rol,
                 include: query => query
                     .Include(u => u.Empresa)
-                    .Include(u => u.Sucursal)! // ← Null-forgiving operator
+                    .Include(u => u.Sucursal)!
             );
 
             var usuariosDto = _mapper.Map<IEnumerable<UsuarioDto>>(usuarios);
@@ -190,19 +292,49 @@ public class UsuariosController : ControllerBase
 
     // GET: api/usuarios/activos
     /// <summary>
-    /// Obtiene usuarios activos o inactivos.
+    /// Obtiene usuarios activos o inactivos según el rol del usuario autenticado.
     /// </summary>
     [HttpGet("activos")]
     public async Task<ActionResult<IEnumerable<UsuarioDto>>> GetActivos([FromQuery] bool activos = true)
     {
         try
         {
-            // ✅ Cargar relaciones con filtro de activos
+            var userRole = User.GetUserRole();
+            var empresaId = User.GetEmpresaId();
+            var sucursalId = User.GetSucursalId();
+
+            Expression<Func<Usuario, bool>> predicate;
+
+            // Combinar filtro de activos con filtro de rol
+            if (userRole == "AdminGlobal")
+            {
+                predicate = u => u.Activo == activos;
+            }
+            else if (userRole == "AdminEmpresa")
+            {
+                if (sucursalId.HasValue)
+                {
+                    predicate = u => u.Activo == activos && u.SucursalId == sucursalId.Value;
+                }
+                else
+                {
+                    predicate = u => u.Activo == activos && u.EmpresaId == empresaId;
+                }
+            }
+            else if (userRole == "Vendedor")
+            {
+                predicate = u => u.Activo == activos && u.SucursalId == sucursalId;
+            }
+            else
+            {
+                return Unauthorized("Rol no reconocido");
+            }
+
             var usuarios = await _unitOfWork.Usuarios.GetAllAsync(
-                predicate: u => u.Activo == activos,
+                predicate: predicate,
                 include: query => query
                     .Include(u => u.Empresa)
-                    .Include(u => u.Sucursal)! // ← Null-forgiving operator
+                    .Include(u => u.Sucursal)!
             );
 
             var usuariosDto = _mapper.Map<IEnumerable<UsuarioDto>>(usuarios);
@@ -223,19 +355,17 @@ public class UsuariosController : ControllerBase
     /// Crea un nuevo usuario. Solo accesible por AdminGlobal y AdminEmpresa.
     /// </summary>
     [HttpPost]
-    [Authorize(Roles = "AdminGlobal,AdminEmpresa")] // Solo administradores
+    [Authorize(Roles = "AdminGlobal,AdminEmpresa")]
     public async Task<ActionResult<UsuarioDto>> Create([FromBody] CreateUsuarioDto createDto)
     {
         try
         {
-            // Validar que la empresa existe
             var empresa = await _unitOfWork.Empresas.GetByIdAsync(createDto.EmpresaId);
             if (empresa == null)
             {
                 return BadRequest($"La empresa con ID {createDto.EmpresaId} no existe");
             }
 
-            // Validar que la sucursal existe (si se especifica)
             if (createDto.SucursalId.HasValue)
             {
                 var sucursal = await _unitOfWork.Sucursales.GetByIdAsync(createDto.SucursalId.Value);
@@ -245,7 +375,6 @@ public class UsuariosController : ControllerBase
                 }
             }
 
-            // Validar que el RUT no esté duplicado en la misma empresa
             var rutExiste = await _unitOfWork.Usuarios.ExistsAsync(
                 u => u.Rut == createDto.Rut && u.EmpresaId == createDto.EmpresaId);
 
@@ -254,7 +383,6 @@ public class UsuariosController : ControllerBase
                 return BadRequest($"Ya existe un usuario con RUT {createDto.Rut} en esta empresa");
             }
 
-            // Validar email duplicado si existe
             if (!string.IsNullOrWhiteSpace(createDto.Email))
             {
                 var emailExiste = await _unitOfWork.Usuarios.ExistsAsync(
@@ -266,23 +394,18 @@ public class UsuariosController : ControllerBase
                 }
             }
 
-            // Mapear DTO a entidad
             var usuario = _mapper.Map<Usuario>(createDto);
-
-            // Hash de la contraseña
             usuario.PasswordHash = _passwordHashService.HashPassword(createDto.Password);
 
-            // Guardar
             await _unitOfWork.Usuarios.AddAsync(usuario);
             await _unitOfWork.SaveChangesAsync();
 
-            // ✅ Recargar con relaciones para el response
             usuario = await _unitOfWork.Usuarios.GetByIdAsync(
                 usuario.Id,
                 include: query => query
                     .Include(u => u.Empresa)
-                    .Include(u => u.Sucursal)! // ← Null-forgiving operator
-            ) ?? throw new InvalidOperationException("Usuario no encontrado después de crearlo"); // ← Null check
+                    .Include(u => u.Sucursal)!
+            ) ?? throw new InvalidOperationException("Usuario no encontrado después de crearlo");
 
             var usuarioDto = _mapper.Map<UsuarioDto>(usuario);
 
@@ -308,12 +431,11 @@ public class UsuariosController : ControllerBase
     {
         try
         {
-            // ✅ Cargar con relaciones para validaciones
             var usuario = await _unitOfWork.Usuarios.GetByIdAsync(
                 id,
                 include: query => query
                     .Include(u => u.Empresa)
-                    .Include(u => u.Sucursal)! // ← Null-forgiving operator
+                    .Include(u => u.Sucursal)!
             );
 
             if (usuario == null)
@@ -321,7 +443,6 @@ public class UsuariosController : ControllerBase
                 return NotFound($"Usuario con ID {id} no encontrado");
             }
 
-            // Validar email duplicado si se cambia
             if (!string.IsNullOrWhiteSpace(updateDto.Email) && updateDto.Email != usuario.Email)
             {
                 var emailExiste = await _unitOfWork.Usuarios.ExistsAsync(
@@ -333,7 +454,6 @@ public class UsuariosController : ControllerBase
                 }
             }
 
-            // Validar sucursal si se cambia
             if (updateDto.SucursalId.HasValue && updateDto.SucursalId != usuario.SucursalId)
             {
                 var sucursal = await _unitOfWork.Sucursales.GetByIdAsync(updateDto.SucursalId.Value);
@@ -343,16 +463,13 @@ public class UsuariosController : ControllerBase
                 }
             }
 
-            // Mapear cambios
             _mapper.Map(updateDto, usuario);
 
-            // Si se cambia la contraseña
             if (!string.IsNullOrWhiteSpace(updateDto.Password))
             {
                 usuario.PasswordHash = _passwordHashService.HashPassword(updateDto.Password);
             }
 
-            // Actualizar
             await _unitOfWork.Usuarios.UpdateAsync(usuario);
             await _unitOfWork.SaveChangesAsync();
 
@@ -383,7 +500,6 @@ public class UsuariosController : ControllerBase
                 return NotFound($"Usuario con ID {id} no encontrado");
             }
 
-            // Soft delete: marcar como inactivo
             usuario.Activo = false;
             usuario.UpdatedAt = DateTime.UtcNow;
 
