@@ -8,8 +8,8 @@ using Project_Gon.Infrastructure.Mappings;
 using Project_Gon.Infrastructure.Repositories;
 using Project_Gon.Infrastructure.Services;
 using Serilog;
-using FluentValidation;                    
-using FluentValidation.AspNetCore;         
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Project_Gon.Api.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,8 +30,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // ==================== DEPENDENCY INJECTION ====================
-// AutoMapper
+// AutoMapper - ACTUALIZADO PARA CARGAR TODOS LOS PERFILES
 builder.Services.AddAutoMapper(typeof(EmpresaMappingProfile).Assembly);
+// ↑ Esta línea carga AUTOMÁTICAMENTE todos los perfiles que hereden de Profile
+// en el ensamblado de Infrastructure (EmpresaMappingProfile, SucursalMappingProfile,
+// UsuarioMappingProfile, ProductoMappingProfile, etc.)
 
 // Repository Pattern + Unit of Work
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
