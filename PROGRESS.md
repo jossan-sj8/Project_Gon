@@ -213,8 +213,8 @@
 - [x] EmpresasController.cs ✅ COMPLETADO y PROBADO
 - [x] SucursalesController.cs ✅ COMPLETADO y PROBADO
 - [x] AuthController.cs ✅ COMPLETADO y PROBADO (Login + Register)
-- [x] UsuariosController.cs (CRUD de usuarios)
-- [ ] ProductosController.cs
+- [x] UsuariosController (10 métodos CRUD + Role-based access control)
+- [x] ProductosController (6 métodos CRUD + Role-based access control)
 - [ ] CategoriasController.cs
 - [ ] StocksController.cs
 - [ ] VentasController.cs
