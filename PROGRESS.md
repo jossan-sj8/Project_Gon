@@ -3,8 +3,8 @@
 ## 📅 Última Sesión
 - **Fecha:** 28 Enero 2026
 - **Rama:** `feature/dtos-services`
-- **Commits:** 3+ (Entities + Migration + DTOs/Controllers + Auth)
-- **Tiempo invertido:** ~10 horas
+- **Commits:** 4+ (Entities + Migration + DTOs/Controllers + Auth + Validators)
+- **Tiempo invertido:** ~11.5 horas
 
 ---
 
@@ -96,11 +96,11 @@
 - [x] Instalar NuGet: FluentValidation.AspNetCore 11.3.1
 - [x] Agregar using statements en Program.cs ✅
 - [x] Registrar FluentValidation en Program.cs ✅
-- [ ] Crear CreateEmpresaDtoValidator.cs
-- [ ] Crear CreateSucursalDtoValidator.cs
-- [ ] Crear RegisterDtoValidator.cs
+- [x] Crear CreateEmpresaDtoValidator.cs
+- [x] Crear CreateSucursalDtoValidator.cs
+- [x] Crear RegisterDtoValidator.cs
 
-**Progreso:** 3 / 6 tareas (50%)
+**Progreso:** 9 / 9 tareas (100%) ✅
 
 ### Paquetes NuGet Instalados
 - [x] Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore 9.0.0
@@ -115,17 +115,65 @@
 
 **Progreso:** 9 / 9 tareas (100%) ✅
 
-**Total FASE 1:** 46 / 49 tareas (94%) | **Tiempo: ~5 horas**
+**Total FASE 1:** 49 / 49 tareas (100%) ✅ | **Tiempo: ~5 horas**
 
 ---
 
 ## 🟡 FASE 2: DTOs & Mappings (EN PROGRESO - 14%)
 
+### FluentValidation - Validadores Creados ✅ COMPLETADO
+- [x] CreateEmpresaDtoValidator.cs ✅
+  - Validación de RUT chileno (formato 12345678-9)
+  - Nombre obligatorio, máx 255 caracteres
+  - Caracteres válidos en nombre
+- [x] UpdateEmpresaDtoValidator.cs ✅
+- [x] CreateSucursalDtoValidator.cs ✅
+  - EmpresaId obligatorio y > 0
+  - Teléfono formato válido (+56912345678)
+- [x] UpdateSucursalDtoValidator.cs ✅
+- [x] LoginDtoValidator.cs ✅
+  - EmailOrRut obligatorio
+  - Password mínimo 6 caracteres
+- [x] RegisterDtoValidator.cs ✅
+  - Email obligatorio SOLO si rol != Vendedor
+  - SucursalId obligatorio SOLO si rol == Vendedor
+  - Contraseña fuerte: 8+ chars, mayúscula, minúscula, número, especial
+  - RUT formato chileno
+  - Nombres solo letras y espacios
+- [x] CreateUsuarioDtoValidator.cs ✅
+  - RUT formato chileno obligatorio (12345678-9)
+  - Email obligatorio SOLO si rol != Vendedor
+  - SucursalId obligatorio SOLO si rol == Vendedor
+  - Contraseña fuerte: 8+ chars, mayúscula, minúscula, número, especial
+  - Nombres y apellidos solo letras y espacios (máx 100 chars)
+  - EmpresaId obligatorio y > 0
+  - Rol válido del enum RolUsuario
+
+- [x] UpdateUsuarioDtoValidator.cs ✅
+  - Email formato válido si se proporciona (máx 255 chars)
+  - Nombre y apellido solo letras si se proporcionan (máx 100 chars)
+  - Contraseña fuerte si se cambia (mismas reglas que create)
+  - Rol válido del enum si se cambia
+  - SucursalId > 0 si se proporciona
+  - Todos los campos opcionales pero con validaciones
+
+**Progreso:** 8 / 8 validadores (100%) ✅
+
+### DTOs Limpiados ✅ COMPLETADO
+- [x] RegisterDto.cs (eliminados Data Annotations duplicados) ✅
+- [x] LoginDto.cs (agregada documentación) ✅
+- [x] CreateEmpresaDto.cs (actualizada documentación) ✅
+- [x] UpdateEmpresaDto.cs (simplificado) ✅
+- [x] CreateSucursalDto.cs (eliminados Data Annotations) ✅
+- [x] UpdateSucursalDto.cs (eliminados Data Annotations) ✅
+
+**Progreso:** 6 / 6 DTOs (100%) ✅
+
 ### DTOs por Entidad (21 entidades)
 - [x] EmpresaDto (3 DTOs: Dto, CreateDto, UpdateDto) ✅
 - [x] SucursalDto (3 DTOs: Dto, CreateDto, UpdateDto) ✅
 - [x] AuthDto (4 DTOs: LoginDto, RegisterDto, LoginResponseDto, UserInfoDto) ✅
-- [ ] UsuarioDto (3 DTOs: Dto, CreateDto, UpdateDto)
+- [x] UsuarioDto (3 DTOs: Dto, CreateDto, UpdateDto)
 - [ ] ProductoDto (3 DTOs)
 - [ ] CategoriaDto (3 DTOs)
 - [ ] StockDto (2 DTOs)
@@ -148,7 +196,7 @@
 ### AutoMapper Profiles (21 entidades)
 - [x] EmpresaMappingProfile.cs ✅
 - [x] SucursalMappingProfile.cs ✅
-- [ ] UsuarioMappingProfile.cs
+- [x] UsuarioMappingProfile.cs
 - [ ] ProductoMappingProfile.cs
 - [ ] CategoriaMappingProfile.cs
 - [ ] Y 16 perfiles más...
@@ -165,7 +213,7 @@
 - [x] EmpresasController.cs ✅ COMPLETADO y PROBADO
 - [x] SucursalesController.cs ✅ COMPLETADO y PROBADO
 - [x] AuthController.cs ✅ COMPLETADO y PROBADO (Login + Register)
-- [ ] UsuariosController.cs (CRUD de usuarios)
+- [x] UsuariosController.cs (CRUD de usuarios)
 - [ ] ProductosController.cs
 - [ ] CategoriasController.cs
 - [ ] StocksController.cs
@@ -185,13 +233,14 @@
 
 ## 📊 RESUMEN GENERAL
 
+
 | Fase | Tareas | Completadas | Progreso |
 |------|--------|-------------|----------|
 | FASE 0 (Infraestructura) | 14 | 14 | **100%** ✅ |
-| FASE 1 (Backend Config) | 49 | 46 | **94%** ✅ |
+| FASE 1 (Backend Config) | 49 | 49 | **100%** ✅ |
 | FASE 2 (DTOs & Mappings) | 42 | 5 | **12%** |
 | FASE 3 (Controllers) | 21 | 3 | **14%** |
-| **TOTAL** | **126** | **68** | **54%** 🎉 |
+| **TOTAL** | **126** | **71** | **56%** 🎉 |
 
 ---
 
@@ -296,14 +345,25 @@
 - **Solución:** Clean + Rebuild
 - **Estado:** ✅ Resuelto
 
+### Bug #3: Data Annotations Duplicados ✅
+- **Problema:** Validaciones duplicadas (Data Annotations + FluentValidation)
+- **Solución:** Eliminados Data Annotations de 6 DTOs
+- **Estado:** ✅ Resuelto
+
+### Bug #4: CS1998 Repository.cs ✅
+- **Problema:** Async method lacks 'await' operators
+- **Solución:** Eliminado 'async', usando Task.FromResult
+- **Estado:** ✅ Resuelto
+
 ---
 
 ## 📈 MÉTRICAS
 - **Compilación:** ✅ 100% exitosa
 - **Endpoints funcionales:** 17 / ~100 (17%)
 - **DTOs creados:** 10 / ~60 (17%)
-- **Mapping Profiles:** 2 / ~20 (10%)
-- **Controllers:** 3 / ~20 (15%)
+- **Mapping Profiles:** 2 / ~21 (10%)
+- **Controllers:** 3 / ~21 (14%)
+- **Validadores FluentValidation:** 6 / ~21 (29%)
 
 ---
 

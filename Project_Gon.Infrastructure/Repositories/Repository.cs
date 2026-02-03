@@ -1,5 +1,6 @@
 ﻿using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
 using Project_Gon.Infrastructure.Data;
 
 namespace Project_Gon.Infrastructure.Repositories;
@@ -25,9 +26,43 @@ public class Repository<T> : IRepository<T> where T : class
         return await _dbSet.Where(predicate).AsNoTracking().ToListAsync();
     }
 
+    // ✅ NUEVO: GetAllAsync con soporte para .Include()
+    public async Task<IEnumerable<T>> GetAllAsync(
+        Expression<Func<T, bool>>? predicate = null,
+        Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null)
+    {
+        IQueryable<T> query = _dbSet.AsNoTracking();
+
+        if (include != null)
+        {
+            query = include(query);
+        }
+
+        if (predicate != null)
+        {
+            query = query.Where(predicate);
+        }
+
+        return await query.ToListAsync();
+    }
+
     public async Task<T?> GetByIdAsync(int id)
     {
         return await _dbSet.FindAsync(id);
+    }
+
+    // ✅ NUEVO: GetByIdAsync con soporte para .Include()
+    public async Task<T?> GetByIdAsync(int id, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null)
+    {
+        IQueryable<T> query = _dbSet.AsNoTracking();
+
+        if (include != null)
+        {
+            query = include(query);
+        }
+
+        // Asumiendo que todas las entidades tienen una propiedad Id
+        return await query.FirstOrDefaultAsync(e => EF.Property<int>(e, "Id") == id);
     }
 
     public async Task<T?> GetAsync(Expression<Func<T, bool>> predicate)
@@ -61,7 +96,6 @@ public class Repository<T> : IRepository<T> where T : class
         return true;
     }
 
-    // ✅ CORREGIDO: Eliminado 'async' y usando Task.FromResult
     public Task<bool> DeleteAsync(T entity)
     {
         if (entity == null)
