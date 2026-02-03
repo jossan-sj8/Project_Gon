@@ -215,10 +215,10 @@
 - [x] AuthController.cs ✅ COMPLETADO y PROBADO (Login + Register)
 - [x] UsuariosController (10 métodos CRUD + Role-based access control)
 - [x] ProductosController (6 métodos CRUD + Role-based access control)
-- [ ] CategoriasController.cs
+- [x] CategoriasController (5 métodos CRUD + role-based access)
+- [x] ClientesController (5 métodos CRUD + role-based access)
 - [ ] StocksController.cs
 - [ ] VentasController.cs
-- [ ] ClientesController.cs
 - [ ] ProveedoresController.cs
 - [ ] MetodosPagoController.cs
 - [ ] CajasRegistradorasController.cs
@@ -238,9 +238,9 @@
 |------|--------|-------------|----------|
 | FASE 0 (Infraestructura) | 14 | 14 | **100%** ✅ |
 | FASE 1 (Backend Config) | 49 | 49 | **100%** ✅ |
-| FASE 2 (DTOs & Mappings) | 42 | 5 | **12%** |
-| FASE 3 (Controllers) | 21 | 3 | **14%** |
-| **TOTAL** | **126** | **71** | **56%** 🎉 |
+| FASE 2 (DTOs & Mappings) | 42 | 11 | **26%** |
+| FASE 3 (Controllers) | 21 | 7 | **33%** |
+| **TOTAL** | **126** | **81** | **64%** 🎉 |
 
 ---
 
@@ -294,22 +294,24 @@
 ---
 
 ## 🎯 ESTADO ACTUAL
-**¡Progreso excelente!** 54% del proyecto completado. 
+**¡Progreso excelente!** 64% del proyecto completado. 
 
-**Logros destacados:**
+**Logros de hoy:**
+- ✅ 2 Controllers nuevos (Categorías + Clientes)
+- ✅ 6 DTOs nuevos (3 por entidad)
+- ✅ 2 Mappings nuevos
+- ✅ Build 100% exitoso (3/3 proyectos)
+- ✅ Role-based access control implementado
+
+**Logros previos:**
 - ✅ UserInfoDto.cs creado correctamente
-- ✅ Bug crítico resuelto (duplicado en LoginResponseDto)
-- ✅ Build 100% exitoso (4/4 proyectos)
+- ✅ Bug crítico resuelto
 - ✅ AuthController completamente funcional
-- ✅ Login/Register probados en Swagger e Insomnia
 - ✅ JWT tokens generándose correctamente
-- ✅ Swagger UI funcionando
 
 **Próximos pasos:**
-1. Crear UsuariosController
-2. Crear ProductosController y CategoriasController
-3. Crear ClientesController y ProveedoresController
-4. Implementar validadores FluentValidation
+1. ✅ Hacer Pull Request a develop
+2. ✅ O crear 2-3 controllers más (VentasController, ProveedoresController)
 
 ---
 
