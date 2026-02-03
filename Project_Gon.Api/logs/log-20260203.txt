@@ -1,0 +1,649 @@
+2026-02-03 14:38:30.109 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-02-03 14:38:30.502 -03:00 [DBG] The index {'ProductoId'} was not created on entity type 'Stock' as the properties are already covered by the index {'ProductoId', 'SucursalId'}.
+2026-02-03 14:38:30.504 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Email'}.
+2026-02-03 14:38:30.505 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Rut'}.
+2026-02-03 14:38:30.589 -03:00 [DBG] The property 'MovimientoStock.DevolucionId' was created in shadow state because there are no eligible CLR members with a matching name.
+2026-02-03 14:38:30.655 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-02-03 14:38:30.668 -03:00 [DBG] Creating DbConnection.
+2026-02-03 14:38:30.691 -03:00 [DBG] Created DbConnection. (22ms).
+2026-02-03 14:38:30.694 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:38:30.924 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:38:30.927 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-02-03 14:38:30.931 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-02-03 14:38:30.932 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (6ms).
+2026-02-03 14:38:30.936 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 14:38:30.957 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 14:38:30.977 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:38:30.982 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 22ms reading results.
+2026-02-03 14:38:30.984 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:38:30.987 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-02-03 14:38:31.123 -03:00 [DBG] Migrating using database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:38:31.125 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:38:31.127 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:38:31.164 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:38:31.165 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:38:31.167 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (1ms).
+2026-02-03 14:38:31.168 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:38:31.169 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:38:31.198 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-02-03 14:38:31.199 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-02-03 14:38:31.199 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-02-03 14:38:31.200 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-02-03 14:38:31.211 -03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-02-03 14:38:31.215 -03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-02-03 14:38:31.217 -03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-02-03 14:38:31.218 -03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-02-03 14:38:31.219 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-02-03 14:38:31.219 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-02-03 14:38:31.220 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-02-03 14:38:31.221 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-02-03 14:38:31.223 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-02-03 14:38:31.224 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-02-03 14:38:31.225 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-02-03 14:38:31.226 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-02-03 14:38:31.226 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 14:38:31.228 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 14:38:31.229 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:38:31.230 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-02-03 14:38:31.236 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-02-03 14:38:31.237 -03:00 [DBG] Committing transaction.
+2026-02-03 14:38:31.240 -03:00 [DBG] Committed transaction.
+2026-02-03 14:38:31.242 -03:00 [DBG] Disposing transaction.
+2026-02-03 14:38:31.242 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:38:31.243 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-02-03 14:38:31.244 -03:00 [INF] Database migrations applied successfully
+2026-02-03 14:38:31.246 -03:00 [DBG] 'AppDbContext' disposed.
+2026-02-03 14:38:31.247 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:38:31.248 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-02-03 14:38:31.283 -03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-02-03 14:38:31.325 -03:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2026-02-03 14:38:31.341 -03:00 [INF] Project Gon API iniciada en ambiente: Development
+2026-02-03 14:38:31.343 -03:00 [DBG] Hosting starting
+2026-02-03 14:38:31.354 -03:00 [INF] User profile is available. Using 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-03 14:38:31.360 -03:00 [DBG] Reading data from file 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys\key-7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c.xml'.
+2026-02-03 14:38:31.390 -03:00 [DBG] Found key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c}.
+2026-02-03 14:38:31.399 -03:00 [DBG] Considering key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} with expiration date 2026-04-28 18:20:11Z as default key.
+2026-02-03 14:38:31.402 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-02-03 14:38:31.403 -03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-02-03 14:38:31.404 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-02-03 14:38:31.406 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-02-03 14:38:31.407 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-02-03 14:38:31.409 -03:00 [DBG] Using key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} as the default key.
+2026-02-03 14:38:31.409 -03:00 [DBG] Key ring with default key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} was loaded during application startup.
+2026-02-03 14:38:31.413 -03:00 [DBG] Middleware loaded
+2026-02-03 14:38:31.414 -03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2026-02-03 14:38:31.416 -03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-02-03 14:38:31.479 -03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-03 14:38:31.480 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-03 14:38:31.483 -03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-02-03 14:38:31.523 -03:00 [INF] Now listening on: https://localhost:7058
+2026-02-03 14:38:31.524 -03:00 [INF] Now listening on: http://localhost:5070
+2026-02-03 14:38:31.525 -03:00 [DBG] Loaded hosting startup assembly Project_Gon.Api
+2026-02-03 14:38:31.525 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-02-03 14:38:31.526 -03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-02-03 14:38:31.526 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-02-03 14:38:31.530 -03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-02-03 14:38:31.534 -03:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-02-03 14:38:31.556 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-03 14:38:31.557 -03:00 [INF] Hosting environment: Development
+2026-02-03 14:38:31.557 -03:00 [INF] Content root path: C:\Proyectos\Project_Gon\Project_Gon.Api
+2026-02-03 14:38:31.559 -03:00 [DBG] Hosting started
+2026-02-03 14:40:35.739 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-02-03 14:40:36.072 -03:00 [DBG] The index {'ProductoId'} was not created on entity type 'Stock' as the properties are already covered by the index {'ProductoId', 'SucursalId'}.
+2026-02-03 14:40:36.074 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Email'}.
+2026-02-03 14:40:36.075 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Rut'}.
+2026-02-03 14:40:36.153 -03:00 [DBG] The property 'MovimientoStock.DevolucionId' was created in shadow state because there are no eligible CLR members with a matching name.
+2026-02-03 14:40:36.209 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-02-03 14:40:36.219 -03:00 [DBG] Creating DbConnection.
+2026-02-03 14:40:36.235 -03:00 [DBG] Created DbConnection. (15ms).
+2026-02-03 14:40:36.238 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:40:36.313 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:40:36.317 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-02-03 14:40:36.320 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-02-03 14:40:36.321 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2026-02-03 14:40:36.325 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 14:40:36.345 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 14:40:36.365 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:40:36.370 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 21ms reading results.
+2026-02-03 14:40:36.372 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:40:36.375 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-02-03 14:40:36.474 -03:00 [DBG] Migrating using database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:40:36.477 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:40:36.479 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:40:36.621 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:40:36.622 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:40:36.624 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (1ms).
+2026-02-03 14:40:36.625 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:40:36.625 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:40:36.650 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-02-03 14:40:36.651 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-02-03 14:40:36.652 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-02-03 14:40:36.653 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-02-03 14:40:36.658 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-02-03 14:40:36.661 -03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-02-03 14:40:36.663 -03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-02-03 14:40:36.664 -03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-02-03 14:40:36.665 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-02-03 14:40:36.665 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-02-03 14:40:36.666 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-02-03 14:40:36.667 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-02-03 14:40:36.668 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-02-03 14:40:36.669 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-02-03 14:40:36.669 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-02-03 14:40:36.670 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-02-03 14:40:36.671 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 14:40:36.672 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 14:40:36.673 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:40:36.674 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-02-03 14:40:36.678 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-02-03 14:40:36.679 -03:00 [DBG] Committing transaction.
+2026-02-03 14:40:36.716 -03:00 [DBG] Committed transaction.
+2026-02-03 14:40:36.718 -03:00 [DBG] Disposing transaction.
+2026-02-03 14:40:36.718 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:40:36.719 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-02-03 14:40:36.720 -03:00 [INF] Database migrations applied successfully
+2026-02-03 14:40:36.721 -03:00 [DBG] 'AppDbContext' disposed.
+2026-02-03 14:40:36.723 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 14:40:36.724 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-02-03 14:40:36.743 -03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-02-03 14:40:36.775 -03:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2026-02-03 14:40:36.787 -03:00 [INF] Project Gon API iniciada en ambiente: Development
+2026-02-03 14:40:36.789 -03:00 [DBG] Hosting starting
+2026-02-03 14:40:36.797 -03:00 [INF] User profile is available. Using 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-03 14:40:36.802 -03:00 [DBG] Reading data from file 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys\key-7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c.xml'.
+2026-02-03 14:40:36.807 -03:00 [DBG] Found key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c}.
+2026-02-03 14:40:36.812 -03:00 [DBG] Considering key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} with expiration date 2026-04-28 18:20:11Z as default key.
+2026-02-03 14:40:36.815 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-02-03 14:40:36.816 -03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-02-03 14:40:36.817 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-02-03 14:40:36.819 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-02-03 14:40:36.819 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-02-03 14:40:36.820 -03:00 [DBG] Using key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} as the default key.
+2026-02-03 14:40:36.821 -03:00 [DBG] Key ring with default key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} was loaded during application startup.
+2026-02-03 14:40:36.824 -03:00 [DBG] Middleware loaded
+2026-02-03 14:40:36.825 -03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2026-02-03 14:40:36.826 -03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-02-03 14:40:36.867 -03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-03 14:40:36.868 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-03 14:40:36.870 -03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-02-03 14:40:36.896 -03:00 [INF] Now listening on: https://localhost:7058
+2026-02-03 14:40:36.896 -03:00 [INF] Now listening on: http://localhost:5070
+2026-02-03 14:40:36.897 -03:00 [DBG] Loaded hosting startup assembly Project_Gon.Api
+2026-02-03 14:40:36.897 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-02-03 14:40:36.898 -03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-02-03 14:40:36.898 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-02-03 14:40:36.901 -03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-02-03 14:40:36.904 -03:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-02-03 14:40:36.925 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-03 14:40:36.926 -03:00 [INF] Hosting environment: Development
+2026-02-03 14:40:36.926 -03:00 [INF] Content root path: C:\Proyectos\Project_Gon\Project_Gon.Api
+2026-02-03 14:40:36.928 -03:00 [DBG] Hosting started
+2026-02-03 14:40:37.571 -03:00 [DBG] Connection id "0HNJ39DBOOTBI" accepted.
+2026-02-03 14:40:37.572 -03:00 [DBG] Connection id "0HNJ39DBOOTBI" started.
+2026-02-03 14:40:37.582 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 14:40:37.594 -03:00 [DBG] Connection id "0HNJ39DBOOTBI" stopped.
+2026-02-03 14:40:37.595 -03:00 [DBG] Connection id "0HNJ39DBOOTBI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 14:40:38.596 -03:00 [DBG] Connection id "0HNJ39DBOOTBJ" accepted.
+2026-02-03 14:40:38.597 -03:00 [DBG] Connection id "0HNJ39DBOOTBJ" started.
+2026-02-03 14:40:38.598 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 14:40:38.602 -03:00 [DBG] Connection id "0HNJ39DBOOTBJ" stopped.
+2026-02-03 14:40:38.602 -03:00 [DBG] Connection id "0HNJ39DBOOTBJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 14:40:39.619 -03:00 [DBG] Connection id "0HNJ39DBOOTBK" accepted.
+2026-02-03 14:40:39.620 -03:00 [DBG] Connection id "0HNJ39DBOOTBK" started.
+2026-02-03 14:40:39.661 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 14:40:39.664 -03:00 [DBG] Connection id "0HNJ39DBOOTBK" stopped.
+2026-02-03 14:40:39.665 -03:00 [DBG] Connection id "0HNJ39DBOOTBK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 14:40:56.847 -03:00 [DBG] Connection id "0HNJ39DBOOTBL" accepted.
+2026-02-03 14:40:56.848 -03:00 [DBG] Connection id "0HNJ39DBOOTBL" started.
+2026-02-03 14:40:56.849 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 14:40:56.852 -03:00 [DBG] Connection id "0HNJ39DBOOTBL" stopped.
+2026-02-03 14:40:56.852 -03:00 [DBG] Connection id "0HNJ39DBOOTBL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 14:40:57.873 -03:00 [DBG] Connection id "0HNJ39DBOOTBM" accepted.
+2026-02-03 14:40:57.874 -03:00 [DBG] Connection id "0HNJ39DBOOTBM" started.
+2026-02-03 14:40:57.874 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 14:40:57.877 -03:00 [DBG] Connection id "0HNJ39DBOOTBM" stopped.
+2026-02-03 14:40:57.878 -03:00 [DBG] Connection id "0HNJ39DBOOTBM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 14:40:59.259 -03:00 [DBG] Connection id "0HNJ39DBOOTBN" accepted.
+2026-02-03 14:40:59.260 -03:00 [DBG] Connection id "0HNJ39DBOOTBN" started.
+2026-02-03 14:40:59.260 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 14:40:59.263 -03:00 [DBG] Connection id "0HNJ39DBOOTBN" stopped.
+2026-02-03 14:40:59.263 -03:00 [DBG] Connection id "0HNJ39DBOOTBN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 14:40:59.763 -03:00 [DBG] Connection id "0HNJ39DBOOTBO" accepted.
+2026-02-03 14:40:59.764 -03:00 [DBG] Connection id "0HNJ39DBOOTBO" started.
+2026-02-03 14:40:59.765 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 14:40:59.767 -03:00 [DBG] Connection id "0HNJ39DBOOTBO" stopped.
+2026-02-03 14:40:59.768 -03:00 [DBG] Connection id "0HNJ39DBOOTBO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 14:54:19.116 -03:00 [DBG] Connection id "0HNJ39DBOOTBP" accepted.
+2026-02-03 14:54:19.117 -03:00 [DBG] Connection id "0HNJ39DBOOTBP" started.
+2026-02-03 14:54:19.118 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 14:54:19.122 -03:00 [DBG] Connection id "0HNJ39DBOOTBP" stopped.
+2026-02-03 14:54:19.122 -03:00 [DBG] Connection id "0HNJ39DBOOTBP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 14:54:22.358 -03:00 [DBG] Connection id "0HNJ39DBOOTBQ" accepted.
+2026-02-03 14:54:22.358 -03:00 [DBG] Connection id "0HNJ39DBOOTBQ" started.
+2026-02-03 14:54:22.359 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 14:54:22.362 -03:00 [DBG] Connection id "0HNJ39DBOOTBQ" stopped.
+2026-02-03 14:54:22.362 -03:00 [DBG] Connection id "0HNJ39DBOOTBQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 15:00:25.664 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-02-03 15:00:25.996 -03:00 [DBG] The index {'ProductoId'} was not created on entity type 'Stock' as the properties are already covered by the index {'ProductoId', 'SucursalId'}.
+2026-02-03 15:00:25.998 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Email'}.
+2026-02-03 15:00:25.998 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Rut'}.
+2026-02-03 15:00:26.070 -03:00 [DBG] The property 'MovimientoStock.DevolucionId' was created in shadow state because there are no eligible CLR members with a matching name.
+2026-02-03 15:00:26.127 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-02-03 15:00:26.138 -03:00 [DBG] Creating DbConnection.
+2026-02-03 15:00:26.155 -03:00 [DBG] Created DbConnection. (15ms).
+2026-02-03 15:00:26.158 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:00:26.233 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:00:26.236 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-02-03 15:00:26.240 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-02-03 15:00:26.241 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2026-02-03 15:00:26.245 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 15:00:26.265 -03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 15:00:26.283 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:00:26.288 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 19ms reading results.
+2026-02-03 15:00:26.289 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:00:26.292 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-02-03 15:00:26.391 -03:00 [DBG] Migrating using database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:00:26.393 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:00:26.395 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:00:26.429 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:00:26.430 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:00:26.432 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (1ms).
+2026-02-03 15:00:26.433 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:00:26.433 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:00:26.459 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-02-03 15:00:26.460 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-02-03 15:00:26.460 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-02-03 15:00:26.461 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-02-03 15:00:26.466 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-02-03 15:00:26.470 -03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-02-03 15:00:26.472 -03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-02-03 15:00:26.473 -03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-02-03 15:00:26.474 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-02-03 15:00:26.474 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-02-03 15:00:26.475 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-02-03 15:00:26.475 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-02-03 15:00:26.477 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-02-03 15:00:26.478 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-02-03 15:00:26.478 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-02-03 15:00:26.479 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-02-03 15:00:26.480 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 15:00:26.481 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 15:00:26.482 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:00:26.483 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-02-03 15:00:26.487 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-02-03 15:00:26.488 -03:00 [DBG] Committing transaction.
+2026-02-03 15:00:26.497 -03:00 [DBG] Committed transaction.
+2026-02-03 15:00:26.499 -03:00 [DBG] Disposing transaction.
+2026-02-03 15:00:26.499 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:00:26.500 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-02-03 15:00:26.501 -03:00 [INF] Database migrations applied successfully
+2026-02-03 15:00:26.502 -03:00 [DBG] 'AppDbContext' disposed.
+2026-02-03 15:00:26.504 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:00:26.505 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-02-03 15:00:26.524 -03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-02-03 15:00:26.555 -03:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2026-02-03 15:00:26.567 -03:00 [INF] Project Gon API iniciada en ambiente: Development
+2026-02-03 15:00:26.569 -03:00 [DBG] Hosting starting
+2026-02-03 15:00:26.577 -03:00 [INF] User profile is available. Using 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-03 15:00:26.582 -03:00 [DBG] Reading data from file 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys\key-7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c.xml'.
+2026-02-03 15:00:26.587 -03:00 [DBG] Found key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c}.
+2026-02-03 15:00:26.592 -03:00 [DBG] Considering key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} with expiration date 2026-04-28 18:20:11Z as default key.
+2026-02-03 15:00:26.594 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-02-03 15:00:26.595 -03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-02-03 15:00:26.596 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-02-03 15:00:26.598 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-02-03 15:00:26.600 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-02-03 15:00:26.601 -03:00 [DBG] Using key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} as the default key.
+2026-02-03 15:00:26.601 -03:00 [DBG] Key ring with default key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} was loaded during application startup.
+2026-02-03 15:00:26.604 -03:00 [DBG] Middleware loaded
+2026-02-03 15:00:26.605 -03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2026-02-03 15:00:26.606 -03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-02-03 15:00:26.647 -03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-03 15:00:26.649 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-03 15:00:26.651 -03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-02-03 15:00:26.676 -03:00 [INF] Now listening on: https://localhost:7058
+2026-02-03 15:00:26.676 -03:00 [INF] Now listening on: http://localhost:5070
+2026-02-03 15:00:26.677 -03:00 [DBG] Loaded hosting startup assembly Project_Gon.Api
+2026-02-03 15:00:26.677 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-02-03 15:00:26.678 -03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-02-03 15:00:26.678 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-02-03 15:00:26.681 -03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-02-03 15:00:26.683 -03:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-02-03 15:00:26.704 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-03 15:00:26.705 -03:00 [INF] Hosting environment: Development
+2026-02-03 15:00:26.706 -03:00 [INF] Content root path: C:\Proyectos\Project_Gon\Project_Gon.Api
+2026-02-03 15:00:26.707 -03:00 [DBG] Hosting started
+2026-02-03 15:02:34.392 -03:00 [DBG] Connection id "0HNJ39PK6UPV2" accepted.
+2026-02-03 15:02:34.393 -03:00 [DBG] Connection id "0HNJ39PK6UPV2" started.
+2026-02-03 15:02:34.400 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 15:02:34.409 -03:00 [DBG] Connection id "0HNJ39PK6UPV2" stopped.
+2026-02-03 15:02:34.411 -03:00 [DBG] Connection id "0HNJ39PK6UPV2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 15:02:45.767 -03:00 [DBG] Connection id "0HNJ39PK6UPV3" accepted.
+2026-02-03 15:02:45.768 -03:00 [DBG] Connection id "0HNJ39PK6UPV3" started.
+2026-02-03 15:02:45.768 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 15:02:45.815 -03:00 [DBG] Connection id "0HNJ39PK6UPV3" stopped.
+2026-02-03 15:02:45.816 -03:00 [DBG] Connection id "0HNJ39PK6UPV3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 15:02:46.599 -03:00 [DBG] Connection id "0HNJ39PK6UPV4" accepted.
+2026-02-03 15:02:46.600 -03:00 [DBG] Connection id "0HNJ39PK6UPV4" started.
+2026-02-03 15:02:46.601 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 15:02:46.604 -03:00 [DBG] Connection id "0HNJ39PK6UPV4" stopped.
+2026-02-03 15:02:46.605 -03:00 [DBG] Connection id "0HNJ39PK6UPV4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 15:03:09.401 -03:00 [DBG] Connection id "0HNJ39PK6UPV5" accepted.
+2026-02-03 15:03:09.402 -03:00 [DBG] Connection id "0HNJ39PK6UPV5" started.
+2026-02-03 15:03:09.402 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 15:03:09.405 -03:00 [DBG] Connection id "0HNJ39PK6UPV5" stopped.
+2026-02-03 15:03:09.405 -03:00 [DBG] Connection id "0HNJ39PK6UPV5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 15:03:28.357 -03:00 [DBG] Connection id "0HNJ39PK6UPV6" accepted.
+2026-02-03 15:03:28.358 -03:00 [DBG] Connection id "0HNJ39PK6UPV6" started.
+2026-02-03 15:03:28.359 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 15:03:28.361 -03:00 [DBG] Connection id "0HNJ39PK6UPV6" stopped.
+2026-02-03 15:03:28.362 -03:00 [DBG] Connection id "0HNJ39PK6UPV6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 15:03:39.128 -03:00 [DBG] Connection id "0HNJ39PK6UPV7" accepted.
+2026-02-03 15:03:39.128 -03:00 [DBG] Connection id "0HNJ39PK6UPV7" started.
+2026-02-03 15:03:39.129 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 15:03:39.132 -03:00 [DBG] Connection id "0HNJ39PK6UPV7" stopped.
+2026-02-03 15:03:39.132 -03:00 [DBG] Connection id "0HNJ39PK6UPV7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-03 15:04:25.713 -03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-02-03 15:04:26.192 -03:00 [DBG] The index {'ProductoId'} was not created on entity type 'Stock' as the properties are already covered by the index {'ProductoId', 'SucursalId'}.
+2026-02-03 15:04:26.195 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Email'}.
+2026-02-03 15:04:26.195 -03:00 [DBG] The index {'EmpresaId'} was not created on entity type 'Usuario' as the properties are already covered by the index {'EmpresaId', 'Rut'}.
+2026-02-03 15:04:26.287 -03:00 [DBG] The property 'MovimientoStock.DevolucionId' was created in shadow state because there are no eligible CLR members with a matching name.
+2026-02-03 15:04:26.363 -03:00 [DBG] Entity Framework Core 9.0.0 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: None
+2026-02-03 15:04:26.390 -03:00 [DBG] Creating DbConnection.
+2026-02-03 15:04:26.446 -03:00 [DBG] Created DbConnection. (55ms).
+2026-02-03 15:04:26.450 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:04:26.662 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:04:26.666 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-02-03 15:04:26.670 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-02-03 15:04:26.672 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (7ms).
+2026-02-03 15:04:26.677 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 15:04:26.700 -03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 15:04:26.727 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:04:26.733 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 29ms reading results.
+2026-02-03 15:04:26.735 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:04:26.740 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (3ms).
+2026-02-03 15:04:26.854 -03:00 [DBG] Migrating using database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:04:26.857 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:04:26.860 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:04:26.899 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:04:26.900 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:04:26.902 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (2ms).
+2026-02-03 15:04:26.903 -03:00 [DBG] Opening connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:04:26.904 -03:00 [DBG] Opened connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:04:26.934 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-02-03 15:04:26.935 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-02-03 15:04:26.936 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (1ms).
+2026-02-03 15:04:26.936 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-02-03 15:04:26.942 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+);
+2026-02-03 15:04:26.945 -03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-02-03 15:04:26.948 -03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-02-03 15:04:26.949 -03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-02-03 15:04:26.950 -03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-02-03 15:04:26.950 -03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-02-03 15:04:26.953 -03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (2ms).
+2026-02-03 15:04:26.954 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-02-03 15:04:26.955 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2026-02-03 15:04:26.956 -03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-02-03 15:04:26.956 -03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-02-03 15:04:26.957 -03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2026-02-03 15:04:26.958 -03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 15:04:26.959 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2026-02-03 15:04:26.960 -03:00 [DBG] Closing data reader to 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:04:26.961 -03:00 [DBG] A data reader for 'gon_db' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2026-02-03 15:04:26.966 -03:00 [INF] No migrations were applied. The database is already up to date.
+2026-02-03 15:04:26.967 -03:00 [DBG] Committing transaction.
+2026-02-03 15:04:26.970 -03:00 [DBG] Committed transaction.
+2026-02-03 15:04:26.971 -03:00 [DBG] Disposing transaction.
+2026-02-03 15:04:26.971 -03:00 [DBG] Closing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:04:26.972 -03:00 [DBG] Closed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-02-03 15:04:26.973 -03:00 [INF] Database migrations applied successfully
+2026-02-03 15:04:26.975 -03:00 [DBG] 'AppDbContext' disposed.
+2026-02-03 15:04:26.976 -03:00 [DBG] Disposing connection to database 'gon_db' on server 'tcp://localhost:5432'.
+2026-02-03 15:04:26.977 -03:00 [DBG] Disposed connection to database 'gon_db' on server 'tcp://localhost:5432' (0ms).
+2026-02-03 15:04:27.046 -03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-02-03 15:04:27.110 -03:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2026-02-03 15:04:27.128 -03:00 [INF] Project Gon API iniciada en ambiente: Development
+2026-02-03 15:04:27.130 -03:00 [DBG] Hosting starting
+2026-02-03 15:04:27.162 -03:00 [INF] User profile is available. Using 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-03 15:04:27.172 -03:00 [DBG] Reading data from file 'C:\Users\Jossan\AppData\Local\ASP.NET\DataProtection-Keys\key-7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c.xml'.
+2026-02-03 15:04:27.179 -03:00 [DBG] Found key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c}.
+2026-02-03 15:04:27.195 -03:00 [DBG] Considering key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} with expiration date 2026-04-28 18:20:11Z as default key.
+2026-02-03 15:04:27.198 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-02-03 15:04:27.199 -03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-02-03 15:04:27.200 -03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-02-03 15:04:27.202 -03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-02-03 15:04:27.204 -03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-02-03 15:04:27.205 -03:00 [DBG] Using key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} as the default key.
+2026-02-03 15:04:27.206 -03:00 [DBG] Key ring with default key {7e5fd75b-dac7-44c1-ba43-f0abb7c83c5c} was loaded during application startup.
+2026-02-03 15:04:27.210 -03:00 [DBG] Middleware loaded
+2026-02-03 15:04:27.212 -03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16515 B).
+2026-02-03 15:04:27.213 -03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2026-02-03 15:04:27.302 -03:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2026-02-03 15:04:27.303 -03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-03 15:04:27.312 -03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2026-02-03 15:04:27.362 -03:00 [INF] Now listening on: https://localhost:7058
+2026-02-03 15:04:27.362 -03:00 [INF] Now listening on: http://localhost:5070
+2026-02-03 15:04:27.363 -03:00 [DBG] Loaded hosting startup assembly Project_Gon.Api
+2026-02-03 15:04:27.363 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-02-03 15:04:27.364 -03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-02-03 15:04:27.364 -03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-02-03 15:04:27.368 -03:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-02-03 15:04:27.372 -03:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2026-02-03 15:04:27.399 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-03 15:04:27.399 -03:00 [INF] Hosting environment: Development
+2026-02-03 15:04:27.400 -03:00 [INF] Content root path: C:\Proyectos\Project_Gon\Project_Gon.Api
+2026-02-03 15:04:27.402 -03:00 [DBG] Hosting started
+2026-02-03 15:04:41.958 -03:00 [DBG] Connection id "0HNJ39QQ7GOO2" accepted.
+2026-02-03 15:04:41.959 -03:00 [DBG] Connection id "0HNJ39QQ7GOO2" started.
+2026-02-03 15:04:41.969 -03:00 [DBG] Failed to authenticate HTTPS connection.
+System.Security.Authentication.AuthenticationException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-02-03 15:04:41.989 -03:00 [DBG] Connection id "0HNJ39QQ7GOO2" stopped.
+2026-02-03 15:04:41.991 -03:00 [DBG] Connection id "0HNJ39QQ7GOO2" sending FIN because: "The Socket transport's send loop completed gracefully."
