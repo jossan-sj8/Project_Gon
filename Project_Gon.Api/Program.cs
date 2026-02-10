@@ -136,6 +136,14 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+// ==================== AUTHORIZATION ====================
+// Configurar políticas de autorización basadas en roles
+builder.Services.AddAuthorizationBuilder()
+    .AddPolicy("AdminGlobalOrAdminEmpresa", policy =>
+        policy.RequireRole("AdminGlobal", "Administrador"))
+    .AddPolicy("AllRoles", policy =>
+        policy.RequireRole("AdminGlobal", "Administrador", "Vendedor"));
+
 // Método auxiliar para generar secret en desarrollo
 static string GenerateDevJwtSecret(IWebHostEnvironment env)
 {

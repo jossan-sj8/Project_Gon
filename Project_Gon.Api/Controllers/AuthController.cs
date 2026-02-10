@@ -339,7 +339,7 @@ public class AuthController : ControllerBase
             new Claim("rut", usuario.Rut ?? ""),
             new Claim("empresaId", usuario.EmpresaId.ToString()),
             new Claim("sucursalId", usuario.SucursalId?.ToString() ?? ""),
-            new Claim("rol", usuario.Rol.ToString()),
+            new Claim(ClaimTypes.Role, usuario.Rol.ToString()), // ✅ CAMBIO CRÍTICO
             new Claim("nombre", usuario.Nombre),
             new Claim("apellido", usuario.Apellido),
             new Claim(JwtRegisteredClaimNames.Iat, new DateTimeOffset(DateTime.UtcNow).ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64),
