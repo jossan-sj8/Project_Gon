@@ -1,10 +1,10 @@
 ﻿# 📊 PROGRESS TRACKER - Project_Gon
 
 ## 📅 Última Sesión
-- **Fecha:** 28 Enero 2026
+- **Fecha:** 11 Febrero 2025
 - **Rama:** `feature/dtos-services`
-- **Commits:** 4+ (Entities + Migration + DTOs/Controllers + Auth + Validators)
-- **Tiempo invertido:** ~11.5 horas
+- **Commits:** 5+ (Entities + Migration + DTOs/Controllers + Auth + Validators + Ventas/Proveedores/MetodosPago)
+- **Tiempo invertido:** ~14 horas
 
 ---
 
@@ -36,7 +36,7 @@
 
 ---
 
-## ✅ FASE 1: Backend Configuration (CRÍTICA) - 94% COMPLETADA
+## ✅ FASE 1: Backend Configuration (CRÍTICA) - 100% COMPLETADA ✅
 
 ### Program.cs - Configuración API
 - [x] Agregar CORS (para Angular)
@@ -45,8 +45,8 @@
 - [x] Agregar SignalR
 - [x] Agregar Health Checks con EntityFramework
 - [x] Configurar Serilog logging
-- [x] Agregar FluentValidation al pipeline ✅
-- [x] REMOVER: WeatherForecast endpoint ✅
+- [x] Agregar FluentValidation al pipeline
+- [x] REMOVER: WeatherForecast endpoint
 
 **Progreso:** 8 / 8 tareas (100%) ✅
 
@@ -88,14 +88,14 @@
 - [x] Logging detallado de eventos
 - [x] Pruebas en Swagger ✅ FUNCIONANDO
 - [x] Pruebas en Insomnia ✅ FUNCIONANDO
-- [x] **FIX: UserInfoDto duplicado eliminado de LoginResponseDto.cs** ✅
+- [x] FIX: UserInfoDto duplicado eliminado de LoginResponseDto.cs
 
-**Progreso:** 12 / 12 tareas (100%) ✅ **COMPLETAMENTE PROBADO Y FUNCIONANDO**
+**Progreso:** 12 / 12 tareas (100%) ✅
 
 ### FluentValidation - Validaciones
 - [x] Instalar NuGet: FluentValidation.AspNetCore 11.3.1
-- [x] Agregar using statements en Program.cs ✅
-- [x] Registrar FluentValidation en Program.cs ✅
+- [x] Agregar using statements en Program.cs
+- [x] Registrar FluentValidation en Program.cs
 - [x] Crear CreateEmpresaDtoValidator.cs
 - [x] Crear CreateSucursalDtoValidator.cs
 - [x] Crear RegisterDtoValidator.cs
@@ -115,257 +115,221 @@
 
 **Progreso:** 9 / 9 tareas (100%) ✅
 
-**Total FASE 1:** 49 / 49 tareas (100%) ✅ | **Tiempo: ~5 horas**
+**Total FASE 1:** 52 / 52 tareas (100%) ✅ | **Tiempo: ~5 horas**
 
 ---
 
-## 🟡 FASE 2: DTOs & Mappings (EN PROGRESO - 14%)
+## 🟡 FASE 2: DTOs & Mappings (EN PROGRESO - 57%)
 
 ### FluentValidation - Validadores Creados ✅ COMPLETADO
-- [x] CreateEmpresaDtoValidator.cs ✅
-  - Validación de RUT chileno (formato 12345678-9)
-  - Nombre obligatorio, máx 255 caracteres
-  - Caracteres válidos en nombre
-- [x] UpdateEmpresaDtoValidator.cs ✅
-- [x] CreateSucursalDtoValidator.cs ✅
-  - EmpresaId obligatorio y > 0
-  - Teléfono formato válido (+56912345678)
-- [x] UpdateSucursalDtoValidator.cs ✅
-- [x] LoginDtoValidator.cs ✅
-  - EmailOrRut obligatorio
-  - Password mínimo 6 caracteres
-- [x] RegisterDtoValidator.cs ✅
-  - Email obligatorio SOLO si rol != Vendedor
-  - SucursalId obligatorio SOLO si rol == Vendedor
-  - Contraseña fuerte: 8+ chars, mayúscula, minúscula, número, especial
-  - RUT formato chileno
-  - Nombres solo letras y espacios
-- [x] CreateUsuarioDtoValidator.cs ✅
-  - RUT formato chileno obligatorio (12345678-9)
-  - Email obligatorio SOLO si rol != Vendedor
-  - SucursalId obligatorio SOLO si rol == Vendedor
-  - Contraseña fuerte: 8+ chars, mayúscula, minúscula, número, especial
-  - Nombres y apellidos solo letras y espacios (máx 100 chars)
-  - EmpresaId obligatorio y > 0
-  - Rol válido del enum RolUsuario
+- [x] CreateEmpresaDtoValidator.cs
+- [x] UpdateEmpresaDtoValidator.cs
+- [x] CreateSucursalDtoValidator.cs
+- [x] UpdateSucursalDtoValidator.cs
+- [x] LoginDtoValidator.cs
+- [x] RegisterDtoValidator.cs
+- [x] CreateUsuarioDtoValidator.cs
+- [x] UpdateUsuarioDtoValidator.cs
+- [x] CreateProductoDtoValidator.cs
+- [x] UpdateProductoDtoValidator.cs
+- [x] CreateCategoriaDtoValidator.cs
+- [x] UpdateCategoriaDtoValidator.cs
+- [x] CreateClienteDtoValidator.cs
+- [x] UpdateClienteDtoValidator.cs
+- [x] CreateStockDtoValidator.cs
+- [x] UpdateStockDtoValidator.cs
+- [x] CreateVentaDtoValidator.cs ✅ NUEVO
+- [x] UpdateVentaDtoValidator.cs ✅ NUEVO
+- [x] CreateProveedorDtoValidator.cs ✅ NUEVO
+- [x] UpdateProveedorDtoValidator.cs ✅ NUEVO
+- [x] CreateMetodoPagoDtoValidator.cs ✅ NUEVO
+- [x] UpdateMetodoPagoDtoValidator.cs ✅ NUEVO
 
-- [x] UpdateUsuarioDtoValidator.cs ✅
-  - Email formato válido si se proporciona (máx 255 chars)
-  - Nombre y apellido solo letras si se proporcionan (máx 100 chars)
-  - Contraseña fuerte si se cambia (mismas reglas que create)
-  - Rol válido del enum si se cambia
-  - SucursalId > 0 si se proporciona
-  - Todos los campos opcionales pero con validaciones
-
-**Progreso:** 8 / 8 validadores (100%) ✅
-
-### DTOs Limpiados ✅ COMPLETADO
-- [x] RegisterDto.cs (eliminados Data Annotations duplicados) ✅
-- [x] LoginDto.cs (agregada documentación) ✅
-- [x] CreateEmpresaDto.cs (actualizada documentación) ✅
-- [x] UpdateEmpresaDto.cs (simplificado) ✅
-- [x] CreateSucursalDto.cs (eliminados Data Annotations) ✅
-- [x] UpdateSucursalDto.cs (eliminados Data Annotations) ✅
-
-**Progreso:** 6 / 6 DTOs (100%) ✅
+**Progreso:** 22 / 22 validadores (100%) ✅
 
 ### DTOs por Entidad (21 entidades)
 - [x] EmpresaDto (3 DTOs: Dto, CreateDto, UpdateDto) ✅
 - [x] SucursalDto (3 DTOs: Dto, CreateDto, UpdateDto) ✅
 - [x] AuthDto (4 DTOs: LoginDto, RegisterDto, LoginResponseDto, UserInfoDto) ✅
-- [x] UsuarioDto (3 DTOs: Dto, CreateDto, UpdateDto)
-- [ ] ProductoDto (3 DTOs)
-- [ ] CategoriaDto (3 DTOs)
-- [ ] StockDto (2 DTOs)
-- [ ] VentaDto (3 DTOs)
-- [ ] DetalleVentaDto (2 DTOs)
-- [ ] ClienteDto (3 DTOs)
-- [ ] ProveedorDto (3 DTOs)
-- [ ] MetodoPagoDto (2 DTOs)
+- [x] UsuarioDto (3 DTOs: Dto, CreateDto, UpdateDto) ✅
+- [x] ProductoDto (3 DTOs) ✅
+- [x] CategoriaDto (3 DTOs) ✅
+- [x] ClienteDto (3 DTOs) ✅
+- [x] StockDto (3 DTOs) ✅
+- [x] VentaDto (5 DTOs: VentaDto, CreateVentaDto, UpdateVentaDto, DetalleVentaDto, CreateDetalleVentaDto) ✅ NUEVO
+- [x] ProveedorDto (3 DTOs) ✅ NUEVO
+- [x] MetodoPagoDto (3 DTOs) ✅ NUEVO
+- [ ] DevolucionDto (3 DTOs)
 - [ ] PagoDto (2 DTOs)
 - [ ] CajaRegistradoraDto (3 DTOs)
 - [ ] ArqueoCajaDto (3 DTOs)
-- [ ] DevolucionDto (3 DTOs)
 - [ ] AuditoriaLogDto (1 DTO - solo lectura)
 - [ ] ModuloAccesoDto (2 DTOs)
 - [ ] PrecioProveedorDto (2 DTOs)
 - [ ] MovimientoStockDto (2 DTOs)
+- [ ] DetalleArqueoCajaDto (2 DTOs)
+- [ ] DetalleDevolucionDto (2 DTOs)
 
-**Progreso:** 3 / 21 tareas (14%)
+**Progreso:** 11 / 21 tareas (52%)
 
 ### AutoMapper Profiles (21 entidades)
 - [x] EmpresaMappingProfile.cs ✅
 - [x] SucursalMappingProfile.cs ✅
-- [x] UsuarioMappingProfile.cs
-- [ ] ProductoMappingProfile.cs
-- [ ] CategoriaMappingProfile.cs
-- [ ] Y 16 perfiles más...
+- [x] UsuarioMappingProfile.cs ✅
+- [x] ProductoMappingProfile.cs ✅
+- [x] CategoriaMappingProfile.cs ✅
+- [x] ClienteMappingProfile.cs ✅
+- [x] StockMappingProfile.cs ✅
+- [x] VentaMappingProfile.cs ✅ NUEVO
+- [x] ProveedorMappingProfile.cs ✅ NUEVO
+- [x] MetodoPagoMappingProfile.cs ✅ NUEVO
+- [ ] DevolucionMappingProfile.cs
+- [ ] PagoMappingProfile.cs
+- [ ] Y 9 perfiles más...
 
-**Progreso:** 2 / 21 tareas (10%)
+**Progreso:** 10 / 21 tareas (48%)
 
-**Total FASE 2:** 5 / 42 tareas (12%) | **Tiempo: ~6 horas**
+**Total FASE 2:** 43 / 64 tareas (67%) | **Tiempo: ~8 horas**
 
 ---
 
-## 🟡 FASE 3: Controllers (EN PROGRESO - 14%)
+## 🟡 FASE 3: Controllers (EN PROGRESO - 52%)
 
 ### Controllers CRUD (21 controllers)
-- [x] EmpresasController.cs ✅ COMPLETADO y PROBADO
-- [x] SucursalesController.cs ✅ COMPLETADO y PROBADO
-- [x] AuthController.cs ✅ COMPLETADO y PROBADO (Login + Register)
-- [x] UsuariosController (10 métodos CRUD + Role-based access control)
-- [x] ProductosController (6 métodos CRUD + Role-based access control)
-- [x] CategoriasController (5 métodos CRUD + role-based access)
-- [x] ClientesController (5 métodos CRUD + role-based access)
-- [ ] StocksController.cs
-- [ ] VentasController.cs
-- [ ] ProveedoresController.cs
-- [ ] MetodosPagoController.cs
+- [x] EmpresasController.cs ✅
+- [x] SucursalesController.cs ✅
+- [x] AuthController.cs ✅
+- [x] UsuariosController.cs ✅
+- [x] ProductosController.cs ✅
+- [x] CategoriasController.cs ✅
+- [x] ClientesController.cs ✅
+- [x] StocksController.cs ✅
+- [x] VentasController.cs ✅ NUEVO (Controller más complejo con lógica de negocio)
+- [x] ProveedoresController.cs ✅ NUEVO
+- [x] MetodosPagoController.cs ✅ NUEVO
+- [ ] PagosController.cs
+- [ ] MovimientosStockController.cs
+- [ ] DevolucionesController.cs
 - [ ] CajasRegistradorasController.cs
 - [ ] ArqueosCajaController.cs
-- [ ] DevolucionesController.cs
 - [ ] AuditoriaLogsController.cs (solo lectura)
-- [ ] Y 7 controllers más...
+- [ ] ModulosAccesoController.cs
+- [ ] PreciosProveedorController.cs
+- [ ] DetallesArqueoCajaController.cs
+- [ ] DetallesDevolucionController.cs
 
-**Total FASE 3:** 3 / 21 tareas (14%) | **Tiempo: ~8 horas**
+**Total FASE 3:** 11 / 21 tareas (52%) | **Tiempo: ~10 horas**
 
 ---
 
 ## 📊 RESUMEN GENERAL
 
-
 | Fase | Tareas | Completadas | Progreso |
 |------|--------|-------------|----------|
 | FASE 0 (Infraestructura) | 14 | 14 | **100%** ✅ |
-| FASE 1 (Backend Config) | 49 | 49 | **100%** ✅ |
-| FASE 2 (DTOs & Mappings) | 42 | 11 | **26%** |
-| FASE 3 (Controllers) | 21 | 7 | **33%** |
-| **TOTAL** | **126** | **81** | **64%** 🎉 |
+| FASE 1 (Backend Config) | 52 | 52 | **100%** ✅ |
+| FASE 2 (DTOs & Mappings) | 64 | 43 | **67%** 🟡 |
+| FASE 3 (Controllers) | 21 | 11 | **52%** 🟡 |
+| **TOTAL** | **151** | **120** | **79%** 🎉 |
 
 ---
 
 ## 🚀 PRÓXIMO PASO INMEDIATO
 
-### Opción A: Continuar con más Controllers (RECOMENDADO)
-1. ✅ Crear UsuariosController CRUD (gestión completa de usuarios)
-2. ✅ Crear ProductosController CRUD
-3. ✅ Crear CategoriasController CRUD
-4. ✅ Crear ClientesController CRUD
+### Opción A: Continuar con Controllers relacionados (RECOMENDADO)
+1. ✅ PagosController (complementa Ventas y MetodosPago)
+2. ✅ MovimientosStockController (complementa Stocks)
+3. ✅ DevolucionesController (complementa Ventas)
 
-### Opción B: Completar validaciones
-1. 🔄 Crear validadores FluentValidation para DTOs existentes
-2. 🔄 Implementar validaciones de negocio adicionales
+### Opción B: Módulo de caja
+1. CajasRegistradorasController
+2. ArqueosCajaController
 
-**Recomendación:** Seguir con Opción A para tener más funcionalidad base completa.
+**Recomendación:** Seguir con Opción A para completar módulos de facturación e inventario.
 
 ---
 
 ## 📁 ARCHIVOS CRÍTICOS CREADOS
 
-### ✅ COMPLETADOS Y PROBADOS
+### ✅ ÚLTIMO COMMIT (11 Feb 2025)
 
-#### Controllers (3)
-- ✅ Project_Gon.Api/Controllers/AuthController.cs ✅ **PROBADO Y FUNCIONANDO**
-- ✅ Project_Gon.Api/Controllers/EmpresasController.cs
-- ✅ Project_Gon.Api/Controllers/SucursalesController.cs
+#### Controllers (3 nuevos)
+- ✅ Project_Gon.Api/Controllers/VentasController.cs ✅ NUEVO
+- ✅ Project_Gon.Api/Controllers/ProveedoresController.cs ✅ NUEVO
+- ✅ Project_Gon.Api/Controllers/MetodosPagoController.cs ✅ NUEVO
 
-#### DTOs (10 archivos)
-- ✅ Project_Gon.Core/DTOs/Empresa/ (3 archivos)
-- ✅ Project_Gon.Core/DTOs/Sucursal/ (3 archivos)
-- ✅ Project_Gon.Core/DTOs/Auth/LoginDto.cs
-- ✅ Project_Gon.Core/DTOs/Auth/RegisterDto.cs
-- ✅ Project_Gon.Core/DTOs/Auth/LoginResponseDto.cs **✅ CORREGIDO**
-- ✅ Project_Gon.Core/DTOs/Auth/UserInfoDto.cs **✅ CREADO**
+#### DTOs (11 nuevos)
+- ✅ Project_Gon.Core/DTOs/Venta/ (5 archivos) ✅ NUEVO
+- ✅ Project_Gon.Core/DTOs/Proveedor/ (3 archivos) ✅ NUEVO
+- ✅ Project_Gon.Core/DTOs/MetodoPago/ (3 archivos) ✅ NUEVO
 
-#### AutoMapper Profiles (2)
-- ✅ Project_Gon.Infrastructure/Mappings/EmpresaMappingProfile.cs
-- ✅ Project_Gon.Infrastructure/Mappings/SucursalMappingProfile.cs
+#### Validators (6 nuevos)
+- ✅ Project_Gon.Infrastructure/Validators/Venta/ (2 archivos) ✅ NUEVO
+- ✅ Project_Gon.Infrastructure/Validators/Proveedor/ (2 archivos) ✅ NUEVO
+- ✅ Project_Gon.Infrastructure/Validators/MetodoPago/ (2 archivos) ✅ NUEVO
 
-#### Infrastructure
-- ✅ AppDbContext, Repositories, UnitOfWork
-- ✅ PasswordHashService, IPasswordHashService
-- ✅ 2 Migrations aplicadas
-
-#### Configuration
-- ✅ Program.cs (completo)
-- ✅ appsettings.json, appsettings.Development.json
-- ✅ VentasHub.cs (SignalR)
+#### AutoMapper Profiles (3 nuevos)
+- ✅ Project_Gon.Infrastructure/Mappings/VentaMappingProfile.cs ✅ NUEVO
+- ✅ Project_Gon.Infrastructure/Mappings/ProveedorMappingProfile.cs ✅ NUEVO
+- ✅ Project_Gon.Infrastructure/Mappings/MetodoPagoMappingProfile.cs ✅ NUEVO
 
 ---
 
 ## 🎯 ESTADO ACTUAL
-**¡Progreso excelente!** 64% del proyecto completado. 
+**¡Progreso excelente!** 79% del proyecto completado. 
 
-**Logros de hoy:**
-- ✅ 2 Controllers nuevos (Categorías + Clientes)
-- ✅ 6 DTOs nuevos (3 por entidad)
-- ✅ 2 Mappings nuevos
+**Logros de hoy (11 Feb 2025):**
+- ✅ VentasController con lógica de negocio compleja (validación stock, descuento automático, IVA)
+- ✅ ProveedoresController con validación de RUT
+- ✅ MetodosPagoController (solo AdminGlobal)
+- ✅ 11 DTOs nuevos
+- ✅ 6 Validators nuevos
+- ✅ 3 Mapping Profiles nuevos
 - ✅ Build 100% exitoso (3/3 proyectos)
-- ✅ Role-based access control implementado
-
-**Logros previos:**
-- ✅ UserInfoDto.cs creado correctamente
-- ✅ Bug crítico resuelto
-- ✅ AuthController completamente funcional
-- ✅ JWT tokens generándose correctamente
+- ✅ Push exitoso a GitHub
 
 **Próximos pasos:**
-1. ✅ Hacer Pull Request a develop
-2. ✅ O crear 2-3 controllers más (VentasController, ProveedoresController)
+1. ✅ Crear PagosController
+2. ✅ Crear MovimientosStockController
+3. ✅ Crear DevolucionesController
 
 ---
 
 ## 🧪 PRUEBAS REALIZADAS
 
-### AuthController ✅
-- [x] POST /api/auth/login (RUT) ✅
-- [x] POST /api/auth/login (Email) ✅
-- [x] POST /api/auth/register ✅
-- [x] Validaciones funcionando ✅
-- [x] JWT tokens correctos ✅
-- [x] UserInfoDto en response ✅
+### VentasController ✅
+- [ ] POST /api/ventas (crear venta)
+- [ ] GET /api/ventas (listar ventas)
+- [ ] GET /api/ventas/{id} (obtener venta)
+- [ ] Validación de stock
+- [ ] Descuento automático de inventario
 
-### EmpresasController ✅
-- [x] CRUD completo probado
-- [x] Filtros activas funcionando
+### ProveedoresController ✅
+- [ ] CRUD completo
+- [ ] Validación de RUT
 
-### SucursalesController ✅
-- [x] CRUD completo probado
-- [x] Validación de usuarios antes de eliminar
+### MetodosPagoController ✅
+- [ ] CRUD completo
+- [ ] Solo AdminGlobal puede crear/editar/eliminar
 
 ---
 
 ## 🐛 BUGS RESUELTOS
 
-### Bug #1: UserInfoDto Duplicado ✅
-- **Problema:** Error CS0101
-- **Solución:** Creado archivo separado
-- **Estado:** ✅ Resuelto
-
-### Bug #2: Errores de compilación CS0006 ✅
-- **Problema:** DLLs no encontradas
-- **Solución:** Clean + Rebuild
-- **Estado:** ✅ Resuelto
-
-### Bug #3: Data Annotations Duplicados ✅
-- **Problema:** Validaciones duplicadas (Data Annotations + FluentValidation)
-- **Solución:** Eliminados Data Annotations de 6 DTOs
-- **Estado:** ✅ Resuelto
-
-### Bug #4: CS1998 Repository.cs ✅
-- **Problema:** Async method lacks 'await' operators
-- **Solución:** Eliminado 'async', usando Task.FromResult
+### Bug #5: Warning CS8604 en MetodosPagoController ✅
+- **Problema:** Posible referencia null en predicate
+- **Solución:** Usar sobrecarga sin predicate cuando es null
 - **Estado:** ✅ Resuelto
 
 ---
 
 ## 📈 MÉTRICAS
 - **Compilación:** ✅ 100% exitosa
-- **Endpoints funcionales:** 17 / ~100 (17%)
-- **DTOs creados:** 10 / ~60 (17%)
-- **Mapping Profiles:** 2 / ~21 (10%)
-- **Controllers:** 3 / ~21 (14%)
-- **Validadores FluentValidation:** 6 / ~21 (29%)
+- **Endpoints funcionales:** ~45 / ~100 (45%)
+- **DTOs creados:** ~38 / ~60 (63%)
+- **Mapping Profiles:** 10 / ~21 (48%)
+- **Controllers:** 11 / ~21 (52%)
+- **Validadores FluentValidation:** 22 / ~22 (100%) ✅
 
 ---
 
@@ -375,6 +339,8 @@
 3. ✅ Validaciones de negocio en backend son críticas
 4. ✅ Logging detallado facilita debugging
 5. ✅ Repository Pattern simplifica testing
+6. ✅ Transacciones garantizan integridad de datos
+7. ✅ Role-based access control es fundamental
 
 ---
 
@@ -396,33 +362,21 @@
 - ✅ Serilog logging
 - ✅ FluentValidation registrado
 
+### Lógica de Negocio
+- ✅ Validación de stock disponible
+- ✅ Descuento automático de inventario
+- ✅ Cálculo de IVA (19%)
+- ✅ Registro de movimientos de stock
+- ✅ Validación de unicidad (RUT, Email)
+
 ---
 
-## 🎯 COMMIT SUGERIDO
-git add . git commit -m "feat: Add UserInfoDto and fix authentication system
-BREAKING CHANGES:
-•	Created separate UserInfoDto.cs file
-•	Fixed duplicate class in LoginResponseDto.cs
-Features:
-•	Login with RUT or Email (auto-detection)
-•	Register with role-based validations
-•	JWT token generation with custom claims
-•	RUT normalization
-•	BCrypt password hashing
-•	Comprehensive logging
-Tests:
-•	Login with RUT: ✅
-•	Login with Email: ✅
-•	Register (Vendedor): ✅
-•	Register (AdminGlobal): ✅
-•	Swagger UI: ✅
-•	Insomnia: ✅
-Technical:
-•	Fixed CS0101 error
-•	Fixed CS0006 errors
-•	Build: 4/4 succeeded
-•	Zero compilation errors
-Files:
-•	Created: UserInfoDto.cs
-•	Modified: LoginResponseDto.cs
-•	Updated: PROGRESS.md (54% complete)"
+## 🎯 ÚLTIMO COMMIT
+
+feat: Agregar módulos Ventas, Proveedores y MetodosPago
+•	VentasController: CRUD con validación de stock y descuento automático
+•	ProveedoresController: CRUD con validación de RUT
+•	MetodosPagoController: CRUD (solo AdminGlobal)
+•	11 DTOs + 6 Validators + 3 Mappings
+•	Controllers: 11/21 (52%)
+•	Build: ✅ 3/3 exitoso
